@@ -1,0 +1,14 @@
+.menu {
+    .selected {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            background-color: #0b537b;
+            height: 2px;
+            width: 45%;
+            display: block;
+        }
+    }
+}

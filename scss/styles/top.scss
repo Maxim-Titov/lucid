@@ -1,0 +1,78 @@
+.top {
+    padding-top: 35px;
+    color: white;
+    background: black;
+    opacity: 0.9;
+    background-size: 100%;
+
+    .back-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.1;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+
+        .left-block, .right-block {
+            width: 50%;
+            margin-top: 50px;
+        }
+
+        .left-block {
+            padding-left: 175px;
+
+            .introducing {
+                color: #0090d0;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            h1 {
+                font-size: 55px;
+            }
+
+            .description {
+                color: #8f8f8f;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+
+            form {
+                margin-top: 55px;
+
+                button:first-child {
+                    margin-left: 0;
+                }
+
+                button:last-child {
+                    margin-right: 0;
+                }
+
+                button {
+                    background-color: #0090d0;
+                    border: none;
+                    border-radius: 5px;
+                    height: 2.5lh;
+                    color: white;
+                    width: 200px;
+                    font-weight: bold;
+                    margin: 0 11px;
+                }
+            }
+        }
+
+        .right-block {
+            text-align: center;
+
+            .phone-img {
+                text-align: right;
+                width: 500px;
+            }
+        }
+    }
+}
