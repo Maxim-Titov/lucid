@@ -12,11 +12,12 @@
         width: 100%;
         z-index: -1;
         opacity: 0.1;
+        height: 985px;
     }
 
     .content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 1170px;
         margin: 0 auto;
 
@@ -34,10 +35,10 @@
 
             h1 {
                 font-size: 55px;
+                color: white;
             }
 
             .description {
-                color: #8f8f8f;
                 font-size: 20px;
                 margin-top: 30px;
             }
@@ -67,11 +68,11 @@
         }
 
         .right-block {
-            text-align: center;
+            text-align: right;
 
             .phone-img {
                 text-align: right;
-                width: 500px;
+                width: 450px;
             }
         }
     }

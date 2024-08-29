@@ -12,10 +12,11 @@
   width: 100%;
   z-index: -1;
   opacity: 0.1;
+  height: 985px;
 }
 .top .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
 }
@@ -30,9 +31,9 @@
 }
 .top .content .left-block h1 {
   font-size: 55px;
+  color: white;
 }
 .top .content .left-block .description {
-  color: #8f8f8f;
   font-size: 20px;
   margin-top: 30px;
 }
@@ -56,11 +57,11 @@
   margin: 0 11px;
 }
 .top .content .right-block {
-  text-align: center;
+  text-align: right;
 }
 .top .content .right-block .phone-img {
   text-align: right;
-  width: 500px;
+  width: 450px;
 }
 
 /*# sourceMappingURL=top.css.map */
