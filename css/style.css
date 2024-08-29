@@ -6809,7 +6809,9 @@ progress {
 }
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
 }
 .header .name {
   display: flex;
@@ -6852,13 +6854,12 @@ progress {
 .top .content {
   display: flex;
   justify-content: space-around;
+  width: 1170px;
+  margin: 0 auto;
 }
 .top .content .left-block, .top .content .right-block {
   width: 50%;
   margin-top: 50px;
-}
-.top .content .left-block {
-  padding-left: 175px;
 }
 .top .content .left-block .introducing {
   color: #0090d0;

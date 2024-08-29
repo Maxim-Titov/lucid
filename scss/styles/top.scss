@@ -17,6 +17,8 @@
     .content {
         display: flex;
         justify-content: space-around;
+        width: 1170px;
+        margin: 0 auto;
 
         .left-block, .right-block {
             width: 50%;
@@ -24,8 +26,6 @@
         }
 
         .left-block {
-            padding-left: 175px;
-
             .introducing {
                 color: #0090d0;
                 font-weight: bold;
