@@ -182,7 +182,7 @@ header .header ul li a {
   z-index: -1;
   opacity: 0.1;
   height: 985px;
-  background-image: url(../../images/header-background.png);
+  background-image: url(../images/header-background.png);
 }
 .top .content {
   display: flex;
