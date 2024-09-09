@@ -1,0 +1,53 @@
+.dip-into-details .block {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.dip-into-details .block .content .underline {
+  margin-right: 0;
+  margin-left: 0;
+}
+.dip-into-details .block .content .desc {
+  margin-top: 30px;
+  color: black;
+}
+.dip-into-details .block .content .desc .desc-row {
+  display: flex;
+  justify-content: left;
+}
+.dip-into-details .block .content .desc .desc-row .img {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+.dip-into-details .block .content .desc .desc-row .img .cup {
+  width: 20px;
+  height: 18px;
+}
+.dip-into-details .block .content .desc .desc-row .img .mouse {
+  width: 12px;
+  height: 19px;
+}
+.dip-into-details .block .content .desc .desc-row .img .energy {
+  width: 14px;
+  height: 19px;
+}
+.dip-into-details .block .content .desc .desc-row .img .speedometer {
+  width: 19px;
+  height: 18px;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  .dip-into-details .block {
+    width: 100%;
+    padding: 15px;
+  }
+  .dip-into-details .block .image img {
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=dip-into-details.css.map */

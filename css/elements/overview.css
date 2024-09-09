@@ -1,0 +1,39 @@
+.overview .content {
+  width: 1170px;
+  margin: 0 auto;
+}
+.overview .content .overview-head {
+  margin-top: 50px;
+  text-align: center;
+}
+.overview .content .points {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.overview .content .points div {
+  width: 25%;
+  text-align: center;
+}
+.overview .content .points div .title {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.overview .content .points div .content {
+  margin-top: 0;
+  width: 100%;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  .overview .content {
+    width: 100%;
+    padding: 15px;
+  }
+  .overview .content .points {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=overview.css.map */

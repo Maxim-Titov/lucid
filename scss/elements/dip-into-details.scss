@@ -50,3 +50,20 @@
         }
     }
 }
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    .dip-into-details {
+        .block {
+            width: 100%;
+            padding: 15px;
+
+            .image {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

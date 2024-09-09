@@ -1,14 +1,28 @@
 .menu {
-    .selected {
-        margin-top: 8px;
-        display: flex;
-        justify-content: space-between;
+    nav {
+        ul {
+            li {
+                a {
+                    color: white;
+                }
 
-        span {
-            background-color: #0090d0;
-            height: 3px;
-            width: 45%;
-            display: block;
+                a:hover {
+                    color: #0090d0;
+                }
+
+                .selected {
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: space-between;
+            
+                    span {
+                        background-color: #0090d0;
+                        height: 3px;
+                        width: 45%;
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
@@ -40,8 +54,8 @@
             background-color: #0090d0;
             width: 50px;
             height: 30px;
-            top: 40px;
-            right: 15px;
+            top: 20px;
+            right: 30px;
             border-radius: 5px;
             position: absolute;
 

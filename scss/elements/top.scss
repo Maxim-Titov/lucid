@@ -13,6 +13,7 @@
         z-index: -1;
         opacity: 0.1;
         height: 985px;
+        background-image: url(../../images/header-background.png);
     }
 
     .content {
@@ -48,15 +49,22 @@
 
                 button:first-child {
                     margin-left: 0;
+                    background-color: #0090d0;
+                    border: none;
                 }
 
                 button:last-child {
                     margin-right: 0;
+                    background-color: rgba($color: white, $alpha: 0.1);
+                    border: 1px solid white;
+                }
+
+                button:last-child:hover {
+                    background-color: #0090d0;
+                    border: none;
                 }
 
                 button {
-                    background-color: #0090d0;
-                    border: none;
                     border-radius: 5px;
                     height: 2.5lh;
                     color: white;
@@ -73,6 +81,22 @@
             .phone-img {
                 text-align: right;
                 width: 450px;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1170px) {
+    .top {
+        padding: 15px 15px 0 15px;
+
+        .content {
+            width: 100%;
+
+            .right-block {
+                width: none;
             }
         }
     }
@@ -115,7 +139,7 @@
 
                 form {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
 
                     button {
                         font-size: 13px;
