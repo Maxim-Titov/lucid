@@ -1,51 +1,73 @@
-.dip-into-details {
-    .block {
-        width: 1170px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
+#dip-into-details {
+    .row {
+        width: 100%;
 
-        .content {
-            .underline {
-                margin-right: 0;
-                margin-left: 0;
-            }
+        .block {
+            width: 1170px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
 
-            .desc {
-                margin-top: 30px;
-                color: black;
+            .content {
+                .underline {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
 
-                .desc-row {
-                    display: flex;
-                    justify-content: left;
+                .desc {
+                    margin-top: 30px;
+                    color: black;
 
-                    .img {
-                        width: 20px;
-                        height: 20px;
-                        text-align: center;
-                        margin-right: 10px;
+                    .desc-row {
+                        display: flex;
+                        justify-content: left;
 
-                        .cup {
+                        .img {
                             width: 20px;
-                            height: 18px;
-                        }
+                            height: 20px;
+                            text-align: center;
+                            margin-right: 10px;
 
-                        .mouse {
-                            width: 12px;
-                            height: 19px;
-                        }
+                            .cup {
+                                width: 20px;
+                                height: 18px;
+                            }
 
-                        .energy {
-                            width: 14px;
-                            height: 19px;
-                        }
+                            .mouse {
+                                width: 12px;
+                                height: 19px;
+                            }
 
-                        .speedometer {
-                            width: 19px;
-                            height: 18px;
+                            .energy {
+                                width: 14px;
+                                height: 19px;
+                            }
+
+                            .speedometer {
+                                width: 19px;
+                                height: 18px;
+                            }
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .row:last-child {
+        margin: 100px 0 0 0;
+        background-color: #f2f2f2;
+        padding: 75px 0 0 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1170px) {
+    #dip-into-details {
+        .row {
+            .block {
+                width: 100%;
             }
         }
     }
@@ -54,16 +76,53 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    .dip-into-details {
-        .block {
-            width: 100%;
-            padding: 15px;
+    #dip-into-details {
+        .row {
+            margin: 0;
+            padding: 0;
 
-            .image {
-                img {
-                    width: 150px;
+            .block {
+                padding: 15px;
+                display: block;
+                text-align: center;
+                
+                .image {
+                    img {
+                        width: 225px;
+                    }
+
+                    .phone-details-second {
+                        width: 300px;
+                    }
+                }
+
+                .content {
+                    padding-top: 30px;
+
+                    .underline {
+                        margin: 40px auto;
+                    }
+
+                    .block-content {
+                        br {
+                            display: none;
+                        }
+                    }
+
+                    .desc {
+                        .desc-row {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
                 }
             }
+        }
+
+        .row:last-child {
+            margin: 0;
+            background-color: #f2f2f2;
+            padding: 0;
         }
     }
 }

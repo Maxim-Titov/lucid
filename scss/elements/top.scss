@@ -1,4 +1,4 @@
-.top {
+#top {
     padding-top: 35px;
     color: white;
     background: black;
@@ -12,8 +12,9 @@
         width: 100%;
         z-index: -1;
         opacity: 0.1;
-        height: 985px;
+        height: 100%;
         background-image: url(../images/header-background.png);
+        background-size: cover;
     }
 
     .content {
@@ -89,15 +90,11 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    .top {
+    #top {
         padding: 15px 15px 0 15px;
 
         .content {
-            width: 100%;
-
-            .right-block {
-                width: none;
-            }
+            width: 100%;   
         }
     }
 }
@@ -105,7 +102,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    .top {
+    #top {
         .content {
             width: 100%;
             padding: 0 15px;

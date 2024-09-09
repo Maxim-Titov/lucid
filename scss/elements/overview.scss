@@ -1,4 +1,4 @@
-.overview {
+#overview {
     .content {
         width: 1170px;
         margin: 0 auto;
@@ -34,10 +34,19 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
-    .overview {
+@media(max-width: 1170px) {
+    #overview {
         .content {
             width: 100%;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    #overview {
+        .content {
             padding: 15px;
 
             .points {

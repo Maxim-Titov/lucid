@@ -28,4 +28,15 @@ $(document).ready(function() {
             }
         ]
     });
+
+    $('.testimonial-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        fade: true,
+        mobileFirst: true,
+        slidesToShow: 1
+    });
 });

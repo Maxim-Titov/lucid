@@ -1,0 +1,53 @@
+#testimonials {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/testimonials-bg.png);
+  background-size: cover;
+  padding: 150px 0;
+  color: white;
+}
+#testimonials .title {
+  text-align: center;
+}
+#testimonials .title h1 {
+  color: white;
+}
+#testimonials .testimonial-slider .slide .content {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#testimonials .testimonial-slider .slide .content div .author {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+}
+#testimonials .testimonial-slider .slide .content div .author img {
+  border-radius: 50%;
+}
+#testimonials .testimonial-slider .slide .content div .author div {
+  padding-left: 20px;
+}
+#testimonials .testimonial-slider .slide .content div .author div p {
+  margin: 0;
+}
+#testimonials .testimonial-slider .slide .content div .author div .role {
+  font-weight: bold;
+}
+#testimonials .testimonial-slider .slick-dots button {
+  display: block;
+  width: 3px;
+  height: 3px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  text-indent: -9999px;
+}
+#testimonials .testimonial-slider .slick-dots li.slick-active button {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border: none;
+}
+
+/*# sourceMappingURL=testimonials.css.map */

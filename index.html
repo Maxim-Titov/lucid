@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<section class="top">
+	<section id="top">
 		<header>
 			<div class="header">
 				<div class="name">
@@ -34,7 +34,7 @@
 					</div>
 					<ul class="menu__box">
 						<li>
-							<a class="menu__item" href="#">Home</a>
+							<a class="menu__item" href="#top">Home</a>
 
 							<div class="selected">
 								<span></span>
@@ -44,15 +44,15 @@
 						
 						<hr class="menu-line"/>
 
-						<li><a class="menu__item" href="#">Features</a></li>
+						<li><a class="menu__item" href="#overview">Features</a></li>
 
 						<hr class="menu-line"/>
 
-						<li><a class="menu__item" href="#">About</a></li>
+						<li><a class="menu__item" href="#dip-into-details">About</a></li>
 						
 						<hr class="menu-line"/>
 						
-						<li><a class="menu__item" href="#">Testimonials</a></li>
+						<li><a class="menu__item" href="#testimonials">Testimonials</a></li>
 
 						<hr class="menu-line"/>
 
@@ -68,16 +68,16 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="#">Home</a>
+								<a href="#top">Home</a>
 
 								<div class="selected">
 									<span></span>
 									<span></span>
 								</div>
 							</li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Testimonials</a></li>
+							<li><a href="#overview">Features</a></li>
+							<li><a href="#dip-into-details">About</a></li>
+							<li><a href="#testimonials">Testimonials</a></li>
 							<li><a href="#">Pricing</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
@@ -112,7 +112,7 @@
 		 <div class="back-img"></div>
 	</section>
 
-	<section class="overview">
+	<section id="overview">
 		<div class="content">
 			<div class="overview-head">
 				<p class="block-title">PRODUCT OVERVIEW</p>
@@ -197,57 +197,253 @@
 
 	<hr class="line"/>
 
-	<section class="dip-into-details">
-		<div class="block">
-			<div class="image">
-				<img src="images/phone-details-1.png" alt="phone details">
-			</div>
-
-			<div class="content">
-				<p class="block-title">DIP INTO THE DETAILS</p>
-
-				<h1>Beautiful on every device</h1>
-
-				<div class="underline">
-					<span></span>
-					<span></span>
+	<section id="dip-into-details">
+		<div class="row">
+			<div class="block">
+				<div class="image">
+					<img src="images/phone-details-1.png" alt="phone details">
 				</div>
 
-				<p class="block-content">
-					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. <br/> Morbi accumsan ipsum velit.
-					Nam nec tellus a odio tincidunt <br/> auctor a ornare odio. Sed non mauris vitae erat consequat <br/> auctor eu in elit.</p>
+				<div class="content">
+					<p class="block-title">DIP INTO THE DETAILS</p>
 
-				<div class="desc">
-					<div class="desc-row">
-						<div class="img">
-							<img src="images/cup.png" alt="cup" class="cup">
-						</div>
+					<h1>Beautiful on every device</h1>
 
-						<p>Awesome design</p>
+					<div class="underline">
+						<span></span>
+						<span></span>
 					</div>
 
-					<div class="desc-row">
-						<div class="img">
-							<img src="images/mouse.png" alt="mouse" class="mouse">
+					<p class="block-content">
+						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. <br/> Morbi accumsan ipsum velit.
+						Nam nec tellus a odio tincidunt <br/> auctor a ornare odio. Sed non mauris vitae erat consequat <br/> auctor eu in elit.
+					</p>
+
+					<div class="desc">
+						<div class="desc-row">
+							<div class="img">
+								<img src="images/cup.png" alt="cup" class="cup">
+							</div>
+
+							<p>Awesome design</p>
 						</div>
-							
-						<p>Fully responsive</p>
+
+						<div class="desc-row">
+							<div class="img">
+								<img src="images/mouse.png" alt="mouse" class="mouse">
+							</div>
+								
+							<p>Fully responsive</p>
+						</div>
+
+						<div class="desc-row">
+							<div class="img">
+								<img src="images/energy.png" alt="energy" class="energy">
+							</div>
+
+							<p>Retina ready</p>
+						</div>
+
+						<div class="desc-row">
+							<div class="img">
+								<img src="images/speedometer.png" alt="speedometer" class="speedometer">
+							</div>
+
+							<p>Tons of features and easy to use</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="block">
+				<div class="content">
+					<p class="block-title">DIP INTO THE DETAILS</p>
+
+					<h1>Super easy to costumize</h1>
+
+					<div class="underline">
+						<span></span>
+						<span></span>
 					</div>
 
-					<div class="desc-row">
-						<div class="img">
-							<img src="images/energy.png" alt="energy" class="energy">
-						</div>
+					<p class="block-content">
+						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. <br/> Morbi accumsan ipsum velit.
+						Nam nec tellus a odio tincidunt <br/> auctor a ornare odio. Sed non mauris vitae erat consequat <br/>
+						auctor eu in elit. Class aptent taciti sociosqu ad litora torquent <br/> per conubia nostra, 
+						per inceptos himenaeos.
+					</p>
+				</div>
+				
+				<div class="image">
+					<img class="phone-details-second" src="images/phone-details-2.png" alt="phone details">
+				</div>
+			</div>
+		</div>
+	</section>
 
-						<p>Retina ready</p>
+	<section id="testimonials">
+		<div class="title">
+			<p class="block-title">QUALITY HAS ITS PRICE</p>
+
+			<h1>Pricings & Plans</h1>
+
+			<div class="underline">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="testimonial-slider">
+			<div class="slide">
+				<div class="content">
+					<div>
+						<p>
+							Once upon a time all the Rivers combined to protest <br/>
+							against the action of the Sea in making their waters salt. <br/>
+							"When we come to you," said they to the Sea.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-first.png" alt="testimonial first">
+		
+							<div>
+								<p class="name">John Doe</p>
+								<p class="role">CEO, THE RIVERS COMPANY</p>
+							</div>
+						</div>
 					</div>
-
-					<div class="desc-row">
-						<div class="img">
-							<img src="images/speedometer.png" alt="speedometer" class="speedometer">
+		
+					<div>
+						<p>
+							A shoe os not anly a design, but it's a part of your body <br/>
+							language, the way you walk. The way you're going to <br/>
+							move is quite dictated by your shoes.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-second.png" alt="testimonial second">
+		
+							<div>
+								<p class="name">Dean Winchester</p>
+								<p class="role">UX DESIGNER, GOOGLE INC.</p>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
 
-						<p>Tons of features and easy to use</p>
+			<div class="slide">
+				<div class="content">
+					<div>
+						<p>
+							Once upon a time all the Rivers combined to protest <br/>
+							against the action of the Sea in making their waters salt. <br/>
+							"When we come to you," said they to the Sea.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-first.png" alt="testimonial first">
+		
+							<div>
+								<p class="name">John Doe</p>
+								<p class="role">CEO, THE RIVERS COMPANY</p>
+							</div>
+						</div>
+					</div>
+		
+					<div>
+						<p>
+							A shoe os not anly a design, but it's a part of your body <br/>
+							language, the way you walk. The way you're going to <br/>
+							move is quite dictated by your shoes.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-second.png" alt="testimonial second">
+		
+							<div>
+								<p class="name">Dean Winchester</p>
+								<p class="role">UX DESIGNER, GOOGLE INC.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="content">
+					<div>
+						<p>
+							Once upon a time all the Rivers combined to protest <br/>
+							against the action of the Sea in making their waters salt. <br/>
+							"When we come to you," said they to the Sea.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-first.png" alt="testimonial first">
+		
+							<div>
+								<p class="name">John Doe</p>
+								<p class="role">CEO, THE RIVERS COMPANY</p>
+							</div>
+						</div>
+					</div>
+		
+					<div>
+						<p>
+							A shoe os not anly a design, but it's a part of your body <br/>
+							language, the way you walk. The way you're going to <br/>
+							move is quite dictated by your shoes.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-second.png" alt="testimonial second">
+		
+							<div>
+								<p class="name">Dean Winchester</p>
+								<p class="role">UX DESIGNER, GOOGLE INC.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="content">
+					<div>
+						<p>
+							Once upon a time all the Rivers combined to protest <br/>
+							against the action of the Sea in making their waters salt. <br/>
+							"When we come to you," said they to the Sea.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-first.png" alt="testimonial first">
+		
+							<div>
+								<p class="name">John Doe</p>
+								<p class="role">CEO, THE RIVERS COMPANY</p>
+							</div>
+						</div>
+					</div>
+		
+					<div>
+						<p>
+							A shoe os not anly a design, but it's a part of your body <br/>
+							language, the way you walk. The way you're going to <br/>
+							move is quite dictated by your shoes.
+						</p>
+		
+						<div class="author">
+							<img src="images/testimonial-second.png" alt="testimonial second">
+		
+							<div>
+								<p class="name">Dean Winchester</p>
+								<p class="role">UX DESIGNER, GOOGLE INC.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
