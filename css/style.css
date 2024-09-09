@@ -76,15 +76,19 @@ header .header ul li a {
   .hamburger-menu #menu__toggle {
     display: none;
   }
-  .hamburger-menu #menu__toggle:checked ~ .menu__btn span {
+  .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span {
     transform: rotate(45deg);
   }
-  .hamburger-menu #menu__toggle:checked ~ .menu__btn span::before {
+  .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::before {
     top: 0;
     transform: rotate(0);
   }
-  .hamburger-menu #menu__toggle:checked ~ .menu__btn span::after {
+  .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::after {
     top: 0;
+    transform: rotate(90deg);
+  }
+  .hamburger-menu #menu__toggle:checked ~ .button {
+    background-color: rgba(0, 144, 208, 0);
     transform: rotate(90deg);
   }
   .hamburger-menu #menu__toggle:checked ~ .menu__box {
@@ -100,6 +104,7 @@ header .header ul li a {
     border-radius: 5px;
     position: absolute;
     z-index: 20;
+    transition-duration: 0.25s;
   }
   .hamburger-menu .button .menu__btn {
     display: flex;
