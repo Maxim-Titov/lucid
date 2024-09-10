@@ -1,8 +1,8 @@
 #testimonials {
     width: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/testimonials-bg.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/testimonials-bg.png);
     background-size: cover;
-    padding: 150px 0;
+    padding: 150px 0 50px 0;
     color: white;
 
     .title {
@@ -48,24 +48,71 @@
         }
 
         .slick-dots {
-                button {
+            button {
+                display: block;
+                width: 6.5px;
+                height: 6.5px;
+                padding: 0;
+                border: 1px solid white;
+                border-radius: 100%;
+                background-color: rgba($color: #000000, $alpha: 0);
+                text-indent: -9999px;
+            }
+            
+            li.slick-active button {
+                background-color: white;
+                width: 13px;
+                height: 13px;
+                margin: 0 -3px;
+            }          
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1170px) {
+    #testimonials {
+        padding: 50px 0 25px 0;
+
+        .testimonial-slider {
+            .slide {
+                .content {
+                    width: 424px;
                     display: block;
-                    width: 3px;
-                    height: 3px;
-                    border: 1px solid gray;
-                    border-radius: 100%;
-                    background-color: rgba($color: #000000, $alpha: 0);
-                    
-                    text-indent: -9999px;
+
+                    div {
+                        text-align: center;
+
+                        p {
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        .author {
+                            .name {
+                                text-align: left;
+                            }
+                        }
+                    }
                 }
-            
-                li.slick-active button {
-                    background-color: white;
-                    width: 8px;
-                    height: 8px;
-                    border: none;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 424px) {
+    #testimonials {
+        .testimonial-slider {
+            .slide {
+                .content {
+                    width: 100%;
+                    padding: 15px;
                 }
-            
+            }
         }
     }
 }
