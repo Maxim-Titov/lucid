@@ -1,0 +1,172 @@
+#testimonials {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/testimonials-bg.png);
+  background-size: cover;
+  padding: 150px 0 50px 0;
+  color: white;
+}
+#testimonials .title {
+  text-align: center;
+}
+#testimonials .title h1 {
+  color: white;
+}
+#testimonials .testimonial-slider {
+  height: 275px;
+}
+#testimonials .testimonial-slider .slide .content {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#testimonials .testimonial-slider .slide .content div .author {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+}
+#testimonials .testimonial-slider .slide .content div .author img {
+  border-radius: 50%;
+}
+#testimonials .testimonial-slider .slide .content div .author div {
+  padding-left: 20px;
+}
+#testimonials .testimonial-slider .slide .content div .author div p {
+  margin: 0;
+}
+#testimonials .testimonial-slider .slide .content div .author div .role {
+  font-weight: bold;
+}
+#testimonials .testimonial-slider .slide .content .line {
+  display: none;
+}
+#testimonials .testimonial-slider .slick-dots button {
+  display: block;
+  width: 6.5px;
+  height: 6.5px;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  text-indent: -9999px;
+}
+#testimonials .testimonial-slider .slick-dots li.slick-active button {
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  margin: 0 -3px;
+}
+
+.like-what-you-see {
+  width: 100%;
+  height: 150px;
+  background-color: #0d0c14;
+  padding: 50px 0;
+}
+.like-what-you-see .like-what-you-see-block {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.like-what-you-see .like-what-you-see-block p {
+  color: white;
+  font-size: 30px;
+}
+.like-what-you-see .like-what-you-see-block p span {
+  font-weight: bold;
+}
+.like-what-you-see .like-what-you-see-block p br {
+  display: none;
+}
+.like-what-you-see .like-what-you-see-block form button:last-child {
+  background-color: #0090d0;
+  border: none;
+}
+.like-what-you-see .like-what-you-see-block form button:first-child {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+}
+.like-what-you-see .like-what-you-see-block form button:first-child:hover {
+  background-color: #0090d0;
+  border: none;
+}
+.like-what-you-see .like-what-you-see-block form button {
+  border-radius: 5px;
+  width: 175px;
+  height: 2.3lh;
+  color: white;
+  font-weight: bold;
+  margin: 0 11px;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1170px) {
+  .like-what-you-see {
+    width: 100%;
+    padding: 50px 15px;
+  }
+  .like-what-you-see .like-what-you-see-block {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 1000px) {
+  .like-what-you-see {
+    padding: 50px 10px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #testimonials {
+    padding: 50px 0 25px 0;
+  }
+  #testimonials .testimonial-slider {
+    height: 100%;
+  }
+  #testimonials .testimonial-slider .slide .content {
+    width: 424px;
+    display: block;
+  }
+  #testimonials .testimonial-slider .slide .content div {
+    text-align: center;
+  }
+  #testimonials .testimonial-slider .slide .content div p br {
+    display: none;
+  }
+  #testimonials .testimonial-slider .slide .content div .author .name {
+    text-align: left;
+  }
+  #testimonials .testimonial-slider .slide .content .line {
+    display: block;
+  }
+  .like-what-you-see {
+    height: 100%;
+    padding: 25px 0;
+  }
+  .like-what-you-see .like-what-you-see-block {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .like-what-you-see .like-what-you-see-block p {
+    font-size: 20px;
+  }
+  .like-what-you-see .like-what-you-see-block p br {
+    display: block;
+  }
+  .like-what-you-see .like-what-you-see-block form button {
+    width: 120px;
+    height: 2lh;
+    font-size: 13px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 424px) {
+  #testimonials .testimonial-slider .slide .content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/*# sourceMappingURL=testimonials.css.map */

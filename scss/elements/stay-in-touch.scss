@@ -1,0 +1,95 @@
+#stay-in-touch {
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 100px 0 50px 0;
+
+    .stay-in-touch-block {
+        width: 1170px;
+        margin: 0 auto;
+
+        .title {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+
+            div {
+                text-align: center;
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .form-block {
+        background-color: #0d0c14;
+        width: 800px;
+        position: absolute;
+        left: 28%;
+
+        form {
+            padding: 75px 0 90px 0;
+
+            .form {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    width: 425px;
+                    padding: 0 10px;
+
+                    input, textarea {
+                        color: gray;
+                        border: 1px solid gray;
+                        background-color: rgba($color: #000000, $alpha: 0);
+                    }
+    
+                    input {
+                        width: 325px;
+                        height: 2.3lh;
+                        margin-bottom: 25px;
+                        padding: 15px;
+                    }
+
+                    textarea {
+                        width: 325px;
+                        height: 9lh;
+                        margin: 0 auto;
+                    }
+                }
+
+                div:first-child {
+                    text-align: right;
+                }
+            }
+
+            button {
+                margin-left: 0;
+                background-color: #0090d0;
+                border: none;
+                border-radius: 5px;
+                width: 200px;
+                height: 2.3lh;
+                color: white;
+                font-weight: bold;
+                position: absolute;
+                right: 65px;
+            }
+
+            button:hover {
+                margin-right: 0;
+                background-color: rgba($color: white, $alpha: 0.1);
+                border: 1px solid white;
+            }
+        }
+    }
+}
