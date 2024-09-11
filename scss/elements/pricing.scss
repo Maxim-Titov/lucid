@@ -1,0 +1,312 @@
+#pricing {
+    width: 100%;
+
+    .pricing-block {
+        width: 1170px;
+        margin: 75px auto;
+
+        .title {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+
+            .price-block {
+                width: 23%;
+
+                div {
+                    text-align: center;
+                    padding: 0 20px;
+                }
+
+                .plan {
+                    border: 1px solid lightgray;
+                    padding: 15px 0;
+
+                    p {
+                        height: 25px;
+                        font-size: 25px;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+
+                .price {
+                    border-right: 1px solid lightgray;
+                    border-left: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 0;
+
+                    p:first-child {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 60px;
+                        height: 60px;
+
+                        span {
+                            font-size: 30px;
+                            vertical-align: 20px;
+                        }
+                    }
+                }
+
+                .desc {
+                    border-right: 1px solid lightgray;
+                    border-left: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    padding: 35px 20px;
+
+                    p {
+                        span {
+                            color: #0090d0;
+                        }
+                    }
+
+                    form {
+                        margin-top: 35px;
+
+                        button {
+                            color: #0090d0;
+                            font-weight: bold;
+                            width: 175px;
+                            height: 2lh;
+                            border-radius: 5px;
+                            background-color: rgba($color: white, $alpha: 0.1);
+                            border: 1px solid lightgray;
+                        }
+        
+                        button:hover {
+                            background-color: #0090d0;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .price-block:nth-child(3) {
+                .plan {
+                    p {
+                        color: #0090d0;
+                    }
+                }
+
+                .price {
+                    background-color: #0090d0;
+                    border: none;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                .desc {
+                    form {
+                        button {
+                            color: white;
+                            background-color: #0090d0;
+                            border: none;
+                        }
+        
+                        button:hover {
+                            color: #0090d0;
+                            font-weight: bold;
+                            width: 175px;
+                            height: 2lh;
+                            border-radius: 5px;
+                            background-color: rgba($color: white, $alpha: 0.1);
+                            border: 1px solid lightgray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1170px) {
+    #pricing {
+        .pricing-block {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    #pricing {
+        .pricing-block {
+            .content {
+                display: block;
+            
+                .price-block {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 15px 0;
+            
+                    .plan {
+                        border: 1px solid lightgray;
+                        padding: 15px 0;
+                        width: 15%;
+            
+                        p {
+                            height: 25px;
+                            font-size: 25px;
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+            
+                    .price {
+                        border-right: 1px solid lightgray;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgray;
+                        padding: 20px 0;
+                        width: 25%;
+            
+                        p:first-child {
+                            color: black;
+                            font-weight: bold;
+                            font-size: 60px;
+                            height: 60px;
+            
+                            span {
+                                font-size: 30px;
+                                vertical-align: 20px;
+                            }
+                        }
+                    }
+            
+                    .desc {
+                        border-right: 1px solid lightgray;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgray;
+                        padding: 35px 20px;
+                        width: 60%;
+            
+                        p {
+                            span {
+                                color: #0090d0;
+                            }
+                        }
+            
+                        form {
+                            margin-top: 35px;
+            
+                            button {
+                                color: #0090d0;
+                                font-weight: bold;
+                                width: 175px;
+                                height: 2lh;
+                                border-radius: 5px;
+                                background-color: rgba($color: white, $alpha: 0.1);
+                                border: 1px solid lightgray;
+                            }
+            
+                            button:hover {
+                                background-color: #0090d0;
+                                border: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .price-block:nth-child(3) {
+                    .plan {
+                        p {
+                            color: #0090d0;
+                        }
+                    }
+    
+                    .price {
+                        background-color: #0090d0;
+                        border: none;
+    
+                        p {
+                            color: white;
+                        }
+                    }
+    
+                    .desc {
+                        form {
+                            button {
+                                color: white;
+                                background-color: #0090d0;
+                                border: none;
+                            }
+            
+                            button:hover {
+                                color: #0090d0;
+                                font-weight: bold;
+                                width: 175px;
+                                height: 2lh;
+                                border-radius: 5px;
+                                background-color: rgba($color: white, $alpha: 0.1);
+                                border: 1px solid lightgray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 850px) {
+    #pricing {
+        .pricing-block {
+            .content {
+                .price-block {
+                    .plan {
+                        p {
+                            font-size: 30px;
+                            margin: 0;
+                            writing-mode: vertical-rl;
+                        }
+                    }
+            
+                    .price {
+                        p:first-child {
+                            font-size: 30px;
+                            height: 30px;
+            
+                            span {
+                                font-size: 15px;
+                                vertical-align: 10px;
+                            }
+                        }
+                    }
+            
+                    .desc {
+                        form {
+                            button {
+                                width: 125px;
+                            }
+                        }
+                    }
+                }
+
+                .price-block:nth-child(3) {
+                    .desc {
+                        form {
+            
+                            button:hover {
+                                width: 125px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
