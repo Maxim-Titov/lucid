@@ -36,7 +36,6 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 10000,
         fade: true,
-        mobileFirst: true,
-        slidesToShow: 1
+        mobileFirst: true
     });
 });

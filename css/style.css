@@ -444,6 +444,22 @@ header .header ul li a {
   text-align: center;
   position: relative;
 }
+.slider .slick-dots button {
+  display: block;
+  width: 6.5px;
+  height: 6.5px;
+  padding: 0;
+  border: 1px solid #0090d0;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  text-indent: -9999px;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: #0090d0;
+  width: 13px;
+  height: 13px;
+  margin: 0 -3px;
+}
 
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
@@ -574,7 +590,7 @@ header .header ul li a {
   }
 }
 /*------------------------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 720px) {
   #testimonials {
     padding: 50px 0 25px 0;
   }
@@ -908,7 +924,6 @@ header .header ul li a {
   text-align: right;
 }
 #stay-in-touch .form-block form button {
-  margin-left: 0;
   background-color: #0090d0;
   border: none;
   border-radius: 5px;
@@ -934,17 +949,23 @@ header .header ul li a {
     width: 100%;
     padding: 15px;
   }
-  #stay-in-touch .stay-in-touch-block .title {
-    padding-top: 25px;
-  }
-  #stay-in-touch .stay-in-touch-block .content {
-    padding: 0;
-    display: block;
-  }
   #stay-in-touch .stay-in-touch-block .content div {
     width: 100%;
     padding: 15px;
   }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 800px) {
+  #stay-in-touch .form-block {
+    width: 100%;
+    position: relative;
+  }
+  #stay-in-touch .map {
+    margin: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 710px) {
   #stay-in-touch .form-block {
     width: 100%;
     position: relative;
@@ -963,10 +984,30 @@ header .header ul li a {
     text-align: center;
   }
   #stay-in-touch .form-block form button {
+    right: 50%;
+    transform: translateX(50%);
     margin: 15px 0;
   }
   #stay-in-touch .map {
     margin: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 640px) {
+  #stay-in-touch .stay-in-touch-block {
+    width: 100%;
+    padding: 15px;
+  }
+  #stay-in-touch .stay-in-touch-block .title {
+    padding-top: 25px;
+  }
+  #stay-in-touch .stay-in-touch-block .content {
+    padding: 0;
+    display: block;
+  }
+  #stay-in-touch .stay-in-touch-block .content div {
+    width: 100%;
+    padding: 15px;
   }
 }
 /*-JS---------------------------------------------------------------*/
