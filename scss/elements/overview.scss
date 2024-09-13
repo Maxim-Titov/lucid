@@ -1,7 +1,8 @@
+@import '../global/mixins.scss';
+
 #overview {
     .content {
-        width: 1170px;
-        margin: 0 auto;
+        @include block-view;
 
         .overview-head {
             margin-top: 50px;
@@ -9,16 +10,16 @@
         }
 
         .points {
+            @include display-flex-with-justiy(space-around);
+
             margin-top: 50px;
-            display: flex;
-            justify-content: space-around;
 
             div {
                 width: 25%;
                 text-align: center;
 
                 .title {
-                    color: black;
+                    color: $black;
                     font-size: 20px;
                     margin-bottom: 0;
                 }

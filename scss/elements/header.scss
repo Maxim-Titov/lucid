@@ -1,15 +1,14 @@
+@import '../global/mixins.scss';
+
 header {
     width: 100%;
 
     .header {
-        display: flex;
-        justify-content: space-between;
-        width: 1170px;
-        margin: 0 auto;
+        @include block-view;
+        @include display-flex-with-justiy(space-between);
     
         .name{
-            display: flex;
-            flex-direction: row;
+            @include display-flex(row);
     
             .company {
                 font-size: 28px;
@@ -23,7 +22,7 @@ header {
         }
     
         ul {
-            display: flex;
+            @include display-flex(row);
     
             li {
                 list-style: none;

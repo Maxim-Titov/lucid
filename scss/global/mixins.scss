@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+@mixin display-flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin display-flex-with-justiy($position) {
+    display: flex;
+    justify-content: $position;
+}
+
+@mixin block-view {
+    width: $content-width;
+    margin: 0 auto;
+}
+
+@mixin buttons($width, $height, $bg-color, $border) {
+    border: $border;
+    border-radius: 5px;
+    height: $height;
+    color: $white;
+    background-color: $bg-color;
+    width: $width;
+    font-weight: bold;
+}
