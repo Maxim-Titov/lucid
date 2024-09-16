@@ -967,8 +967,8 @@ header .header ul li a {
 }
 #stay-in-touch .form-block form .form div input, #stay-in-touch .form-block form .form div textarea {
   width: 85%;
-  color: gray;
-  border: 1px solid gray;
+  color: #8f8f8f;
+  border: 1px solid #8f8f8f;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
   padding: 15px;
@@ -1085,6 +1085,47 @@ header .header ul li a {
   border: none;
 }
 
+footer {
+  width: 100%;
+  background-color: #0d0c14;
+}
+footer .container {
+  text-align: center;
+  padding: 50px;
+}
+footer .container div svg {
+  margin: 0 15px;
+  vertical-align: middle;
+}
+footer .container div svg:hover g {
+  fill: #0090d0;
+}
+footer .container div p {
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+footer .container div a {
+  color: #8f8f8f;
+  text-decoration: none;
+}
+footer .container div a:hover {
+  color: #0090d0;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1170px) {
+  footer .container {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 373px) {
+  footer .container div svg {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+  }
+}
 body, html {
   margin: 0;
   padding: 0;
@@ -1096,38 +1137,45 @@ body {
   font-style: normal;
   color: #8f8f8f;
 }
-
-* {
-  box-sizing: border-box;
+body .container {
+  width: 1170px;
+  margin: 0 auto;
 }
-
-.underline {
+body .underline {
   display: flex;
   justify-content: space-between;
   width: 60px;
   margin: 40px auto 40px auto;
 }
-.underline span {
+body .underline span {
   display: block;
   background-color: #0090d0;
   height: 3px;
   width: 45%;
 }
-
-.line {
+body .line {
   width: 100%;
   border: none;
   height: 3px;
   background-color: gray;
   margin: 50px 0;
 }
-
-.block-title {
+body .block-title {
   color: #0090d0;
   font-weight: bold;
   font-size: 13px;
 }
-
-h1, h2, h3, h4 {
+body h1, body h2, body h3, body h4 {
   color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1170px) {
+  body .container {
+    width: 100%;
+  }
 }

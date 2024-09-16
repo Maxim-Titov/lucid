@@ -1,0 +1,56 @@
+@import '../global/mixins.scss';
+
+footer {
+    width: 100%;
+    background-color: $fourth-bg-color;
+
+    .container {
+        text-align: center;
+        padding: 50px;
+
+        div {
+            svg {
+                margin: 0 15px;      
+                vertical-align: middle;  
+            }
+
+            svg:hover {
+                g {
+                    fill: $second-main-color;
+                }
+            }
+
+            p {
+                margin: 25px 0 0 0;
+                font-weight: bold;
+            }
+
+            a {
+                color: $font-main-color;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $second-main-color;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1170px) {
+    footer .container {
+        width: 100%;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 373px) {
+    footer .container div svg {
+        @include flex(column);
+
+        margin: 15px auto;
+    }
+}
