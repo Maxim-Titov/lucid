@@ -1,3 +1,5 @@
+@import '../global/mixins.scss';
+
 #top {
     padding-top: 35px;
     color: $white;
@@ -19,7 +21,7 @@
 
     .content {
         @include block-view;
-        @include display-flex-with-justiy(space-between);
+        @include flex-with-justiy(space-between);
 
         .left-block, .right-block {
             width: 50%;
@@ -47,20 +49,15 @@
                 margin-top: 55px;
 
                 button:first-child {
-                    @include buttons(200px, 2.5lh, $second-main-color, none);
-
-                    margin-left: 0;
+                    @include btn(200px, 2.5lh, $second-main-color, none, 5px);
                 }
 
                 button:last-child {
-                    @include buttons(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid white));
-
-                    margin-right: 0;
+                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid white), 5px);
                 }
 
                 button:last-child:hover {
-                    background-color: $second-main-color;
-                    border: none;
+                    @include btn(200px, 2.5lh, $second-main-color, none, 5px);
                 }
 
                 button {
@@ -100,7 +97,6 @@
             width: 100%;
             padding: 0 15px;
             display: block;
-            justify-content: none;
 
             .left-block, .right-block {
                 width: 100%;
@@ -128,18 +124,12 @@
                 }
 
                 form {
-                    display: flex;
-                    justify-content: center;
+                    @include flex-with-justiy(center);
 
                     button {
+                        @include btn(150px, 2lh, $second-main-color, none, 5px);
                         font-size: 13px;
-                        background-color: #0090d0;
-                        border: none;
-                        border-radius: 5px;
-                        height: 2lh;
                         color: white;
-                        width: 150px;
-                        font-weight: bold;
                         margin: 0 11px;
                     }
                 }

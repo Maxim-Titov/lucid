@@ -51,9 +51,9 @@ header .header ul li a {
   color: #0090d0;
 }
 .menu nav ul li .selected {
-  margin-top: 8px;
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
 }
 .menu nav ul li .selected span {
   background-color: #0090d0;
@@ -97,12 +97,15 @@ header .header ul li a {
     top: 0;
   }
   .hamburger-menu .button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
     background-color: #0090d0;
     width: 50px;
-    height: 30px;
+    font-weight: bold;
     top: 20px;
     right: 30px;
-    border-radius: 5px;
     position: absolute;
     z-index: 20;
     transition-duration: 0.25s;
@@ -220,7 +223,6 @@ header .header ul li a {
   background-color: #0090d0;
   width: 200px;
   font-weight: bold;
-  margin-left: 0;
 }
 #top .content .left-block form button:last-child {
   border: 1px solid white;
@@ -230,11 +232,15 @@ header .header ul li a {
   background-color: rgba(255, 255, 255, 0.1);
   width: 200px;
   font-weight: bold;
-  margin-right: 0;
 }
 #top .content .left-block form button:last-child:hover {
-  background-color: #0090d0;
   border: none;
+  border-radius: 5px;
+  height: 2.5lh;
+  color: white;
+  background-color: #0090d0;
+  width: 200px;
+  font-weight: bold;
 }
 #top .content .left-block form button {
   margin: 0 11px;
@@ -262,7 +268,6 @@ header .header ul li a {
     width: 100%;
     padding: 0 15px;
     display: block;
-    justify-content: none;
   }
   #top .content .left-block, #top .content .right-block {
     width: 100%;
@@ -289,14 +294,15 @@ header .header ul li a {
     justify-content: center;
   }
   #top .content .left-block form button {
-    font-size: 13px;
-    background-color: #0090d0;
     border: none;
     border-radius: 5px;
     height: 2lh;
     color: white;
+    background-color: #0090d0;
     width: 150px;
     font-weight: bold;
+    font-size: 13px;
+    color: white;
     margin: 0 11px;
   }
   #top .content .right-block {
@@ -451,19 +457,25 @@ header .header ul li a {
   position: relative;
 }
 .slider .slick-dots button {
-  display: block;
-  width: 6.5px;
-  height: 6.5px;
-  padding: 0;
   border: 1px solid #0090d0;
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  height: 6.5px;
+  color: white;
+  background-color: black;
+  width: 6.5px;
+  font-weight: bold;
+  display: block;
+  padding: 0;
   text-indent: -9999px;
 }
 .slider .slick-dots li.slick-active button {
+  border: 1px solid 1px solid #0090d0;
+  border-radius: 100%;
+  height: 13px;
+  color: white;
   background-color: #0090d0;
   width: 13px;
-  height: 13px;
+  font-weight: bold;
   margin: 0 -3px;
 }
 
@@ -520,19 +532,25 @@ header .header ul li a {
   display: none;
 }
 #testimonials .testimonial-slider .slick-dots button {
-  display: block;
-  width: 6.5px;
-  height: 6.5px;
-  padding: 0;
   border: 1px solid white;
   border-radius: 100%;
+  height: 6.5px;
+  color: white;
   background-color: rgba(0, 0, 0, 0);
+  width: 6.5px;
+  font-weight: bold;
+  display: block;
+  padding: 0;
   text-indent: -9999px;
 }
 #testimonials .testimonial-slider .slick-dots li.slick-active button {
+  border: 1px solid 1px solid white;
+  border-radius: 100%;
+  height: 13px;
+  color: white;
   background-color: white;
   width: 13px;
-  height: 13px;
+  font-weight: bold;
   margin: 0 -3px;
 }
 
@@ -559,23 +577,33 @@ header .header ul li a {
   display: none;
 }
 .like-what-you-see .like-what-you-see-block form button:last-child {
-  background-color: #0090d0;
   border: none;
-}
-.like-what-you-see .like-what-you-see-block form button:first-child {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid white;
-}
-.like-what-you-see .like-what-you-see-block form button:first-child:hover {
-  background-color: #0090d0;
-  border: none;
-}
-.like-what-you-see .like-what-you-see-block form button {
   border-radius: 5px;
-  width: 175px;
   height: 2.3lh;
   color: white;
+  background-color: #0090d0;
+  width: 175px;
   font-weight: bold;
+}
+.like-what-you-see .like-what-you-see-block form button:first-child {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 2.3lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 175px;
+  font-weight: bold;
+}
+.like-what-you-see .like-what-you-see-block form button:first-child:hover {
+  border: none;
+  border-radius: 5px;
+  height: 2.3lh;
+  color: white;
+  background-color: #0090d0;
+  width: 175px;
+  font-weight: bold;
+}
+.like-what-you-see .like-what-you-see-block form button {
   margin: 0 11px;
 }
 
@@ -707,17 +735,23 @@ header .header ul li a {
   margin-top: 35px;
 }
 #pricing .pricing-block .content .price-block .desc form button {
-  color: #0090d0;
-  font-weight: bold;
-  width: 175px;
-  height: 2lh;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 2lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 175px;
+  font-weight: bold;
+  color: #0090d0;
 }
 #pricing .pricing-block .content .price-block .desc form button:hover {
-  background-color: #0090d0;
   border: none;
+  border-radius: 5px;
+  height: 2lh;
+  color: white;
+  background-color: #0090d0;
+  width: 175px;
+  font-weight: bold;
   color: white;
 }
 #pricing .pricing-block .content .price-block:nth-child(3) .plan p {
@@ -731,18 +765,24 @@ header .header ul li a {
   color: white;
 }
 #pricing .pricing-block .content .price-block:nth-child(3) .desc form button {
+  border: none;
+  border-radius: 5px;
+  height: 2lh;
   color: white;
   background-color: #0090d0;
-  border: none;
+  width: 175px;
+  font-weight: bold;
+  color: white;
 }
 #pricing .pricing-block .content .price-block:nth-child(3) .desc form button:hover {
-  color: #0090d0;
-  font-weight: bold;
-  width: 175px;
-  height: 2lh;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 2lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 175px;
+  font-weight: bold;
+  color: #0090d0;
 }
 
 /*------------------------------------------------------------------*/
@@ -758,9 +798,9 @@ header .header ul li a {
     display: block;
   }
   #pricing .pricing-block .content .price-block {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
     margin: 15px 0;
   }
   #pricing .pricing-block .content .price-block .plan {
@@ -805,17 +845,23 @@ header .header ul li a {
     margin-top: 35px;
   }
   #pricing .pricing-block .content .price-block .desc form button {
-    color: #0090d0;
-    font-weight: bold;
-    width: 175px;
-    height: 2lh;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 2lh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 175px;
+    font-weight: bold;
+    color: #0090d0;
   }
   #pricing .pricing-block .content .price-block .desc form button:hover {
-    background-color: #0090d0;
     border: none;
+    border-radius: 5px;
+    height: 2lh;
+    color: white;
+    background-color: #0090d0;
+    width: 175px;
+    font-weight: bold;
     color: white;
   }
   #pricing .pricing-block .content .price-block:nth-child(3) .plan p {
@@ -829,18 +875,24 @@ header .header ul li a {
     color: white;
   }
   #pricing .pricing-block .content .price-block:nth-child(3) .desc form button {
+    border: none;
+    border-radius: 5px;
+    height: 2lh;
     color: white;
     background-color: #0090d0;
-    border: none;
+    width: 175px;
+    font-weight: bold;
+    color: white;
   }
   #pricing .pricing-block .content .price-block:nth-child(3) .desc form button:hover {
-    color: #0090d0;
-    font-weight: bold;
-    width: 175px;
-    height: 2lh;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 2lh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 175px;
+    font-weight: bold;
+    color: #0090d0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -891,6 +943,10 @@ header .header ul li a {
 #stay-in-touch .stay-in-touch-block .content div p {
   margin: 0;
 }
+#stay-in-touch .stay-in-touch-block .content div p a {
+  color: #8f8f8f;
+  text-decoration: 0;
+}
 #stay-in-touch .form-block {
   background-color: #0d0c14;
   width: 800px;
@@ -930,20 +986,26 @@ header .header ul li a {
   text-align: right;
 }
 #stay-in-touch .form-block form button {
-  background-color: #0090d0;
   border: none;
   border-radius: 5px;
-  width: 200px;
   height: 2.3lh;
   color: white;
+  background-color: #0090d0;
+  width: 200px;
   font-weight: bold;
+  color: white;
   position: absolute;
   right: 65px;
 }
 #stay-in-touch .form-block form button:hover {
-  margin-right: 0;
-  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
+  border-radius: 5px;
+  height: 2.3lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 200px;
+  font-weight: bold;
+  margin-right: 0;
 }
 #stay-in-touch .map {
   margin-top: 325px;
@@ -1069,5 +1131,3 @@ body {
 h1, h2, h3, h4 {
   color: black;
 }
-
-/*# sourceMappingURL=style.css.map */

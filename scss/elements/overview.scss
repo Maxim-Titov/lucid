@@ -10,7 +10,7 @@
         }
 
         .points {
-            @include display-flex-with-justiy(space-around);
+            @include flex-with-justiy(space-around);
 
             margin-top: 50px;
 

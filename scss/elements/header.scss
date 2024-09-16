@@ -5,10 +5,10 @@ header {
 
     .header {
         @include block-view;
-        @include display-flex-with-justiy(space-between);
+        @include flex-with-justiy(space-between);
     
         .name{
-            @include display-flex(row);
+            @include flex(row);
     
             .company {
                 font-size: 28px;
@@ -22,7 +22,7 @@ header {
         }
     
         ul {
-            @include display-flex(row);
+            @include flex(row);
     
             li {
                 list-style: none;

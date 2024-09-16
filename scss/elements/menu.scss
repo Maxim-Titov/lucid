@@ -1,22 +1,24 @@
+@import '../global/mixins.scss';
+
 .menu {
     nav {
         ul {
             li {
                 a {
-                    color: white;
+                    color: $white;
                 }
 
                 a:hover {
-                    color: #0090d0;
+                    color: $second-main-color;
                 }
 
                 .selected {
+                    @include flex-with-justiy(space-between);
+
                     margin-top: 8px;
-                    display: flex;
-                    justify-content: space-between;
             
                     span {
-                        background-color: #0090d0;
+                        background-color: $second-main-color;
                         height: 3px;
                         width: 45%;
                         display: block;
@@ -80,12 +82,10 @@
         }
 
         .button {
-            background-color: #0090d0;
-            width: 50px;
-            height: 30px;
+            @include btn(50px, 30px, $second-main-color, none, 5px);
+
             top: 20px;
             right: 30px;
-            border-radius: 5px;
             position: absolute;
             z-index: 20;
             transition-duration: .25s;
@@ -138,7 +138,7 @@
             padding: 50px 15px 15px 15px;
             list-style: none;
             text-align: center;
-            background-color: rgba($color: #0090d0, $alpha: 0.9);
+            background-color: rgba($color: $second-main-color, $alpha: 0.9);
             transition-duration: .25s;
 
             .menu__item {
@@ -152,7 +152,7 @@
             .menu-line {
                 border: none;
                 height: 1px;
-                background-color: white;
+                background-color: $white;
                 opacity: 1;
                 width: 75%;
                 margin: 0 auto;

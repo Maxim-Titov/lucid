@@ -1,10 +1,12 @@
+@import '../global/mixins.scss';
+
 #stay-in-touch {
     width: 100%;
-    background-color: #eeeeee;
+    background-color: $third-bg-color;
 
     .stay-in-touch-block {
-        width: 1170px;
-        margin: 0 auto;
+        @include block-view;
+        
         padding: 100px 0 75px 0;
 
         .title {
@@ -12,8 +14,8 @@
         }
 
         .content {
-            display: flex;
-            justify-content: space-around;
+            @include flex-with-justiy(space-around);
+            
             padding-top: 40px;
 
             div {
@@ -25,13 +27,18 @@
 
                 p {
                     margin: 0;
+                     
+                    a {
+                        color: #8f8f8f;
+                        text-decoration: 0;
+                    }
                 }
             }
         }
     }
 
     .form-block {
-        background-color: #0d0c14;
+        background-color: $fourth-bg-color;
         width: 800px;
         position: absolute;
         left: 50%;
@@ -41,8 +48,7 @@
             padding: 75px 0 90px 0;
 
             .form {
-                display: flex;
-                justify-content: center;
+                @include flex-with-justiy(center);
 
                 div {
                     width: 50%;
@@ -50,10 +56,10 @@
 
                     input, textarea {
                         width: 85%;
-                        color: gray;
-                        border: 1px solid gray;
+                        color: $gray;
+                        border: 1px solid $gray;
                         border-radius: 5px;
-                        background-color: rgba($color: #000000, $alpha: 0);
+                        background-color: rgba($black, $alpha: 0);
                         padding: 15px;
                     }
     
@@ -75,21 +81,17 @@
             }
 
             button {
-                background-color: #0090d0;
-                border: none;
-                border-radius: 5px;
-                width: 200px;
-                height: 2.3lh;
+                @include btn(200px, 2.3lh, $second-main-color, none, 5px);
+
                 color: white;
-                font-weight: bold;
                 position: absolute;
                 right: 65px;
             }
 
             button:hover {
+                @include btn(200px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid white), 5px);
+
                 margin-right: 0;
-                background-color: rgba($color: white, $alpha: 0.1);
-                border: 1px solid white;
             }
         }
     }

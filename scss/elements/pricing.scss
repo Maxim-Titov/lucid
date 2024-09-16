@@ -10,8 +10,7 @@
         }
 
         .content {
-            display: flex;
-            justify-content: space-between;
+            @include flex-with-justiy(space-between);
 
             .price-block {
                 width: 23%;
@@ -22,21 +21,21 @@
                 }
 
                 .plan {
-                    border: 1px solid lightgray;
+                    border: 1px solid $light-gray;
                     padding: 15px 0;
 
                     p {
                         height: 25px;
                         font-size: 25px;
-                        color: black;
+                        color: $black;
                         font-weight: bold;
                     }
                 }
 
                 .price {
-                    border-right: 1px solid lightgray;
-                    border-left: 1px solid lightgray;
-                    border-bottom: 1px solid lightgray;
+                    border-right: 1px solid $light-gray;
+                    border-left: 1px solid $light-gray;
+                    border-bottom: 1px solid $light-gray;
                     padding: 20px 0;
 
                     p:first-child {
@@ -53,14 +52,14 @@
                 }
 
                 .desc {
-                    border-right: 1px solid lightgray;
-                    border-left: 1px solid lightgray;
-                    border-bottom: 1px solid lightgray;
+                    border-right: 1px solid $light-gray;
+                    border-left: 1px solid $light-gray;
+                    border-bottom: 1px solid $light-gray;
                     padding: 35px 20px;
 
                     p {
                         span {
-                            color: #0090d0;
+                            color: $second-main-color;
                         }
                     }
 
@@ -68,19 +67,15 @@
                         margin-top: 35px;
 
                         button {
-                            color: #0090d0;
-                            font-weight: bold;
-                            width: 175px;
-                            height: 2lh;
-                            border-radius: 5px;
-                            background-color: rgba($color: white, $alpha: 0.1);
-                            border: 1px solid lightgray;
+                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
+
+                            color: $second-main-color;
                         }
         
                         button:hover {
-                            background-color: #0090d0;
-                            border: none;
-                            color: white;
+                            @include btn(175px, 2lh, $second-main-color, none, 5px);
+                            
+                            color: $white;
                         }
                     }
                 }
@@ -89,35 +84,31 @@
             .price-block:nth-child(3) {
                 .plan {
                     p {
-                        color: #0090d0;
+                        color: $second-main-color;
                     }
                 }
 
                 .price {
-                    background-color: #0090d0;
+                    background-color: $second-main-color;
                     border: none;
 
                     p {
-                        color: white;
+                        color: $white;
                     }
                 }
 
                 .desc {
                     form {
                         button {
-                            color: white;
-                            background-color: #0090d0;
-                            border: none;
+                            @include btn(175px, 2lh, $second-main-color, none, 5px);
+
+                            color: $white;
                         }
         
                         button:hover {
+                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
+
                             color: #0090d0;
-                            font-weight: bold;
-                            width: 175px;
-                            height: 2lh;
-                            border-radius: 5px;
-                            background-color: rgba($color: white, $alpha: 0.1);
-                            border: 1px solid lightgray;
                         }
                     }
                 }
@@ -146,33 +137,33 @@
                 display: block;
             
                 .price-block {
+                    @include flex-with-justiy(center);
+
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
                     margin: 15px 0;
             
                     .plan {
-                        border: 1px solid lightgray;
+                        border: 1px solid $light-gray;
                         padding: 15px 0;
                         width: 15%;
             
                         p {
                             height: 25px;
                             font-size: 25px;
-                            color: black;
+                            color: $black;
                             font-weight: bold;
                         }
                     }
             
                     .price {
-                        border-right: 1px solid lightgray;
-                        border-top: 1px solid lightgray;
-                        border-bottom: 1px solid lightgray;
+                        border-right: 1px solid $light-gray;
+                        border-top: 1px solid $light-gray;
+                        border-bottom: 1px solid $light-gray;
                         padding: 20px 0;
                         width: 25%;
             
                         p:first-child {
-                            color: black;
+                            color: $black;
                             font-weight: bold;
                             font-size: 60px;
                             height: 60px;
@@ -185,15 +176,15 @@
                     }
             
                     .desc {
-                        border-right: 1px solid lightgray;
-                        border-top: 1px solid lightgray;
-                        border-bottom: 1px solid lightgray;
+                        border-right: 1px solid $light-gray;
+                        border-top: 1px solid $light-gray;
+                        border-bottom: 1px solid $light-gray;
                         padding: 35px 20px;
                         width: 60%;
             
                         p {
                             span {
-                                color: #0090d0;
+                                color: $second-main-color;
                             }
                         }
             
@@ -201,18 +192,14 @@
                             margin-top: 35px;
             
                             button {
-                                color: #0090d0;
-                                font-weight: bold;
-                                width: 175px;
-                                height: 2lh;
-                                border-radius: 5px;
-                                background-color: rgba($color: white, $alpha: 0.1);
-                                border: 1px solid lightgray;
+                                @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
+
+                                color: $second-main-color;
                             }
             
                             button:hover {
-                                background-color: #0090d0;
-                                border: none;
+                                @include btn(175px, 2lh, $second-main-color, none, 5px);
+
                                 color: white;
                             }
                         }
@@ -222,35 +209,31 @@
                 .price-block:nth-child(3) {
                     .plan {
                         p {
-                            color: #0090d0;
+                            color: $second-main-color;
                         }
                     }
     
                     .price {
-                        background-color: #0090d0;
+                        background-color: $second-main-color;
                         border: none;
     
                         p {
-                            color: white;
+                            color: $white;
                         }
                     }
     
                     .desc {
                         form {
                             button {
-                                color: white;
-                                background-color: #0090d0;
-                                border: none;
+                                @include btn(175px, 2lh, $second-main-color, none, 5px);
+
+                                color: $white;
                             }
             
                             button:hover {
+                                @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
+
                                 color: #0090d0;
-                                font-weight: bold;
-                                width: 175px;
-                                height: 2lh;
-                                border-radius: 5px;
-                                background-color: rgba($color: white, $alpha: 0.1);
-                                border: 1px solid lightgray;
                             }
                         }
                     }

@@ -1,11 +1,11 @@
 @import 'variables.scss';
 
-@mixin display-flex($direction) {
+@mixin flex($direction) {
     display: flex;
     flex-direction: $direction;
 }
 
-@mixin display-flex-with-justiy($position) {
+@mixin flex-with-justiy($position) {
     display: flex;
     justify-content: $position;
 }
@@ -15,12 +15,28 @@
     margin: 0 auto;
 }
 
-@mixin buttons($width, $height, $bg-color, $border) {
+@mixin btn($width, $height, $bg-color, $border, $border-radius) {
     border: $border;
-    border-radius: 5px;
+    border-radius: $border-radius;
     height: $height;
     color: $white;
     background-color: $bg-color;
     width: $width;
     font-weight: bold;
+}
+
+@mixin slider-dots($active-color, $passive-color, $border) {
+    button {
+        @include btn(6.5px, 6.5px, $passive-color, $border, 100%);
+
+        display: block;
+        padding: 0;
+        text-indent: -9999px;
+    }
+    
+    li.slick-active button {
+        @include btn(13px, 13px, $active-color, (1px solid $border), 100%);
+
+        margin: 0 -3px;
+    } 
 }
