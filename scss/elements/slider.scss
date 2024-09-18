@@ -10,7 +10,7 @@
     }
 
     .slick-dots {
-        @include slider-dots($second-main-color, $black, (1px solid $second-main-color));         
+        @include slider-dots($second-main-color, rgba($black, $alpha: 0), (1px solid $second-main-color));         
     }
 }
 

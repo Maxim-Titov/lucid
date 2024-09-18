@@ -3,8 +3,7 @@
 header {
     width: 100%;
 
-    .header {
-        @include block-view;
+    .container {
         @include flex-with-justiy(space-between);
     
         .name{
@@ -32,27 +31,6 @@ header {
                     text-decoration: None;
                 }
             }
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 1170px) {
-    header {
-        .header {
-            width: 100%;
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 992px) {
-    header {
-        .header {
-            width: 100%;
-            padding: 0 15px;
         }
     }
 }

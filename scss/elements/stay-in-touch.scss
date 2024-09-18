@@ -4,9 +4,7 @@
     width: 100%;
     background-color: $third-bg-color;
 
-    .stay-in-touch-block {
-        @include block-view;
-        
+    .stay-in-touch-block .container {
         padding: 100px 0 75px 0;
 
         .title {
@@ -44,54 +42,59 @@
         left: 50%;
         transform: translateX(-50%);
 
-        form {
-            padding: 75px 0 90px 0;
+        .container {
+            width: 100%;
+            padding: 0;
 
-            .form {
-                @include flex-with-justiy(center);
-
-                div {
-                    width: 50%;
-                    padding: 0 10px;
-
-                    input, textarea {
-                        width: 85%;
-                        color: $font-main-color;
-                        border: 1px solid $font-main-color;
-                        border-radius: 5px;
-                        background-color: rgba($black, $alpha: 0);
-                        padding: 15px;
+            form {
+                padding: 75px 0 90px 0;
+    
+                .form {
+                    @include flex-with-justiy(center);
+    
+                    div {
+                        width: 50%;
+                        padding: 0 10px;
+    
+                        input, textarea {
+                            width: 85%;
+                            color: $font-main-color;
+                            border: 1px solid $font-main-color;
+                            border-radius: 5px;
+                            background-color: rgba($black, $alpha: 0);
+                            padding: 15px;
+                        }
+        
+                        input {
+                            height: 2.3lh;
+                            margin-bottom: 25px;
+                        }
+    
+                        textarea {
+                            resize: none;
+                            height: 9lh;
+                            margin: 0 auto;
+                        }
                     }
     
-                    input {
-                        height: 2.3lh;
-                        margin-bottom: 25px;
-                    }
-
-                    textarea {
-                        resize: none;
-                        height: 9lh;
-                        margin: 0 auto;
+                    div:first-child {
+                        text-align: right;
                     }
                 }
-
-                div:first-child {
-                    text-align: right;
+    
+                button {
+                    @include btn(200px, 2.3lh, $second-main-color, none, 5px);
+    
+                    color: white;
+                    position: absolute;
+                    right: 65px;
                 }
-            }
-
-            button {
-                @include btn(200px, 2.3lh, $second-main-color, none, 5px);
-
-                color: white;
-                position: absolute;
-                right: 65px;
-            }
-
-            button:hover {
-                @include btn(200px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid $white), 5px);
-
-                margin-right: 0;
+    
+                button:hover {
+                    @include btn(200px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid $white), 5px);
+    
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -104,16 +107,14 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    #stay-in-touch {
-        .stay-in-touch-block {
-            width: 100%;
-            padding: 15px;
+    #stay-in-touch .stay-in-touch-block .container {
+        width: 100%;
+        padding: 15px;
 
-            .content {
-                div {
-                    width: 100%;
-                    padding: 15px;
-                }
+        .content {
+            div {
+                width: 100%;
+                padding: 15px;
             }
         }
     }
@@ -138,10 +139,7 @@
 
 @media(max-width: 710px) {
     #stay-in-touch {
-        .form-block {
-            width: 100%;
-            position: relative;
-
+        .form-block .container {
             form {
                 padding: 25px 0 90px 0;
 
@@ -175,23 +173,18 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 640px) {
-    #stay-in-touch {
-        .stay-in-touch-block {
-            width: 100%;
-            padding: 15px;
+    #stay-in-touch .stay-in-touch-block .container {
+        .title {
+            padding-top: 25px;
+        }
 
-            .title {
-                padding-top: 25px;
-            }
+        .content {
+            padding: 0;
+            display: block;
 
-            .content {
-                padding: 0;
-                display: block;
-
-                div {
-                    width: 100%;
-                    padding: 15px;
-                }
+            div {
+                width: 100%;
+                padding: 15px;
             }
         }
     }

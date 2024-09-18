@@ -1,7 +1,7 @@
 #pricing {
     width: 100%;
 
-    .pricing-block {
+    .container {
         width: 1170px;
         margin: 75px auto;
 
@@ -120,123 +120,113 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    #pricing {
-        .pricing-block {
-            width: 100%;
-            padding: 15px;
-        }
+    #pricing .container {
+        width: 100%;
+        padding: 15px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    #pricing {
-        .pricing-block {
-            .content {
-                display: block;
+    #pricing .container .content {
+        display: block;
             
-                .price-block {
-                    @include flex-with-justiy(center);
+        .price-block {
+            @include flex-with-justiy(center);
 
-                    width: 100%;
-                    margin: 15px 0;
-            
-                    .plan {
-                        border: 1px solid $light-gray;
-                        padding: 15px 0;
-                        width: 15%;
-            
-                        p {
-                            height: 25px;
-                            font-size: 25px;
-                            color: $black;
-                            font-weight: bold;
-                        }
-                    }
-            
-                    .price {
-                        border-right: 1px solid $light-gray;
-                        border-top: 1px solid $light-gray;
-                        border-bottom: 1px solid $light-gray;
-                        padding: 20px 0;
-                        width: 25%;
-            
-                        p:first-child {
-                            color: $black;
-                            font-weight: bold;
-                            font-size: 60px;
-                            height: 60px;
-            
-                            span {
-                                font-size: 30px;
-                                vertical-align: 20px;
-                            }
-                        }
-                    }
-            
-                    .desc {
-                        border-right: 1px solid $light-gray;
-                        border-top: 1px solid $light-gray;
-                        border-bottom: 1px solid $light-gray;
-                        padding: 35px 20px;
-                        width: 60%;
-            
-                        p {
-                            span {
-                                color: $second-main-color;
-                            }
-                        }
-            
-                        form {
-                            margin-top: 35px;
-            
-                            button {
-                                @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
-
-                                color: $second-main-color;
-                            }
-            
-                            button:hover {
-                                @include btn(175px, 2lh, $second-main-color, none, 5px);
-
-                                color: white;
-                            }
-                        }
+            width: 100%;
+            margin: 15px 0;
+    
+            .plan {
+                border: 1px solid $light-gray;
+                padding: 15px 0;
+                width: 15%;
+    
+                p {
+                    height: 25px;
+                    font-size: 25px;
+                    color: $black;
+                    font-weight: bold;
+                    writing-mode: vertical-rl;
+                    text-align: left;
+                }
+            }
+    
+            .price {
+                border-right: 1px solid $light-gray;
+                border-top: 1px solid $light-gray;
+                border-bottom: 1px solid $light-gray;
+                padding: 20px 0;
+                width: 25%;
+    
+                p:first-child {
+                    color: $black;
+                    font-weight: bold;
+                    font-size: 60px;
+                    height: 60px;
+    
+                    span {
+                        font-size: 30px;
+                        vertical-align: 20px;
                     }
                 }
+            }
+    
+            .desc {
+                border-right: 1px solid $light-gray;
+                border-top: 1px solid $light-gray;
+                border-bottom: 1px solid $light-gray;
+                padding: 35px 20px;
+                width: 60%;
+    
+                p span {
+                    color: $second-main-color;
+                }
+    
+                form {
+                    margin-top: 35px;
+    
+                    button {
+                        @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
 
-                .price-block:nth-child(3) {
-                    .plan {
-                        p {
-                            color: $second-main-color;
-                        }
+                        color: $second-main-color;
                     }
     
-                    .price {
-                        background-color: $second-main-color;
-                        border: none;
-    
-                        p {
-                            color: $white;
-                        }
-                    }
-    
-                    .desc {
-                        form {
-                            button {
-                                @include btn(175px, 2lh, $second-main-color, none, 5px);
+                    button:hover {
+                        @include btn(175px, 2lh, $second-main-color, none, 5px);
 
-                                color: $white;
-                            }
-            
-                            button:hover {
-                                @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
-
-                                color: #0090d0;
-                            }
-                        }
+                        color: white;
                     }
+                }
+            }
+        }
+
+        .price-block:nth-child(3) {
+            .plan p {
+                color: $second-main-color;
+            }
+
+            .price {
+                background-color: $second-main-color;
+                border: none;
+
+                p {
+                    color: $white;
+                }
+            }
+
+            .desc form {
+                button {
+                    @include btn(175px, 2lh, $second-main-color, none, 5px);
+
+                    color: $white;
+                }
+
+                button:hover {
+                    @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray), 5px);
+
+                    color: #0090d0;
                 }
             }
         }
@@ -246,50 +236,30 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 850px) {
-    #pricing {
-        .pricing-block {
-            .content {
-                .price-block {
-                    .plan {
-                        p {
-                            font-size: 30px;
-                            margin: 0;
-                            writing-mode: vertical-rl;
-                        }
-                    }
-            
-                    .price {
-                        p:first-child {
-                            font-size: 30px;
-                            height: 30px;
-            
-                            span {
-                                font-size: 15px;
-                                vertical-align: 10px;
-                            }
-                        }
-                    }
-            
-                    .desc {
-                        form {
-                            button {
-                                width: 125px;
-                            }
-                        }
-                    }
-                }
+    #pricing .container .content {
+        .price-block {
+            .plan p {
+                font-size: 30px;
+                margin: 0;
+            }
+    
+            .price p:first-child {
+                font-size: 30px;
+                height: 30px;
 
-                .price-block:nth-child(3) {
-                    .desc {
-                        form {
-            
-                            button:hover {
-                                width: 125px;
-                            }
-                        }
-                    }
+                span {
+                    font-size: 15px;
+                    vertical-align: 10px;
                 }
             }
+    
+            .desc form button {
+                width: 125px;
+            }
+        }
+
+        .price-block:nth-child(3) .desc form button {
+            width: 125px;
         }
     }
 }

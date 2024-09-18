@@ -5,7 +5,6 @@
         width: 100%;
 
         .block {
-            @include block-view;
             @include flex-with-justiy(space-around);
 
             .content {
@@ -65,7 +64,7 @@
 @media(max-width: 1170px) {
     #dip-into-details {
         .row {
-            .block {
+            .container {
                 width: 100%;
             }
         }
@@ -80,7 +79,7 @@
             margin: 0;
             padding: 0;
 
-            .block {
+            .container .block {
                 padding: 15px;
                 display: block;
                 text-align: center;
@@ -91,7 +90,7 @@
                     }
 
                     .phone-details-second {
-                        width: 300px;
+                        width: 260px;
                     }
                 }
 
