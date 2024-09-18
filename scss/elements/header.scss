@@ -19,18 +19,5 @@ header {
                 color: gray;
             }
         }
-    
-        ul {
-            @include flex(row);
-    
-            li {
-                list-style: none;
-                margin: 15px 15px 15px 1px;
-    
-                a {
-                    text-decoration: None;
-                }
-            }
-        }
     }
 }

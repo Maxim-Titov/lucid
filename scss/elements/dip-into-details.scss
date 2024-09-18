@@ -116,6 +116,10 @@
             }
         }
 
+        .row:first-child {
+            padding-bottom: 30px;
+        }
+
         .row:last-child {
             margin: 0;
             background-color: $second-bg-color;

@@ -1,30 +1,27 @@
 @import '../global/mixins.scss';
 
-.menu {
-    nav {
-        ul {
-            li {
-                a {
-                    color: $white;
-                }
+.menu nav .nav .nav-item {
+    margin: 15px 15px 15px 1px;
 
-                a:hover {
-                    color: $second-main-color;
-                }
+    .nav-link {
+        color: $white;
+        padding: 0;
+    }
 
-                .selected {
-                    @include flex-with-justiy(space-between);
+    .nav-link:hover {
+        color: $second-main-color;
+    }
 
-                    margin-top: 8px;
-            
-                    span {
-                        background-color: $second-main-color;
-                        height: 3px;
-                        width: 45%;
-                        display: block;
-                    }
-                }
-            }
+    .selected {
+        @include flex-with-justiy(space-between);
+
+        margin-top: 8px;
+
+        span {
+            background-color: $second-main-color;
+            height: 3px;
+            width: 45%;
+            display: block;
         }
     }
 }
@@ -72,7 +69,7 @@
         }
 
         #menu__toggle:checked ~ .button {
-            background-color: rgba($color: #0090d0, $alpha: 0);
+            background-color: rgba($second-main-color, $alpha: 0);
             transform: rotate(90deg);
         }
 
@@ -82,7 +79,7 @@
         }
 
         .button {
-            @include btn(50px, 30px, $second-main-color, none, 5px);
+            @include btn(50px, 30px, $second-main-color, none);
 
             top: 20px;
             right: 15px;
@@ -138,7 +135,7 @@
             padding: 50px 15px 15px 15px;
             list-style: none;
             text-align: center;
-            background-color: rgba($color: $second-main-color, $alpha: 0.9);
+            background-color: rgba($second-main-color, $alpha: 0.9);
             transition-duration: .25s;
 
             .menu__item {
@@ -155,7 +152,7 @@
                 background-color: $white;
                 opacity: 1;
                 width: 75%;
-                margin: 0 auto;
+                margin: 15px auto;
             }
         }
     }

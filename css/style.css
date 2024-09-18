@@ -42,7 +42,6 @@
 }
 #top .container .left-block form button:first-child {
   border: none;
-  border-radius: 5px;
   height: 2.5lh;
   color: white;
   background-color: #0090d0;
@@ -51,7 +50,6 @@
 }
 #top .container .left-block form button:last-child {
   border: 1px solid white;
-  border-radius: 5px;
   height: 2.5lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
@@ -60,7 +58,6 @@
 }
 #top .container .left-block form button:last-child:hover {
   border: none;
-  border-radius: 5px;
   height: 2.5lh;
   color: white;
   background-color: #0090d0;
@@ -150,30 +147,23 @@ header .container .name .desc {
   font-size: 10px;
   color: gray;
 }
-header .container ul {
-  display: flex;
-  flex-direction: row;
-}
-header .container ul li {
-  list-style: none;
+
+.menu nav .nav .nav-item {
   margin: 15px 15px 15px 1px;
 }
-header .container ul li a {
-  text-decoration: None;
-}
-
-.menu nav ul li a {
+.menu nav .nav .nav-item .nav-link {
   color: white;
+  padding: 0;
 }
-.menu nav ul li a:hover {
+.menu nav .nav .nav-item .nav-link:hover {
   color: #0090d0;
 }
-.menu nav ul li .selected {
+.menu nav .nav .nav-item .selected {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
 }
-.menu nav ul li .selected span {
+.menu nav .nav .nav-item .selected span {
   background-color: #0090d0;
   height: 3px;
   width: 45%;
@@ -216,7 +206,6 @@ header .container ul li a {
   }
   .hamburger-menu .button {
     border: none;
-    border-radius: 5px;
     height: 30px;
     color: white;
     background-color: #0090d0;
@@ -286,7 +275,7 @@ header .container ul li a {
     background-color: white;
     opacity: 1;
     width: 75%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 #overview .container .overview-head {
@@ -311,6 +300,37 @@ header .container ul li a {
   margin-top: 0;
   width: 100%;
 }
+#overview .container .slider {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+#overview .container .slider .slick-slide {
+  text-align: center;
+  position: relative;
+}
+#overview .container .slider .slick-dots button {
+  border: 1px solid #0090d0;
+  height: 6.5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  width: 6.5px;
+  font-weight: bold;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  border-radius: 100%;
+}
+#overview .container .slider .slick-dots li.slick-active button {
+  border: 1px solid 1px solid #0090d0;
+  height: 13px;
+  color: white;
+  background-color: #0090d0;
+  width: 13px;
+  font-weight: bold;
+  margin: 0 -3px;
+}
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
@@ -326,47 +346,14 @@ header .container ul li a {
   #overview .container .points {
     display: none;
   }
-}
-.slider {
-  text-align: center;
-  width: 100%;
-  position: relative;
-  display: none;
-}
-.slider .slick-slide {
-  text-align: center;
-  position: relative;
-}
-.slider .slick-dots button {
-  border: 1px solid #0090d0;
-  border-radius: 100%;
-  height: 6.5px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  width: 6.5px;
-  font-weight: bold;
-  display: block;
-  padding: 0;
-  text-indent: -9999px;
-}
-.slider .slick-dots li.slick-active button {
-  border: 1px solid 1px solid #0090d0;
-  border-radius: 100%;
-  height: 13px;
-  color: white;
-  background-color: #0090d0;
-  width: 13px;
-  font-weight: bold;
-  margin: 0 -3px;
-}
-
-/*------------------------------------------------------------------*/
-@media (max-width: 992px) {
-  .slider {
+  #overview .container .slider {
     display: block;
     text-align: center;
   }
-  .slider .slick-slide img {
+  #overview .container .slider .slick-slide {
+    padding: 10px 10px 40px 10px;
+  }
+  #overview .container .slider .slick-slide img {
     margin: 0 auto;
   }
 }
@@ -453,6 +440,9 @@ header .container ul li a {
     display: flex;
     justify-content: center;
   }
+  #dip-into-details .row:first-child {
+    padding-bottom: 30px;
+  }
   #dip-into-details .row:last-child {
     margin: 0;
     background-color: #f2f2f2;
@@ -479,21 +469,25 @@ header .container ul li a {
   display: flex;
   justify-content: space-around;
 }
-#testimonials .container .testimonial-slider .slide .content div .author {
+#testimonials .container .testimonial-slider .slide .content .card {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+#testimonials .container .testimonial-slider .slide .content .card .card-body {
+  padding: 0;
+}
+#testimonials .container .testimonial-slider .slide .content .card .card-body .author {
   display: flex;
   justify-content: left;
   padding-top: 10px;
 }
-#testimonials .container .testimonial-slider .slide .content div .author img {
-  border-radius: 50%;
-}
-#testimonials .container .testimonial-slider .slide .content div .author div {
+#testimonials .container .testimonial-slider .slide .content .card .card-body .author div {
   padding-left: 20px;
 }
-#testimonials .container .testimonial-slider .slide .content div .author div p {
+#testimonials .container .testimonial-slider .slide .content .card .card-body .author div p {
   margin: 0;
 }
-#testimonials .container .testimonial-slider .slide .content div .author div .role {
+#testimonials .container .testimonial-slider .slide .content .card .card-body .author div .role {
   font-weight: bold;
 }
 #testimonials .container .testimonial-slider .slide .content .line {
@@ -501,7 +495,6 @@ header .container ul li a {
 }
 #testimonials .container .testimonial-slider .slick-dots button {
   border: 1px solid white;
-  border-radius: 100%;
   height: 6.5px;
   color: white;
   background-color: rgba(0, 0, 0, 0);
@@ -510,10 +503,10 @@ header .container ul li a {
   display: block;
   padding: 0;
   text-indent: -9999px;
+  border-radius: 100%;
 }
 #testimonials .container .testimonial-slider .slick-dots li.slick-active button {
   border: 1px solid 1px solid white;
-  border-radius: 100%;
   height: 13px;
   color: white;
   background-color: white;
@@ -536,13 +529,13 @@ header .container ul li a {
     padding: 15px;
     margin: 0 auto;
   }
-  #testimonials .container .testimonial-slider .slide .content div {
+  #testimonials .container .testimonial-slider .slide .content .card {
     text-align: center;
   }
-  #testimonials .container .testimonial-slider .slide .content div p br {
+  #testimonials .container .testimonial-slider .slide .content .card .card-body .card-text br {
     display: none;
   }
-  #testimonials .container .testimonial-slider .slide .content div .author .name {
+  #testimonials .container .testimonial-slider .slide .content .card .card-body .author .name {
     text-align: left;
   }
   #testimonials .container .testimonial-slider .slide .content .line {
@@ -558,38 +551,38 @@ header .container ul li a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 342px) {
-  .container .testimonial-slider .slide .content div .author .role {
+  .container .testimonial-slider .slide .content .card .card-body .author .role {
     font-size: 15px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 329px) {
-  .container .testimonial-slider .slide .content div .author .role {
+  .container .testimonial-slider .slide .content .card .card-body .author .role {
     font-size: 14px;
   }
 }
 .like-what-you-see {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
   height: auto;
   background-color: #0d0c14;
   padding: 50px 15px;
-  vertical-align: middle;
 }
-.like-what-you-see p {
+.like-what-you-see .container {
+  display: flex;
+  justify-content: space-around;
+}
+.like-what-you-see .container p {
   color: white;
   font-size: 30px;
 }
-.like-what-you-see p span {
+.like-what-you-see .container p span {
   font-weight: bold;
 }
-.like-what-you-see p br {
+.like-what-you-see .container p br {
   display: none;
 }
-.like-what-you-see form button:last-child {
+.like-what-you-see .container form button:last-child {
   border: none;
-  border-radius: 5px;
   height: 2.3lh;
   color: white;
   background-color: #0090d0;
@@ -597,9 +590,8 @@ header .container ul li a {
   font-weight: bold;
   margin-left: 11px;
 }
-.like-what-you-see form button:first-child {
+.like-what-you-see .container form button:first-child {
   border: 1px solid white;
-  border-radius: 5px;
   height: 2.3lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
@@ -607,40 +599,38 @@ header .container ul li a {
   font-weight: bold;
   margin-right: 11px;
 }
-.like-what-you-see form button:first-child:hover {
+.like-what-you-see .container form button:first-child:hover {
   border: none;
-  border-radius: 5px;
   height: 2.3lh;
   color: white;
   background-color: #0090d0;
   width: 175px;
   font-weight: bold;
 }
-.like-what-you-see form br {
+.like-what-you-see .container form br {
   display: none;
 }
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 @media (max-width: 985px) {
-  .like-what-you-see p {
+  .like-what-you-see .container p {
     font-size: 25px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 905px) {
-  .like-what-you-see p {
+  .like-what-you-see .container p {
     font-size: 23px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 860px) {
-  .like-what-you-see p {
+  .like-what-you-see .container p {
     font-size: 20px;
   }
-  .like-what-you-see form button:last-child {
+  .like-what-you-see .container form button:last-child {
     border: none;
-    border-radius: 5px;
     height: 2.3lh;
     color: white;
     background-color: #0090d0;
@@ -648,9 +638,8 @@ header .container ul li a {
     font-weight: bold;
     margin-left: 5px;
   }
-  .like-what-you-see form button:first-child {
+  .like-what-you-see .container form button:first-child {
     border: 1px solid white;
-    border-radius: 5px;
     height: 2.3lh;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -662,15 +651,16 @@ header .container ul li a {
 /*------------------------------------------------------------------*/
 @media (max-width: 795px) {
   .like-what-you-see {
-    height: 100%;
     padding: 25px 0;
+  }
+  .like-what-you-see .container {
     display: block;
     text-align: center;
   }
-  .like-what-you-see p br {
+  .like-what-you-see .container p br {
     display: block;
   }
-  .like-what-you-see form button {
+  .like-what-you-see .container form button {
     width: 120px;
     height: 2lh;
     font-size: 13px;
@@ -678,17 +668,17 @@ header .container ul li a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 390px) {
-  .like-what-you-see form button:last-child {
+  .like-what-you-see .container form button:last-child {
     width: 60%;
     margin-left: 0;
     margin-top: 8px;
   }
-  .like-what-you-see form button:first-child {
+  .like-what-you-see .container form button:first-child {
     width: 60%;
     margin-right: 0;
     margin-bottom: 8px;
   }
-  .like-what-you-see form br {
+  .like-what-you-see .container form br {
     display: block;
   }
 }
@@ -753,7 +743,6 @@ header .container ul li a {
 }
 #pricing .container .content .price-block .desc form button {
   border: 1px solid lightgray;
-  border-radius: 5px;
   height: 2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
@@ -763,7 +752,6 @@ header .container ul li a {
 }
 #pricing .container .content .price-block .desc form button:hover {
   border: none;
-  border-radius: 5px;
   height: 2lh;
   color: white;
   background-color: #0090d0;
@@ -783,7 +771,6 @@ header .container ul li a {
 }
 #pricing .container .content .price-block:nth-child(3) .desc form button {
   border: none;
-  border-radius: 5px;
   height: 2lh;
   color: white;
   background-color: #0090d0;
@@ -793,7 +780,6 @@ header .container ul li a {
 }
 #pricing .container .content .price-block:nth-child(3) .desc form button:hover {
   border: 1px solid lightgray;
-  border-radius: 5px;
   height: 2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
@@ -865,7 +851,6 @@ header .container ul li a {
   }
   #pricing .container .content .price-block .desc form button {
     border: 1px solid lightgray;
-    border-radius: 5px;
     height: 2lh;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -875,7 +860,6 @@ header .container ul li a {
   }
   #pricing .container .content .price-block .desc form button:hover {
     border: none;
-    border-radius: 5px;
     height: 2lh;
     color: white;
     background-color: #0090d0;
@@ -895,7 +879,6 @@ header .container ul li a {
   }
   #pricing .container .content .price-block:nth-child(3) .desc form button {
     border: none;
-    border-radius: 5px;
     height: 2lh;
     color: white;
     background-color: #0090d0;
@@ -905,7 +888,6 @@ header .container ul li a {
   }
   #pricing .container .content .price-block:nth-child(3) .desc form button:hover {
     border: 1px solid lightgray;
-    border-radius: 5px;
     height: 2lh;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -989,7 +971,6 @@ header .container ul li a {
   width: 85%;
   color: #8f8f8f;
   border: 1px solid #8f8f8f;
-  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
   padding: 15px;
 }
@@ -1007,7 +988,6 @@ header .container ul li a {
 }
 #stay-in-touch .form-block .container form button {
   border: none;
-  border-radius: 5px;
   height: 2.3lh;
   color: white;
   background-color: #0090d0;
@@ -1019,7 +999,6 @@ header .container ul li a {
 }
 #stay-in-touch .form-block .container form button:hover {
   border: 1px solid white;
-  border-radius: 5px;
   height: 2.3lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1144,6 +1123,10 @@ body, html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
@@ -1180,6 +1163,9 @@ body h1, body h2, body h3, body h4 {
 body .container {
   width: 1170px;
   margin: 0 auto;
+}
+body p {
+  margin: 0;
 }
 
 * {

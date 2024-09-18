@@ -28,6 +28,22 @@
                 }
             }
         }
+
+        .slider {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            display: none;
+        
+            .slick-slide {
+                text-align: center;
+                position: relative;
+            }
+        
+            .slick-dots {
+                @include slider-dots($second-main-color, rgba($black, $alpha: 0), (1px solid $second-main-color));         
+            }
+        }
     }
 }
 
@@ -50,6 +66,19 @@
 
             .points {
                 display: none;
+            }
+
+            .slider {
+                display: block;
+                text-align: center;
+            
+                .slick-slide {
+                    padding: 10px 10px 40px 10px;
+
+                    img {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }

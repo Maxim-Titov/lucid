@@ -48,15 +48,15 @@
                 margin-top: 55px;
 
                 button:first-child {
-                    @include btn(200px, 2.5lh, $second-main-color, none, 5px);
+                    @include btn(200px, 2.5lh, $second-main-color, none);
                 }
 
                 button:last-child {
-                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid white), 5px);
+                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid white));
                 }
 
                 button:last-child:hover {
-                    @include btn(200px, 2.5lh, $second-main-color, none, 5px);
+                    @include btn(200px, 2.5lh, $second-main-color, none);
                 }
 
                 button {

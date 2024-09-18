@@ -15,9 +15,8 @@
     margin: 0 auto;
 }
 
-@mixin btn($width, $height, $bg-color, $border, $border-radius) {
+@mixin btn($width, $height, $bg-color, $border) {
     border: $border;
-    border-radius: $border-radius;
     height: $height;
     color: $white;
     background-color: $bg-color;
@@ -27,15 +26,16 @@
 
 @mixin slider-dots($active-color, $passive-color, $border) {
     button {
-        @include btn(6.5px, 6.5px, $passive-color, $border, 100%);
+        @include btn(6.5px, 6.5px, $passive-color, $border);
 
         display: block;
         padding: 0;
         text-indent: -9999px;
+        border-radius: 100%
     }
     
     li.slick-active button {
-        @include btn(13px, 13px, $active-color, (1px solid $border), 100%);
+        @include btn(13px, 13px, $active-color, (1px solid $border));
 
         margin: 0 -3px;
     } 
