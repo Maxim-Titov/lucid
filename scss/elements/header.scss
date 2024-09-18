@@ -3,8 +3,8 @@
 header {
     width: 100%;
 
-    .container {
-        @include flex-with-justiy(space-between);
+    .container-xl {
+        @include flex-with-justify(space-between);
     
         .name{
             @include flex(row);

@@ -4,7 +4,7 @@
     width: 100%;
     background-color: $third-bg-color;
 
-    .stay-in-touch-block .container {
+    .stay-in-touch-block .container-xl {
         padding: 100px 0 75px 0;
 
         .title {
@@ -12,7 +12,7 @@
         }
 
         .content {
-            @include flex-with-justiy(space-around);
+            @include flex-with-justify(space-around);
             
             padding-top: 40px;
 
@@ -42,7 +42,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        .container {
+        .container-xl {
             width: 100%;
             padding: 0;
 
@@ -50,7 +50,7 @@
                 padding: 75px 0 90px 0;
     
                 .form {
-                    @include flex-with-justiy(center);
+                    @include flex-with-justify(center);
     
                     div {
                         width: 50%;
@@ -106,7 +106,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    #stay-in-touch .stay-in-touch-block .container {
+    #stay-in-touch .stay-in-touch-block .container-xl {
         width: 100%;
         padding: 15px;
 
@@ -138,7 +138,7 @@
 
 @media(max-width: 710px) {
     #stay-in-touch {
-        .form-block .container {
+        .form-block .container-xl {
             form {
                 padding: 25px 0 90px 0;
 
@@ -172,7 +172,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 640px) {
-    #stay-in-touch .stay-in-touch-block .container {
+    #stay-in-touch .stay-in-touch-block .container-xl {
         .title {
             padding-top: 25px;
         }

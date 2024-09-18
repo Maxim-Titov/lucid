@@ -13,7 +13,7 @@
     }
 
     .selected {
-        @include flex-with-justiy(space-between);
+        @include flex-with-justify(space-between);
 
         margin-top: 8px;
 

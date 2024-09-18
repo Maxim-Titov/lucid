@@ -1,8 +1,7 @@
 #pricing {
     width: 100%;
 
-    .container {
-        width: 1170px;
+    .container-xl {
         margin: 75px auto;
 
         .title {
@@ -10,11 +9,7 @@
         }
 
         .content {
-            @include flex-with-justiy(space-between);
-
             .price-block {
-                width: 23%;
-
                 div {
                     text-align: center;
                     padding: 0 20px;
@@ -81,7 +76,7 @@
                 }
             }
 
-            .price-block:nth-child(3) {
+            .col-sm-3:nth-child(3) {
                 .plan {
                     p {
                         color: $second-main-color;
@@ -120,8 +115,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    #pricing .container {
-        width: 100%;
+    #pricing .container-xl {
         padding: 15px;
     }
 }
@@ -129,11 +123,11 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    #pricing .container .content {
+    #pricing .container-xl .content {
         display: block;
             
         .price-block {
-            @include flex-with-justiy(center);
+            @include flex-with-justify(center);
 
             width: 100%;
             margin: 15px 0;
@@ -202,7 +196,7 @@
             }
         }
 
-        .price-block:nth-child(3) {
+        .col-sm-3:nth-child(3) {
             .plan p {
                 color: $second-main-color;
             }
@@ -236,7 +230,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 850px) {
-    #pricing .container .content {
+    #pricing .container-xl .content {
         .price-block {
             .plan p {
                 font-size: 30px;
@@ -258,7 +252,7 @@
             }
         }
 
-        .price-block:nth-child(3) .desc form button {
+        .col-sm-3:nth-child(3) .desc form button {
             width: 125px;
         }
     }

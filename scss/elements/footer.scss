@@ -4,7 +4,7 @@ footer {
     width: 100%;
     background-color: $fourth-bg-color;
 
-    .container {
+    .container-xl {
         text-align: center;
         padding: 50px;
         margin: 0;
@@ -41,7 +41,7 @@ footer {
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1170px) {
-    footer .container {
+    footer .container-xl {
         width: 100%;
     }
 }
@@ -49,7 +49,7 @@ footer {
 /*------------------------------------------------------------------*/
 
 @media(max-width: 373px) {
-    footer .container div svg {
+    footer .container-xl div svg {
         @include flex(column);
 
         margin: 15px auto;

@@ -16,31 +16,31 @@
   background-image: url(../images/header-background.png);
   background-size: cover;
 }
-#top .container {
+#top .container-xl {
   display: flex;
   justify-content: space-between;
 }
-#top .container .left-block, #top .container .right-block {
+#top .container-xl .left-block, #top .container-xl .right-block {
   width: 50%;
   margin-top: 50px;
 }
-#top .container .left-block .introducing {
+#top .container-xl .left-block .introducing {
   color: #0090d0;
   font-weight: bold;
   margin-top: 10px;
 }
-#top .container .left-block h1 {
+#top .container-xl .left-block h1 {
   font-size: 55px;
   color: white;
 }
-#top .container .left-block .description {
+#top .container-xl .left-block .description {
   font-size: 20px;
   margin-top: 30px;
 }
-#top .container .left-block form {
+#top .container-xl .left-block form {
   margin-top: 55px;
 }
-#top .container .left-block form button:first-child {
+#top .container-xl .left-block form button:first-child {
   border: none;
   height: 2.5lh;
   color: white;
@@ -48,7 +48,7 @@
   width: 200px;
   font-weight: bold;
 }
-#top .container .left-block form button:last-child {
+#top .container-xl .left-block form button:last-child {
   border: 1px solid white;
   height: 2.5lh;
   color: white;
@@ -56,7 +56,7 @@
   width: 200px;
   font-weight: bold;
 }
-#top .container .left-block form button:last-child:hover {
+#top .container-xl .left-block form button:last-child:hover {
   border: none;
   height: 2.5lh;
   color: white;
@@ -64,13 +64,13 @@
   width: 200px;
   font-weight: bold;
 }
-#top .container .left-block form button {
+#top .container-xl .left-block form button {
   margin: 0 11px;
 }
-#top .container .right-block {
+#top .container-xl .right-block {
   text-align: right;
 }
-#top .container .right-block .phone-img {
+#top .container-xl .right-block .phone-img {
   text-align: right;
   width: 450px;
 }
@@ -80,50 +80,50 @@
   #top {
     padding: 15px 15px 0 15px;
   }
-  #top .container {
+  #top .container-xl {
     width: 100%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
-  #top .container {
+  #top .container-xl {
     width: 100%;
     padding: 0 15px;
     display: block;
   }
-  #top .container .left-block, #top .container .right-block {
+  #top .container-xl .left-block, #top .container-xl .right-block {
     width: 100%;
     margin-top: 50px;
   }
-  #top .container .left-block {
+  #top .container-xl .left-block {
     text-align: center;
   }
-  #top .container .left-block .introducing {
+  #top .container-xl .left-block .introducing {
     font-size: 15px;
   }
-  #top .container .left-block h1 {
+  #top .container-xl .left-block h1 {
     font-size: 25px;
   }
-  #top .container .left-block .description {
+  #top .container-xl .left-block .description {
     font-size: 15px;
     margin-top: 30px;
   }
-  #top .container .left-block .description br {
+  #top .container-xl .left-block .description br {
     display: none;
   }
-  #top .container .left-block form {
+  #top .container-xl .left-block form {
     display: flex;
     justify-content: center;
   }
-  #top .container .left-block form button {
+  #top .container-xl .left-block form button {
     font-size: 13px;
     color: white;
     margin: 0 5px;
   }
-  #top .container .right-block {
+  #top .container-xl .right-block {
     text-align: center;
   }
-  #top .container .right-block .phone-img {
+  #top .container-xl .right-block .phone-img {
     text-align: center;
     width: 250px;
   }
@@ -131,18 +131,18 @@
 header {
   width: 100%;
 }
-header .container {
+header .container-xl {
   display: flex;
   justify-content: space-between;
 }
-header .container .name {
+header .container-xl .name {
   display: flex;
   flex-direction: row;
 }
-header .container .name .company {
+header .container-xl .name .company {
   font-size: 28px;
 }
-header .container .name .desc {
+header .container-xl .name .desc {
   margin-top: 7px;
   font-size: 10px;
   color: gray;
@@ -278,39 +278,37 @@ header .container .name .desc {
     margin: 15px auto;
   }
 }
-#overview .container .overview-head {
+#overview .container-xl .overview-head {
   margin-top: 50px;
   text-align: center;
 }
-#overview .container .points {
-  display: flex;
-  justify-content: space-around;
+#overview .container-xl .points {
   margin-top: 50px;
 }
-#overview .container .points div {
+#overview .container-xl .points .col-3 {
   width: 25%;
   text-align: center;
 }
-#overview .container .points div .title {
+#overview .container-xl .points .col-3 .title {
   color: black;
   font-size: 20px;
   margin-bottom: 0;
 }
-#overview .container .points div .content {
+#overview .container-xl .points .col-3 .content {
   margin-top: 0;
   width: 100%;
 }
-#overview .container .slider {
+#overview .container-xl .slider {
   text-align: center;
   width: 100%;
   position: relative;
   display: none;
 }
-#overview .container .slider .slick-slide {
+#overview .container-xl .slider .slick-slide {
   text-align: center;
   position: relative;
 }
-#overview .container .slider .slick-dots button {
+#overview .container-xl .slider .slick-dots button {
   border: 1px solid #0090d0;
   height: 6.5px;
   color: white;
@@ -322,7 +320,7 @@ header .container .name .desc {
   text-indent: -9999px;
   border-radius: 100%;
 }
-#overview .container .slider .slick-dots li.slick-active button {
+#overview .container-xl .slider .slick-dots li.slick-active button {
   border: 1px solid 1px solid #0090d0;
   height: 13px;
   color: white;
@@ -334,26 +332,26 @@ header .container .name .desc {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
-  #overview .container {
+  #overview .container-xl {
     width: 100%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
-  #overview .container {
+  #overview .container-xl {
     padding: 15px;
   }
-  #overview .container .points {
+  #overview .container-xl .points {
     display: none;
   }
-  #overview .container .slider {
+  #overview .container-xl .slider {
     display: block;
     text-align: center;
   }
-  #overview .container .slider .slick-slide {
+  #overview .container-xl .slider .slick-slide {
     padding: 10px 10px 40px 10px;
   }
-  #overview .container .slider .slick-slide img {
+  #overview .container-xl .slider .slick-slide img {
     margin: 0 auto;
   }
 }
@@ -406,7 +404,7 @@ header .container .name .desc {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
-  #dip-into-details .row .container {
+  #dip-into-details .row .container-xl {
     width: 100%;
   }
 }
@@ -416,27 +414,27 @@ header .container .name .desc {
     margin: 0;
     padding: 0;
   }
-  #dip-into-details .row .container .block {
+  #dip-into-details .row .container-xl .block {
     padding: 15px;
     display: block;
     text-align: center;
   }
-  #dip-into-details .row .container .block .image img {
+  #dip-into-details .row .container-xl .block .image img {
     width: 225px;
   }
-  #dip-into-details .row .container .block .image .phone-details-second {
+  #dip-into-details .row .container-xl .block .image .phone-details-second {
     width: 260px;
   }
-  #dip-into-details .row .container .block .content {
+  #dip-into-details .row .container-xl .block .content {
     padding-top: 30px;
   }
-  #dip-into-details .row .container .block .content .underline {
+  #dip-into-details .row .container-xl .block .content .underline {
     margin: 40px auto;
   }
-  #dip-into-details .row .container .block .content .block-content br {
+  #dip-into-details .row .container-xl .block .content .block-content br {
     display: none;
   }
-  #dip-into-details .row .container .block .content .desc .desc-row {
+  #dip-into-details .row .container-xl .block .content .desc .desc-row {
     display: flex;
     justify-content: center;
   }
@@ -456,44 +454,44 @@ header .container .name .desc {
   padding: 150px 0 50px 0;
   color: white;
 }
-#testimonials .container .title {
+#testimonials .container-xl .title {
   text-align: center;
 }
-#testimonials .container .title h1 {
+#testimonials .container-xl .title h1 {
   color: white;
 }
-#testimonials .container .testimonial-slider {
+#testimonials .container-xl .testimonial-slider {
   height: 275px;
 }
-#testimonials .container .testimonial-slider .slide .content {
+#testimonials .container-xl .testimonial-slider .slide .content {
   display: flex;
   justify-content: space-around;
 }
-#testimonials .container .testimonial-slider .slide .content .card {
+#testimonials .container-xl .testimonial-slider .slide .content .card {
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }
-#testimonials .container .testimonial-slider .slide .content .card .card-body {
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body {
   padding: 0;
 }
-#testimonials .container .testimonial-slider .slide .content .card .card-body .author {
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author {
   display: flex;
   justify-content: left;
   padding-top: 10px;
 }
-#testimonials .container .testimonial-slider .slide .content .card .card-body .author div {
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author div {
   padding-left: 20px;
 }
-#testimonials .container .testimonial-slider .slide .content .card .card-body .author div p {
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author div p {
   margin: 0;
 }
-#testimonials .container .testimonial-slider .slide .content .card .card-body .author div .role {
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author div .role {
   font-weight: bold;
 }
-#testimonials .container .testimonial-slider .slide .content .line {
+#testimonials .container-xl .testimonial-slider .slide .content .line {
   display: none;
 }
-#testimonials .container .testimonial-slider .slick-dots button {
+#testimonials .container-xl .testimonial-slider .slick-dots button {
   border: 1px solid white;
   height: 6.5px;
   color: white;
@@ -505,7 +503,7 @@ header .container .name .desc {
   text-indent: -9999px;
   border-radius: 100%;
 }
-#testimonials .container .testimonial-slider .slick-dots li.slick-active button {
+#testimonials .container-xl .testimonial-slider .slick-dots li.slick-active button {
   border: 1px solid 1px solid white;
   height: 13px;
   color: white;
@@ -520,44 +518,45 @@ header .container .name .desc {
   #testimonials {
     padding: 50px 0 25px 0;
   }
-  #testimonials .container .testimonial-slider {
+  #testimonials .container-xl .testimonial-slider {
     height: 100%;
   }
-  #testimonials .container .testimonial-slider .slide .content {
+  #testimonials .container-xl .testimonial-slider .slide .content {
     width: 415px;
     display: block;
     padding: 15px;
     margin: 0 auto;
   }
-  #testimonials .container .testimonial-slider .slide .content .card {
+  #testimonials .container-xl .testimonial-slider .slide .content .card {
     text-align: center;
   }
-  #testimonials .container .testimonial-slider .slide .content .card .card-body .card-text br {
+  #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text br {
     display: none;
   }
-  #testimonials .container .testimonial-slider .slide .content .card .card-body .author .name {
+  #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author .name {
     text-align: left;
   }
-  #testimonials .container .testimonial-slider .slide .content .line {
+  #testimonials .container-xl .testimonial-slider .slide .content .line {
     display: block;
     background-color: gray;
+    margin: 30px 0;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 415px) {
-  #testimonials .container .testimonial-slider .slide .content {
+  #testimonials .container-xl .testimonial-slider .slide .content {
     width: 100%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 342px) {
-  .container .testimonial-slider .slide .content .card .card-body .author .role {
+  .container-xl .testimonial-slider .slide .content .card .card-body .author .role {
     font-size: 15px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 329px) {
-  .container .testimonial-slider .slide .content .card .card-body .author .role {
+  .container-xl .testimonial-slider .slide .content .card .card-body .author .role {
     font-size: 14px;
   }
 }
@@ -567,21 +566,20 @@ header .container .name .desc {
   background-color: #0d0c14;
   padding: 50px 15px;
 }
-.like-what-you-see .container {
+.like-what-you-see .container-xl {
   display: flex;
   justify-content: space-around;
 }
-.like-what-you-see .container p {
-  color: white;
+.like-what-you-see .container-xl p {
   font-size: 30px;
 }
-.like-what-you-see .container p span {
+.like-what-you-see .container-xl p span {
   font-weight: bold;
 }
-.like-what-you-see .container p br {
+.like-what-you-see .container-xl p br {
   display: none;
 }
-.like-what-you-see .container form button:last-child {
+.like-what-you-see .container-xl form button:last-child {
   border: none;
   height: 2.3lh;
   color: white;
@@ -590,7 +588,7 @@ header .container .name .desc {
   font-weight: bold;
   margin-left: 11px;
 }
-.like-what-you-see .container form button:first-child {
+.like-what-you-see .container-xl form button:first-child {
   border: 1px solid white;
   height: 2.3lh;
   color: white;
@@ -599,7 +597,7 @@ header .container .name .desc {
   font-weight: bold;
   margin-right: 11px;
 }
-.like-what-you-see .container form button:first-child:hover {
+.like-what-you-see .container-xl form button:first-child:hover {
   border: none;
   height: 2.3lh;
   color: white;
@@ -607,29 +605,29 @@ header .container .name .desc {
   width: 175px;
   font-weight: bold;
 }
-.like-what-you-see .container form br {
+.like-what-you-see .container-xl form br {
   display: none;
 }
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 @media (max-width: 985px) {
-  .like-what-you-see .container p {
+  .like-what-you-see .container-xl p {
     font-size: 25px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 905px) {
-  .like-what-you-see .container p {
+  .like-what-you-see .container-xl p {
     font-size: 23px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 860px) {
-  .like-what-you-see .container p {
+  .like-what-you-see .container-xl p {
     font-size: 20px;
   }
-  .like-what-you-see .container form button:last-child {
+  .like-what-you-see .container-xl form button:last-child {
     border: none;
     height: 2.3lh;
     color: white;
@@ -638,7 +636,7 @@ header .container .name .desc {
     font-weight: bold;
     margin-left: 5px;
   }
-  .like-what-you-see .container form button:first-child {
+  .like-what-you-see .container-xl form button:first-child {
     border: 1px solid white;
     height: 2.3lh;
     color: white;
@@ -653,14 +651,14 @@ header .container .name .desc {
   .like-what-you-see {
     padding: 25px 0;
   }
-  .like-what-you-see .container {
+  .like-what-you-see .container-xl {
     display: block;
     text-align: center;
   }
-  .like-what-you-see .container p br {
+  .like-what-you-see .container-xl p br {
     display: block;
   }
-  .like-what-you-see .container form button {
+  .like-what-you-see .container-xl form button {
     width: 120px;
     height: 2lh;
     font-size: 13px;
@@ -668,80 +666,72 @@ header .container .name .desc {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 390px) {
-  .like-what-you-see .container form button:last-child {
+  .like-what-you-see .container-xl form button:last-child {
     width: 60%;
     margin-left: 0;
     margin-top: 8px;
   }
-  .like-what-you-see .container form button:first-child {
+  .like-what-you-see .container-xl form button:first-child {
     width: 60%;
     margin-right: 0;
     margin-bottom: 8px;
   }
-  .like-what-you-see .container form br {
+  .like-what-you-see .container-xl form br {
     display: block;
   }
 }
 #pricing {
   width: 100%;
 }
-#pricing .container {
-  width: 1170px;
+#pricing .container-xl {
   margin: 75px auto;
 }
-#pricing .container .title {
+#pricing .container-xl .title {
   text-align: center;
 }
-#pricing .container .content {
-  display: flex;
-  justify-content: space-between;
-}
-#pricing .container .content .price-block {
-  width: 23%;
-}
-#pricing .container .content .price-block div {
+#pricing .container-xl .content .price-block div {
   text-align: center;
   padding: 0 20px;
 }
-#pricing .container .content .price-block .plan {
+#pricing .container-xl .content .price-block .plan {
   border: 1px solid lightgray;
   padding: 15px 0;
 }
-#pricing .container .content .price-block .plan p {
+#pricing .container-xl .content .price-block .plan p {
   height: 25px;
   font-size: 25px;
   color: black;
   font-weight: bold;
 }
-#pricing .container .content .price-block .price {
+#pricing .container-xl .content .price-block .price {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   padding: 20px 0;
 }
-#pricing .container .content .price-block .price p:first-child {
+#pricing .container-xl .content .price-block .price p:first-child {
   color: black;
   font-weight: bold;
   font-size: 60px;
   height: 60px;
 }
-#pricing .container .content .price-block .price p:first-child span {
+#pricing .container-xl .content .price-block .price p:first-child span {
   font-size: 30px;
   vertical-align: 20px;
 }
-#pricing .container .content .price-block .desc {
+#pricing .container-xl .content .price-block .desc {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   padding: 35px 20px;
 }
-#pricing .container .content .price-block .desc p span {
+#pricing .container-xl .content .price-block .desc p span {
   color: #0090d0;
 }
-#pricing .container .content .price-block .desc form {
+#pricing .container-xl .content .price-block .desc form {
   margin-top: 35px;
 }
-#pricing .container .content .price-block .desc form button {
+#pricing .container-xl .content .price-block .desc form button {
   border: 1px solid lightgray;
   height: 2lh;
   color: white;
@@ -750,7 +740,7 @@ header .container .name .desc {
   font-weight: bold;
   color: #0090d0;
 }
-#pricing .container .content .price-block .desc form button:hover {
+#pricing .container-xl .content .price-block .desc form button:hover {
   border: none;
   height: 2lh;
   color: white;
@@ -759,17 +749,17 @@ header .container .name .desc {
   font-weight: bold;
   color: white;
 }
-#pricing .container .content .price-block:nth-child(3) .plan p {
+#pricing .container-xl .content .col-sm-3:nth-child(3) .plan p {
   color: #0090d0;
 }
-#pricing .container .content .price-block:nth-child(3) .price {
+#pricing .container-xl .content .col-sm-3:nth-child(3) .price {
   background-color: #0090d0;
   border: none;
 }
-#pricing .container .content .price-block:nth-child(3) .price p {
+#pricing .container-xl .content .col-sm-3:nth-child(3) .price p {
   color: white;
 }
-#pricing .container .content .price-block:nth-child(3) .desc form button {
+#pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
   border: none;
   height: 2lh;
   color: white;
@@ -778,7 +768,7 @@ header .container .name .desc {
   font-weight: bold;
   color: white;
 }
-#pricing .container .content .price-block:nth-child(3) .desc form button:hover {
+#pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button:hover {
   border: 1px solid lightgray;
   height: 2lh;
   color: white;
@@ -790,28 +780,27 @@ header .container .name .desc {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
-  #pricing .container {
-    width: 100%;
+  #pricing .container-xl {
     padding: 15px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
-  #pricing .container .content {
+  #pricing .container-xl .content {
     display: block;
   }
-  #pricing .container .content .price-block {
+  #pricing .container-xl .content .price-block {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 15px 0;
   }
-  #pricing .container .content .price-block .plan {
+  #pricing .container-xl .content .price-block .plan {
     border: 1px solid lightgray;
     padding: 15px 0;
     width: 15%;
   }
-  #pricing .container .content .price-block .plan p {
+  #pricing .container-xl .content .price-block .plan p {
     height: 25px;
     font-size: 25px;
     color: black;
@@ -819,37 +808,37 @@ header .container .name .desc {
     writing-mode: vertical-rl;
     text-align: left;
   }
-  #pricing .container .content .price-block .price {
+  #pricing .container-xl .content .price-block .price {
     border-right: 1px solid lightgray;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     padding: 20px 0;
     width: 25%;
   }
-  #pricing .container .content .price-block .price p:first-child {
+  #pricing .container-xl .content .price-block .price p:first-child {
     color: black;
     font-weight: bold;
     font-size: 60px;
     height: 60px;
   }
-  #pricing .container .content .price-block .price p:first-child span {
+  #pricing .container-xl .content .price-block .price p:first-child span {
     font-size: 30px;
     vertical-align: 20px;
   }
-  #pricing .container .content .price-block .desc {
+  #pricing .container-xl .content .price-block .desc {
     border-right: 1px solid lightgray;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     padding: 35px 20px;
     width: 60%;
   }
-  #pricing .container .content .price-block .desc p span {
+  #pricing .container-xl .content .price-block .desc p span {
     color: #0090d0;
   }
-  #pricing .container .content .price-block .desc form {
+  #pricing .container-xl .content .price-block .desc form {
     margin-top: 35px;
   }
-  #pricing .container .content .price-block .desc form button {
+  #pricing .container-xl .content .price-block .desc form button {
     border: 1px solid lightgray;
     height: 2lh;
     color: white;
@@ -858,7 +847,7 @@ header .container .name .desc {
     font-weight: bold;
     color: #0090d0;
   }
-  #pricing .container .content .price-block .desc form button:hover {
+  #pricing .container-xl .content .price-block .desc form button:hover {
     border: none;
     height: 2lh;
     color: white;
@@ -867,17 +856,17 @@ header .container .name .desc {
     font-weight: bold;
     color: white;
   }
-  #pricing .container .content .price-block:nth-child(3) .plan p {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .plan p {
     color: #0090d0;
   }
-  #pricing .container .content .price-block:nth-child(3) .price {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .price {
     background-color: #0090d0;
     border: none;
   }
-  #pricing .container .content .price-block:nth-child(3) .price p {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .price p {
     color: white;
   }
-  #pricing .container .content .price-block:nth-child(3) .desc form button {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
     border: none;
     height: 2lh;
     color: white;
@@ -886,7 +875,7 @@ header .container .name .desc {
     font-weight: bold;
     color: white;
   }
-  #pricing .container .content .price-block:nth-child(3) .desc form button:hover {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button:hover {
     border: 1px solid lightgray;
     height: 2lh;
     color: white;
@@ -898,22 +887,22 @@ header .container .name .desc {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 850px) {
-  #pricing .container .content .price-block .plan p {
+  #pricing .container-xl .content .price-block .plan p {
     font-size: 30px;
     margin: 0;
   }
-  #pricing .container .content .price-block .price p:first-child {
+  #pricing .container-xl .content .price-block .price p:first-child {
     font-size: 30px;
     height: 30px;
   }
-  #pricing .container .content .price-block .price p:first-child span {
+  #pricing .container-xl .content .price-block .price p:first-child span {
     font-size: 15px;
     vertical-align: 10px;
   }
-  #pricing .container .content .price-block .desc form button {
+  #pricing .container-xl .content .price-block .desc form button {
     width: 125px;
   }
-  #pricing .container .content .price-block:nth-child(3) .desc form button {
+  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
     width: 125px;
   }
 }
@@ -921,27 +910,27 @@ header .container .name .desc {
   width: 100%;
   background-color: #eeeeee;
 }
-#stay-in-touch .stay-in-touch-block .container {
+#stay-in-touch .stay-in-touch-block .container-xl {
   padding: 100px 0 75px 0;
 }
-#stay-in-touch .stay-in-touch-block .container .title {
+#stay-in-touch .stay-in-touch-block .container-xl .title {
   text-align: center;
 }
-#stay-in-touch .stay-in-touch-block .container .content {
+#stay-in-touch .stay-in-touch-block .container-xl .content {
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-#stay-in-touch .stay-in-touch-block .container .content div {
+#stay-in-touch .stay-in-touch-block .container-xl .content div {
   text-align: center;
 }
-#stay-in-touch .stay-in-touch-block .container .content div img {
+#stay-in-touch .stay-in-touch-block .container-xl .content div img {
   margin-bottom: 20px;
 }
-#stay-in-touch .stay-in-touch-block .container .content div p {
+#stay-in-touch .stay-in-touch-block .container-xl .content div p {
   margin: 0;
 }
-#stay-in-touch .stay-in-touch-block .container .content div p a {
+#stay-in-touch .stay-in-touch-block .container-xl .content div p a {
   color: #8f8f8f;
   text-decoration: 0;
 }
@@ -952,41 +941,41 @@ header .container .name .desc {
   left: 50%;
   transform: translateX(-50%);
 }
-#stay-in-touch .form-block .container {
+#stay-in-touch .form-block .container-xl {
   width: 100%;
   padding: 0;
 }
-#stay-in-touch .form-block .container form {
+#stay-in-touch .form-block .container-xl form {
   padding: 75px 0 90px 0;
 }
-#stay-in-touch .form-block .container form .form {
+#stay-in-touch .form-block .container-xl form .form {
   display: flex;
   justify-content: center;
 }
-#stay-in-touch .form-block .container form .form div {
+#stay-in-touch .form-block .container-xl form .form div {
   width: 50%;
   padding: 0 10px;
 }
-#stay-in-touch .form-block .container form .form div input, #stay-in-touch .form-block .container form .form div textarea {
+#stay-in-touch .form-block .container-xl form .form div input, #stay-in-touch .form-block .container-xl form .form div textarea {
   width: 85%;
   color: #8f8f8f;
   border: 1px solid #8f8f8f;
   background-color: rgba(0, 0, 0, 0);
   padding: 15px;
 }
-#stay-in-touch .form-block .container form .form div input {
+#stay-in-touch .form-block .container-xl form .form div input {
   height: 2.3lh;
   margin-bottom: 25px;
 }
-#stay-in-touch .form-block .container form .form div textarea {
+#stay-in-touch .form-block .container-xl form .form div textarea {
   resize: none;
   height: 9lh;
   margin: 0 auto;
 }
-#stay-in-touch .form-block .container form .form div:first-child {
+#stay-in-touch .form-block .container-xl form .form div:first-child {
   text-align: right;
 }
-#stay-in-touch .form-block .container form button {
+#stay-in-touch .form-block .container-xl form button {
   border: none;
   height: 2.3lh;
   color: white;
@@ -997,7 +986,7 @@ header .container .name .desc {
   position: absolute;
   right: 65px;
 }
-#stay-in-touch .form-block .container form button:hover {
+#stay-in-touch .form-block .container-xl form button:hover {
   border: 1px solid white;
   height: 2.3lh;
   color: white;
@@ -1012,11 +1001,11 @@ header .container .name .desc {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
-  #stay-in-touch .stay-in-touch-block .container {
+  #stay-in-touch .stay-in-touch-block .container-xl {
     width: 100%;
     padding: 15px;
   }
-  #stay-in-touch .stay-in-touch-block .container .content div {
+  #stay-in-touch .stay-in-touch-block .container-xl .content div {
     width: 100%;
     padding: 15px;
   }
@@ -1033,20 +1022,20 @@ header .container .name .desc {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 710px) {
-  #stay-in-touch .form-block .container form {
+  #stay-in-touch .form-block .container-xl form {
     padding: 25px 0 90px 0;
   }
-  #stay-in-touch .form-block .container form .form {
+  #stay-in-touch .form-block .container-xl form .form {
     display: block;
   }
-  #stay-in-touch .form-block .container form .form div {
+  #stay-in-touch .form-block .container-xl form .form div {
     width: 100%;
     text-align: center;
   }
-  #stay-in-touch .form-block .container form .form div:first-child {
+  #stay-in-touch .form-block .container-xl form .form div:first-child {
     text-align: center;
   }
-  #stay-in-touch .form-block .container form button {
+  #stay-in-touch .form-block .container-xl form button {
     right: 50%;
     transform: translateX(50%);
     margin: 15px 0;
@@ -1057,14 +1046,14 @@ header .container .name .desc {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 640px) {
-  #stay-in-touch .stay-in-touch-block .container .title {
+  #stay-in-touch .stay-in-touch-block .container-xl .title {
     padding-top: 25px;
   }
-  #stay-in-touch .stay-in-touch-block .container .content {
+  #stay-in-touch .stay-in-touch-block .container-xl .content {
     padding: 0;
     display: block;
   }
-  #stay-in-touch .stay-in-touch-block .container .content div {
+  #stay-in-touch .stay-in-touch-block .container-xl .content div {
     width: 100%;
     padding: 15px;
   }
@@ -1080,39 +1069,39 @@ footer {
   width: 100%;
   background-color: #0d0c14;
 }
-footer .container {
+footer .container-xl {
   text-align: center;
   padding: 50px;
   margin: 0;
 }
-footer .container div svg {
+footer .container-xl div svg {
   margin: 0 15px;
   vertical-align: middle;
 }
-footer .container div svg:hover g {
+footer .container-xl div svg:hover g {
   fill: #0090d0;
 }
-footer .container div p {
+footer .container-xl div p {
   margin: 25px 0 0 0;
   font-weight: bold;
 }
-footer .container div a {
+footer .container-xl div a {
   color: #8f8f8f;
   text-decoration: none;
 }
-footer .container div a:hover {
+footer .container-xl div a:hover {
   color: #0090d0;
 }
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1170px) {
-  footer .container {
+  footer .container-xl {
     width: 100%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 373px) {
-  footer .container div svg {
+  footer .container-xl div svg {
     display: flex;
     flex-direction: column;
     margin: 15px auto;
@@ -1150,7 +1139,7 @@ body .line {
   border: none;
   height: 1px;
   background-color: lightgray;
-  margin: 50px 0;
+  margin: 75px 0;
 }
 body .block-title {
   color: #0090d0;
@@ -1160,21 +1149,13 @@ body .block-title {
 body h1, body h2, body h3, body h4 {
   color: black;
 }
-body .container {
-  width: 1170px;
-  margin: 0 auto;
-}
 body p {
   margin: 0;
+}
+body .container-xl {
+  margin: 0 auto;
 }
 
 * {
   box-sizing: border-box;
-}
-
-/*------------------------------------------------------------------*/
-@media (max-width: 1170px) {
-  body .container {
-    width: 100%;
-  }
 }

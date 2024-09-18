@@ -16,7 +16,7 @@ body {
     color: $font-main-color;
 
     .underline {
-        @include flex-with-justiy(space-between);
+        @include flex-with-justify(space-between);
 
         width: 60px;
         margin: 40px auto 40px auto;
@@ -34,7 +34,7 @@ body {
         border: none;
         height: 1px;
         background-color: $light-gray;
-        margin: 50px 0;
+        margin: 75px 0;
     }
     
     .block-title {
@@ -47,25 +47,15 @@ body {
         color: $black;
     }
 
-    .container {
-        @include block-view;
-    }
-
     p {
         margin: 0;
+    }
+
+    .container-xl {
+        margin: 0 auto;
     }
 }
 
 * {
     box-sizing: border-box;
-}
-
-
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 1170px) {
-    body .container {
-        width: 100%;
-    }
 }

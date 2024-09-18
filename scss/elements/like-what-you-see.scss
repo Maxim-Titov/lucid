@@ -6,11 +6,10 @@
     background-color: $fourth-bg-color;
     padding: 50px 15px;
 
-    .container {
-        @include flex-with-justiy(space-around);
+    .container-xl {
+        @include flex-with-justify(space-around);
 
         p {
-            color: $white;
             font-size: 30px;
     
             span {
@@ -57,7 +56,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 985px) {
-    .like-what-you-see .container p {
+    .like-what-you-see .container-xl p {
         font-size: 25px;
     }
 }
@@ -65,7 +64,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 905px) {
-    .like-what-you-see .container p {
+    .like-what-you-see .container-xl p {
         font-size: 23px;
     }
 }
@@ -73,7 +72,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 860px) {
-    .like-what-you-see .container {
+    .like-what-you-see .container-xl {
         p {
             font-size: 20px;
         }
@@ -100,7 +99,7 @@
     .like-what-you-see {
         padding: 25px 0;
 
-        .container {
+        .container-xl {
             display: block;
             text-align: center;
     
@@ -122,7 +121,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 390px) {
-    .like-what-you-see .container form {
+    .like-what-you-see .container-xl form {
         button:last-child {
             width: 60%;
             margin-left: 0;

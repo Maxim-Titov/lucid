@@ -5,14 +5,9 @@
     flex-direction: $direction;
 }
 
-@mixin flex-with-justiy($position) {
+@mixin flex-with-justify($position) {
     display: flex;
     justify-content: $position;
-}
-
-@mixin block-view {
-    width: $content-width;
-    margin: 0 auto;
 }
 
 @mixin btn($width, $height, $bg-color, $border) {
