@@ -11,25 +11,18 @@
             text-align: center;
         }
 
-        .content {
-            @include flex-with-justify(space-around);
-            
-            padding-top: 40px;
-
-            div {
+        .row {
+            .col-sm-4 {
                 text-align: center;
+                padding: 20px 0;
 
                 img {
                     margin-bottom: 20px;
                 }
 
-                p {
-                    margin: 0;
-                     
-                    a {
-                        color: $font-main-color;
-                        text-decoration: 0;
-                    }
+                p a {
+                    color: $font-main-color;
+                    text-decoration: 0;
                 }
             }
         }
@@ -50,10 +43,9 @@
                 padding: 75px 0 90px 0;
     
                 .form {
-                    @include flex-with-justify(center);
-    
+                    margin: 0 auto;
+
                     div {
-                        width: 50%;
                         padding: 0 10px;
     
                         input, textarea {
@@ -75,7 +67,7 @@
                             margin: 0 auto;
                         }
                     }
-    
+
                     div:first-child {
                         text-align: right;
                     }
@@ -84,7 +76,7 @@
                 button {
                     @include btn(200px, 2.3lh, $second-main-color, none);
     
-                    color: white;
+                    color: $white;
                     position: absolute;
                     right: 65px;
                 }
@@ -107,15 +99,7 @@
 
 @media(max-width: 1170px) {
     #stay-in-touch .stay-in-touch-block .container-xl {
-        width: 100%;
         padding: 15px;
-
-        .content {
-            div {
-                width: 100%;
-                padding: 15px;
-            }
-        }
     }
 }
 
@@ -136,17 +120,32 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 710px) {
+@media(max-width: 640px) {
+    #stay-in-touch .stay-in-touch-block .container-xl {
+        .title {
+            padding-top: 25px;
+        }
+
+        .row {
+            div {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 575px) {
     #stay-in-touch {
         .form-block .container-xl {
             form {
                 padding: 25px 0 90px 0;
 
                 .form {
-                    display: block;
+                    width: 100%;
 
                     div {
-                        width: 100%;
                         text-align: center;
                     }
 
@@ -165,26 +164,6 @@
 
         .map {
             margin: 0;
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 640px) {
-    #stay-in-touch .stay-in-touch-block .container-xl {
-        .title {
-            padding-top: 25px;
-        }
-
-        .content {
-            padding: 0;
-            display: block;
-
-            div {
-                width: 100%;
-                padding: 15px;
-            }
         }
     }
 }

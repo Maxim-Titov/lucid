@@ -125,72 +125,77 @@
 @media(max-width: 992px) {
     #pricing .container-xl .content {
         display: block;
-            
-        .price-block {
-            @include flex-with-justify(center);
 
-            width: 100%;
-            margin: 15px 0;
+        .col-sm-3 {
+            margin: 0 auto;
+            max-width: 650px;
+
+            .price-block {
+                @include flex-with-justify(center);
     
-            .plan {
-                border: 1px solid $light-gray;
-                padding: 15px 0;
-                width: 15%;
-    
-                p {
-                    height: 25px;
-                    font-size: 25px;
-                    color: $black;
-                    font-weight: bold;
-                    writing-mode: vertical-rl;
-                    text-align: left;
-                }
-            }
-    
-            .price {
-                border-right: 1px solid $light-gray;
-                border-top: 1px solid $light-gray;
-                border-bottom: 1px solid $light-gray;
-                padding: 20px 0;
-                width: 25%;
-    
-                p:first-child {
-                    color: $black;
-                    font-weight: bold;
-                    font-size: 60px;
-                    height: 60px;
-    
-                    span {
-                        font-size: 30px;
-                        vertical-align: 20px;
+                width: 100%;
+                margin: 15px 0;
+        
+                .plan {
+                    border: 1px solid $light-gray;
+                    padding: 15px 0;
+                    width: 15%;
+        
+                    p {
+                        height: 25px;
+                        font-size: 25px;
+                        color: $black;
+                        font-weight: bold;
+                        writing-mode: vertical-rl;
+                        text-align: left;
                     }
                 }
-            }
-    
-            .desc {
-                border-right: 1px solid $light-gray;
-                border-top: 1px solid $light-gray;
-                border-bottom: 1px solid $light-gray;
-                padding: 35px 20px;
-                width: 60%;
-    
-                p span {
-                    color: $second-main-color;
+        
+                .price {
+                    border-right: 1px solid $light-gray;
+                    border-top: 1px solid $light-gray;
+                    border-bottom: 1px solid $light-gray;
+                    padding: 20px 0;
+                    width: 25%;
+        
+                    p:first-child {
+                        color: $black;
+                        font-weight: bold;
+                        font-size: 60px;
+                        height: 60px;
+        
+                        span {
+                            font-size: 30px;
+                            vertical-align: 20px;
+                        }
+                    }
                 }
-    
-                form {
-                    margin-top: 35px;
-    
-                    button {
-                        @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
-
+        
+                .desc {
+                    border-right: 1px solid $light-gray;
+                    border-top: 1px solid $light-gray;
+                    border-bottom: 1px solid $light-gray;
+                    padding: 35px 20px;
+                    width: 60%;
+        
+                    p span {
                         color: $second-main-color;
                     }
+        
+                    form {
+                        margin-top: 35px;
+        
+                        button {
+                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
     
-                    button:hover {
-                        @include btn(175px, 2lh, $second-main-color, none);
-
-                        color: $white;
+                            color: $second-main-color;
+                        }
+        
+                        button:hover {
+                            @include btn(175px, 2lh, $second-main-color, none);
+    
+                            color: $white;
+                        }
                     }
                 }
             }
@@ -205,7 +210,7 @@
                 background-color: $second-main-color;
                 border: none;
 
-                p {
+                p:first-child {
                     color: $white;
                 }
             }
@@ -231,7 +236,7 @@
 
 @media(max-width: 850px) {
     #pricing .container-xl .content {
-        .price-block {
+        .col-sm-3 .price-block {
             .plan p {
                 font-size: 30px;
                 margin: 0;

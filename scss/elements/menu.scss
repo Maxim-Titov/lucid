@@ -80,7 +80,8 @@
 
         .button {
             @include btn(50px, 30px, $second-main-color, none);
-
+            
+            z-index: 999;
             top: 20px;
             right: 15px;
             position: absolute;
@@ -137,6 +138,7 @@
             text-align: center;
             background-color: rgba($second-main-color, $alpha: 0.9);
             transition-duration: .25s;
+            z-index: 1;
 
             .menu__item {
                 display: block;

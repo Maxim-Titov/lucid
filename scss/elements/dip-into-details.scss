@@ -1,50 +1,46 @@
 @import '../global/mixins.scss';
 
 #dip-into-details {
-    .row {
+    .block-row {
         width: 100%;
 
-        .block {
-            @include flex-with-justify(space-around);
+        .content {
+            .underline {
+                margin-right: 0;
+                margin-left: 0;
+            }
 
-            .content {
-                .underline {
-                    margin-right: 0;
-                    margin-left: 0;
-                }
+            .desc {
+                margin-top: 30px;
+                color: $black;
 
-                .desc {
-                    margin-top: 30px;
-                    color: black;
+                .desc-row {
+                    @include flex-with-justify(left);
 
-                    .desc-row {
-                        @include flex-with-justify(left);
+                    .img {
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        margin-right: 10px;
 
-                        .img {
+                        .cup {
                             width: 20px;
-                            height: 20px;
-                            text-align: center;
-                            margin-right: 10px;
+                            height: 18px;
+                        }
 
-                            .cup {
-                                width: 20px;
-                                height: 18px;
-                            }
+                        .mouse {
+                            width: 12px;
+                            height: 19px;
+                        }
 
-                            .mouse {
-                                width: 12px;
-                                height: 19px;
-                            }
+                        .energy {
+                            width: 14px;
+                            height: 19px;
+                        }
 
-                            .energy {
-                                width: 14px;
-                                height: 19px;
-                            }
-
-                            .speedometer {
-                                width: 19px;
-                                height: 18px;
-                            }
+                        .speedometer {
+                            width: 19px;
+                            height: 18px;
                         }
                     }
                 }
@@ -52,22 +48,10 @@
         }
     }
 
-    .row:last-child {
+    .block-row:last-child {
         margin: 100px 0 0 0;
         background-color: $second-bg-color;
-        padding: 75px 0 0 0;
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 1170px) {
-    #dip-into-details {
-        .row {
-            .container-xl {
-                width: 100%;
-            }
-        }
+        padding: 75px 0;
     }
 }
 
@@ -75,22 +59,21 @@
 
 @media(max-width: 992px) {
     #dip-into-details {
-        .row {
+        .block-row {
             margin: 0;
             padding: 0;
 
-            .container-xl .block {
+            .container-xl {
                 padding: 15px;
-                display: block;
                 text-align: center;
-                
+
                 .image {
                     img {
-                        width: 225px;
+                        width: 250px;
                     }
 
                     .phone-details-second {
-                        width: 260px;
+                        width: 400px;
                     }
                 }
 
@@ -116,14 +99,23 @@
             }
         }
 
-        .row:first-child {
+        .block-row:first-child {
             padding-bottom: 30px;
         }
 
-        .row:last-child {
+        .block-row:last-child {
             margin: 0;
-            background-color: $second-bg-color;
-            padding: 0;
+            padding: 75px 0;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+    #dip-into-details .block-row .container-xl .row .col-md-6 .image {
+        .phone-details-first {
+            width: 175px;
         }
     }
 }

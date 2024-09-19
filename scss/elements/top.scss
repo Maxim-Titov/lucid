@@ -20,10 +20,7 @@
     }
 
     .container-xl {
-        @include flex-with-justify(space-between);
-
         .left-block, .right-block {
-            width: 50%;
             margin-top: 50px;
         }
 
@@ -84,6 +81,10 @@
 
         .container-xl {
             width: 100%;
+
+            br {
+                display: none;
+            }
         }
     }
 }
@@ -93,14 +94,7 @@
 @media(max-width: 992px) {
     #top {
         .container-xl {
-            width: 100%;
             padding: 0 15px;
-            display: block;
-
-            .left-block, .right-block {
-                width: 100%;
-                margin-top: 50px;
-            }
     
             .left-block {
                 text-align: center;
