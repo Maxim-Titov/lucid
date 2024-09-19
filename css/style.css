@@ -1,5 +1,5 @@
 #top {
-  padding-top: 35px;
+  padding: 15px 15px 0 15px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/header-background.png);
   opacity: 0.9;
@@ -265,6 +265,9 @@ header .container-xl .name .desc {
     margin: 15px auto;
   }
 }
+#overview {
+  padding: 50px;
+}
 #overview .container-xl .overview-head {
   margin-top: 50px;
   text-align: center;
@@ -342,11 +345,17 @@ header .container-xl .name .desc {
     margin: 0 auto;
   }
 }
+#dip-into-details {
+  padding: 50px 0 0 0;
+}
 #dip-into-details .block-row {
   width: 100%;
 }
 #dip-into-details .block-row .image .phone-details-second {
   max-width: none;
+}
+#dip-into-details .block-row .content {
+  padding: 50px;
 }
 #dip-into-details .block-row .content .underline {
   margin-right: 0;
@@ -554,7 +563,7 @@ header .container-xl .name .desc {
   width: 100%;
   height: auto;
   background-color: #0d0c14;
-  padding: 50px 15px;
+  padding: 50px;
 }
 .like-what-you-see .container-xl {
   display: flex;
@@ -673,9 +682,10 @@ header .container-xl .name .desc {
 }
 #pricing {
   width: 100%;
+  padding: 50px;
 }
 #pricing .container-xl {
-  margin: 75px auto;
+  margin: 0 auto;
 }
 #pricing .container-xl .title {
   text-align: center;
@@ -906,7 +916,7 @@ header .container-xl .name .desc {
   background-color: #eeeeee;
 }
 #stay-in-touch .stay-in-touch-block .container-xl {
-  padding: 100px 0 75px 0;
+  padding: 50px 0 75px 0;
 }
 #stay-in-touch .stay-in-touch-block .container-xl .title {
   text-align: center;
@@ -1042,12 +1052,12 @@ header .container-xl .name .desc {
 }
 
 footer {
+  padding: 50px;
   width: 100%;
   background-color: #0d0c14;
 }
 footer .container-xl {
   text-align: center;
-  padding: 50px;
   margin: 0;
 }
 footer .container-xl div svg {
@@ -1115,7 +1125,6 @@ body .line {
   border: none;
   height: 1px;
   background-color: lightgray;
-  margin: 75px 0;
 }
 body .block-title {
   color: #0090d0;
