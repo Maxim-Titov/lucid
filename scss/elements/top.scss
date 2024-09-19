@@ -3,21 +3,10 @@
 #top {
     padding-top: 35px;
     color: $white;
-    background: $black;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(../images/header-background.png);
     opacity: 0.9;
     background-size: 100%;
-
-    .back-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.1;
-        height: 100%;
-        background-image: url(../images/header-background.png);
-        background-size: cover;
-    }
+    background-size: cover;
 
     .container-xl {
         .left-block, .right-block {
