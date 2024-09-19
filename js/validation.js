@@ -16,7 +16,7 @@ $(document).ready(function() {
                 isValid = false;
                 event.preventDefault();
             } else if (field.pattern && !field.pattern.test(value)) {
-                field.element.addClass('error');
+                field.element.addClass('error').val('');
                 isValid = false;
                 event.preventDefault();
             } else {

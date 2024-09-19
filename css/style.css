@@ -121,6 +121,9 @@ header .container-xl .name {
   display: flex;
   flex-direction: row;
 }
+header .container-xl .name br {
+  display: block !important;
+}
 header .container-xl .name .company {
   font-size: 28px;
 }
@@ -342,6 +345,9 @@ header .container-xl .name .desc {
 #dip-into-details .block-row {
   width: 100%;
 }
+#dip-into-details .block-row .image .phone-details-second {
+  max-width: none;
+}
 #dip-into-details .block-row .content .underline {
   margin-right: 0;
   margin-left: 0;
@@ -382,6 +388,12 @@ header .container-xl .name .desc {
   padding: 75px 0;
 }
 
+/*------------------------------------------------------------------*/
+@media (max-width: 1399px) {
+  #dip-into-details .block-row .container-xl .row .col-md-6 .image .phone-details-second {
+    max-width: 100%;
+  }
+}
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
   #dip-into-details .block-row {

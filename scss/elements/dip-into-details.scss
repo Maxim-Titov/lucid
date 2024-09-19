@@ -4,6 +4,10 @@
     .block-row {
         width: 100%;
 
+        .image .phone-details-second {
+            max-width: none;
+        }
+
         .content {
             .underline {
                 margin-right: 0;
@@ -52,6 +56,14 @@
         margin: 100px 0 0 0;
         background-color: $second-bg-color;
         padding: 75px 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1399px) {
+    #dip-into-details .block-row .container-xl .row .col-md-6 .image .phone-details-second {
+        max-width: 100%;
     }
 }
 

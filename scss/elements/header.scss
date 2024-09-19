@@ -8,6 +8,10 @@ header {
     
         .name{
             @include flex(row);
+
+            br {
+                display: block !important;
+            }
     
             .company {
                 font-size: 28px;
@@ -16,7 +20,7 @@ header {
             .desc {
                 margin-top: 7px;
                 font-size: 10px;
-                color: gray;
+                color: $gray;
             }
         }
     }
