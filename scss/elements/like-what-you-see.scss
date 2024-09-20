@@ -3,44 +3,64 @@
 .like-what-you-see {
     width: 100%;
     background-color: $fourth-bg-color;
-    padding: 50px 0;
+    padding: 59px 0;
 
     .container-xl {
         p {
-            font-size: 28px;
+            font-size: 33px;
     
             span {
                 font-weight: bold;
             }
         }
-    
-        form {
-            button:first-child {
-                @include btn(175px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid $white));
-    
-                margin-right: 11px;
-            }
-    
-            button:first-child:hover {
-                @include btn(175px, 2.3lh, $second-main-color, none);
-            }
 
-            button:last-child {
-                @include btn(175px, 2.3lh, $second-main-color, none);
-                
-                margin-left: 11px;
-            }
+        .col-lg-5 {
+            padding: 0 0 0 100px;
 
-            button:last-child:hover {
-                @include btn(175px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid $white));
-            }
+            form {
+                button:first-child {
+                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+        
+                    margin-right: 11px;
+                }
+        
+                button:first-child:hover {
+                    @include btn(160px, 2.2lh, $second-main-color, none);
+                }
     
-            br {
-                display: none;
+                button:last-child {
+                    @include btn(160px, 2.2lh, $second-main-color, none);
+                    
+                    margin-left: 11px;
+                }
+    
+                button:last-child:hover {
+                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+                }
+        
+                br {
+                    display: none;
+                }
             }
         }
     }
 }
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1135px) {
+    .like-what-you-see .container-xl {
+        p {
+            font-size: 26px;
+        }
+
+        .col-lg-5 {
+            padding: 0 0 0 50px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
 
 @media(max-width: 1002px) {
     .like-what-you-see .container-xl {
@@ -77,6 +97,10 @@
         p {
             font-size: 25px;
             margin-bottom: 15px;
+        }
+
+        .col-lg-5 {
+            padding: 0;
         }
     }
 }

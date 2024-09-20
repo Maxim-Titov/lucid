@@ -1,7 +1,7 @@
 @import '../global/mixins.scss';
 
 #top {
-    padding: 15px 0 0 0;
+    padding: 25px 0 0 0;
     color: $white;
     background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(../images/header-background.png);
     opacity: 0.9;
@@ -9,11 +9,9 @@
     background-size: cover;
 
     .container-xl {
-        .left-block, .right-block {
-            margin-top: 50px;
-        }
-
         .left-block {
+            margin-top: 62px;
+
             .introducing {
                 color: $second-main-color;
                 font-weight: bold;
@@ -21,46 +19,48 @@
             }
 
             h1 {
-                font-size: 55px;
+                font-size: 48px;
                 color: $white;
+                margin-top: 15px;
             }
 
             .description {
-                font-size: 20px;
-                margin-top: 30px;
+                font-size: 18px;
+                margin-top: 12px;
             }
 
             form {
-                margin-top: 55px;
+                margin-top: 54px;
 
                 button:first-child {
-                    @include btn(200px, 2.5lh, $second-main-color, none);
+                    @include btn(160px, 2.2lh, $second-main-color, none);
+                    
+                    margin-right: 10px;
                 }
 
                 button:first-child:hover {
-                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid $white))
+                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white))
                 }
 
                 button:last-child {
-                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid $white));
+                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+
+                    margin-left: 10px;
                 }
 
                 button:last-child:hover {
-                    @include btn(200px, 2.5lh, $second-main-color, none);
-                }
-
-                button {
-                    margin: 0 11px;
+                    @include btn(160px, 2.2lh, $second-main-color, none);
                 }
             }
         }
 
         .right-block {
             text-align: right;
+            margin-top: 35px;
 
             .phone-img {
                 text-align: right;
-                width: 450px;
+                width: 425px;
             }
         }
     }

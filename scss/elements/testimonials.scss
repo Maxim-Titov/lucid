@@ -4,7 +4,7 @@
     width: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/testimonials-bg.png);
     background-size: cover;
-    padding: 150px 0 50px 0;
+    padding: 60px 0 45px 0;
     color: $white;
 
     .container-xl {
@@ -17,7 +17,8 @@
         }
     
         .testimonial-slider {
-            height: 275px;
+            padding-top: 50px;
+            height: 366px;
     
             .slide {
                 .content {
@@ -30,10 +31,14 @@
                         .card-body {
                             padding: 0;
 
+                            .card-text {
+                                font-size: 23px
+                            }
+
                             .author {
                                 @include flex-with-justify(left);
                                 
-                                padding-top: 10px;
+                                padding-top: 20px;
                 
                                 div {
                                     padding-left: 20px;
@@ -65,6 +70,14 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 1110px) {
+    #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text {
+        font-size: 20px
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 991px) {
     #testimonials {
         padding: 50px 0 25px 0;
@@ -83,8 +96,12 @@
                         text-align: center;
 
                         .card-body {
-                            .card-text br {
-                                display: none;
+                            .card-text {
+                                font-size: 15px;
+
+                                br {
+                                    display: none;
+                                }
                             }
     
                             .author .name {

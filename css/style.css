@@ -1,13 +1,13 @@
 #top {
-  padding: 15px 0 0 0;
+  padding: 25px 0 0 0;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/header-background.png);
   opacity: 0.9;
   background-size: 100%;
   background-size: cover;
 }
-#top .container-xl .left-block, #top .container-xl .right-block {
-  margin-top: 50px;
+#top .container-xl .left-block {
+  margin-top: 62px;
 }
 #top .container-xl .left-block .introducing {
   color: #0090d0;
@@ -15,57 +15,58 @@
   margin-top: 10px;
 }
 #top .container-xl .left-block h1 {
-  font-size: 55px;
+  font-size: 48px;
   color: white;
+  margin-top: 15px;
 }
 #top .container-xl .left-block .description {
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 18px;
+  margin-top: 12px;
 }
 #top .container-xl .left-block form {
-  margin-top: 55px;
+  margin-top: 54px;
 }
 #top .container-xl .left-block form button:first-child {
   border: none;
-  height: 2.5lh;
+  height: 2.2lh;
   color: white;
   background-color: #0090d0;
-  width: 200px;
+  width: 160px;
   font-weight: bold;
+  margin-right: 10px;
 }
 #top .container-xl .left-block form button:first-child:hover {
   border: 1px solid white;
-  height: 2.5lh;
+  height: 2.2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 200px;
+  width: 160px;
   font-weight: bold;
 }
 #top .container-xl .left-block form button:last-child {
   border: 1px solid white;
-  height: 2.5lh;
+  height: 2.2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 200px;
+  width: 160px;
   font-weight: bold;
+  margin-left: 10px;
 }
 #top .container-xl .left-block form button:last-child:hover {
   border: none;
-  height: 2.5lh;
+  height: 2.2lh;
   color: white;
   background-color: #0090d0;
-  width: 200px;
+  width: 160px;
   font-weight: bold;
-}
-#top .container-xl .left-block form button {
-  margin: 0 11px;
 }
 #top .container-xl .right-block {
   text-align: right;
+  margin-top: 35px;
 }
 #top .container-xl .right-block .phone-img {
   text-align: right;
-  width: 450px;
+  width: 425px;
 }
 
 /*------------------------------------------------------------------*/
@@ -133,12 +134,20 @@ header .container-xl .name br {
   display: block !important;
 }
 header .container-xl .name .company {
-  font-size: 28px;
+  padding-top: 10px;
+  font-size: 23px;
 }
 header .container-xl .name .desc {
-  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+}
+header .container-xl .name .desc p {
   font-size: 10px;
   color: gray;
+  margin: 0;
+}
+header .container-xl .name .desc p:first-child {
+  margin-top: 12px;
 }
 
 .menu nav .nav .nav-item {
@@ -205,10 +214,9 @@ header .container-xl .name .desc {
     width: 50px;
     font-weight: bold;
     z-index: 999;
-    top: 20px;
-    right: 15px;
+    top: 25px;
+    right: 25px;
     position: absolute;
-    z-index: 20;
     transition-duration: 0.25s;
   }
   .hamburger-menu .button .menu__btn {
@@ -274,14 +282,16 @@ header .container-xl .name .desc {
   }
 }
 #overview {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 #overview .container-xl .overview-head {
-  margin-top: 50px;
   text-align: center;
 }
+#overview .container-xl .overview-head h1 {
+  padding-top: 5px;
+}
 #overview .container-xl .points {
-  margin-top: 50px;
+  margin: 70px 0 23px 0;
 }
 #overview .container-xl .points .col-3 {
   width: 25%;
@@ -289,7 +299,8 @@ header .container-xl .name .desc {
 }
 #overview .container-xl .points .col-3 .title {
   color: black;
-  font-size: 20px;
+  font-size: 25px;
+  padding-top: 25px;
   margin-bottom: 0;
 }
 #overview .container-xl .points .col-3 .content {
@@ -354,7 +365,7 @@ header .container-xl .name .desc {
   }
 }
 #dip-into-details {
-  padding: 50px 0 0 0;
+  padding: 66px 0 0 0;
 }
 #dip-into-details .block-row {
   width: 100%;
@@ -365,7 +376,11 @@ header .container-xl .name .desc {
 #dip-into-details .block-row .content {
   padding: 50px 0;
 }
+#dip-into-details .block-row .content h1 {
+  padding-top: 5px;
+}
 #dip-into-details .block-row .content .underline {
+  margin-top: 23px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -376,6 +391,7 @@ header .container-xl .name .desc {
 #dip-into-details .block-row .content .desc .desc-row {
   display: flex;
   justify-content: left;
+  margin: 12px 0;
 }
 #dip-into-details .block-row .content .desc .desc-row .img {
   width: 20px;
@@ -399,10 +415,25 @@ header .container-xl .name .desc {
   width: 19px;
   height: 18px;
 }
+#dip-into-details .block-row:first-child .image {
+  padding: 0 26.25px;
+}
 #dip-into-details .block-row:last-child {
-  margin: 100px 0 0 0;
+  margin: 75px 0 0 0;
   background-color: #f2f2f2;
-  padding: 75px 0;
+  padding: 60px 0 0 0;
+}
+#dip-into-details .block-row:last-child .container-xl .row .col-md-6 {
+  padding-bottom: 10px;
+}
+#dip-into-details .block-row:last-child .container-xl .row .col-md-6 .image {
+  text-align: left;
+}
+#dip-into-details .block-row:last-child .container-xl .row .col-md-6 .content {
+  padding: 70px 0;
+}
+#dip-into-details .block-row:last-child .container-xl .row .col-md-6 .content h1 {
+  padding-top: 8px;
 }
 
 /*------------------------------------------------------------------*/
@@ -426,6 +457,9 @@ header .container-xl .name .desc {
   #dip-into-details .block-row .container-xl {
     padding: 15px;
     text-align: center;
+  }
+  #dip-into-details .block-row .container-xl .image {
+    padding: 0;
   }
   #dip-into-details .block-row .container-xl .image img {
     width: 250px;
@@ -451,7 +485,13 @@ header .container-xl .name .desc {
   }
   #dip-into-details .block-row:last-child {
     margin: 0;
-    padding: 75px 0;
+    padding: 30px 0;
+  }
+  #dip-into-details .block-row:last-child .container-xl .row .col-md-6 .image {
+    text-align: center;
+  }
+  #dip-into-details .block-row:last-child .container-xl .row .col-md-6 .content {
+    padding: 0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -479,7 +519,7 @@ header .container-xl .name .desc {
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/testimonials-bg.png);
   background-size: cover;
-  padding: 150px 0 50px 0;
+  padding: 60px 0 45px 0;
   color: white;
 }
 #testimonials .container-xl .title {
@@ -489,7 +529,8 @@ header .container-xl .name .desc {
   color: white;
 }
 #testimonials .container-xl .testimonial-slider {
-  height: 275px;
+  padding-top: 50px;
+  height: 366px;
 }
 #testimonials .container-xl .testimonial-slider .slide .content {
   display: flex;
@@ -502,10 +543,13 @@ header .container-xl .name .desc {
 #testimonials .container-xl .testimonial-slider .slide .content .card .card-body {
   padding: 0;
 }
+#testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text {
+  font-size: 23px;
+}
 #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author {
   display: flex;
   justify-content: left;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author div {
   padding-left: 20px;
@@ -542,6 +586,12 @@ header .container-xl .name .desc {
 }
 
 /*------------------------------------------------------------------*/
+@media (max-width: 1110px) {
+  #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text {
+    font-size: 20px;
+  }
+}
+/*------------------------------------------------------------------*/
 @media (max-width: 991px) {
   #testimonials {
     padding: 50px 0 25px 0;
@@ -557,6 +607,9 @@ header .container-xl .name .desc {
   }
   #testimonials .container-xl .testimonial-slider .slide .content .card {
     text-align: center;
+  }
+  #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text {
+    font-size: 15px;
   }
   #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .card-text br {
     display: none;
@@ -591,52 +644,65 @@ header .container-xl .name .desc {
 .like-what-you-see {
   width: 100%;
   background-color: #0d0c14;
-  padding: 50px 0;
+  padding: 59px 0;
 }
 .like-what-you-see .container-xl p {
-  font-size: 28px;
+  font-size: 33px;
 }
 .like-what-you-see .container-xl p span {
   font-weight: bold;
 }
-.like-what-you-see .container-xl form button:first-child {
+.like-what-you-see .container-xl .col-lg-5 {
+  padding: 0 0 0 100px;
+}
+.like-what-you-see .container-xl .col-lg-5 form button:first-child {
   border: 1px solid white;
-  height: 2.3lh;
+  height: 2.2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   margin-right: 11px;
 }
-.like-what-you-see .container-xl form button:first-child:hover {
+.like-what-you-see .container-xl .col-lg-5 form button:first-child:hover {
   border: none;
-  height: 2.3lh;
+  height: 2.2lh;
   color: white;
   background-color: #0090d0;
-  width: 175px;
+  width: 160px;
   font-weight: bold;
 }
-.like-what-you-see .container-xl form button:last-child {
+.like-what-you-see .container-xl .col-lg-5 form button:last-child {
   border: none;
-  height: 2.3lh;
+  height: 2.2lh;
   color: white;
   background-color: #0090d0;
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   margin-left: 11px;
 }
-.like-what-you-see .container-xl form button:last-child:hover {
+.like-what-you-see .container-xl .col-lg-5 form button:last-child:hover {
   border: 1px solid white;
-  height: 2.3lh;
+  height: 2.2lh;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 175px;
+  width: 160px;
   font-weight: bold;
 }
-.like-what-you-see .container-xl form br {
+.like-what-you-see .container-xl .col-lg-5 form br {
   display: none;
 }
 
+/*------------------------------------------------------------------*/
+@media (max-width: 1135px) {
+  .like-what-you-see .container-xl p {
+    font-size: 26px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 {
+    padding: 0 0 0 50px;
+  }
+}
+/*------------------------------------------------------------------*/
 @media (max-width: 1002px) {
   .like-what-you-see .container-xl p {
     font-size: 27px;
@@ -662,6 +728,9 @@ header .container-xl .name .desc {
   .like-what-you-see .container-xl p {
     font-size: 25px;
     margin-bottom: 15px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 {
+    padding: 0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -723,7 +792,7 @@ header .container-xl .name .desc {
 }
 #pricing {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 #pricing .container-xl {
   margin: 0 auto;
@@ -731,13 +800,22 @@ header .container-xl .name .desc {
 #pricing .container-xl .title {
   text-align: center;
 }
+#pricing .container-xl .title h1 {
+  padding-top: 15px;
+}
+#pricing .container-xl .title .underline {
+  margin-top: 23px;
+}
+#pricing .container-xl .content {
+  padding: 31.5px 0 0 0;
+}
 #pricing .container-xl .content .price-block div {
   text-align: center;
   padding: 0 20px;
 }
 #pricing .container-xl .content .price-block .plan {
   border: 1px solid lightgray;
-  padding: 15px 0;
+  padding: 23.5px 0;
 }
 #pricing .container-xl .content .price-block .plan p {
   height: 25px;
@@ -749,7 +827,7 @@ header .container-xl .name .desc {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  padding: 20px 0;
+  padding: 28px 0 38px 0;
 }
 #pricing .container-xl .content .price-block .price p:first-child {
   color: black;
@@ -765,29 +843,29 @@ header .container-xl .name .desc {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  padding: 35px 20px;
+  padding: 50px 20px;
 }
 #pricing .container-xl .content .price-block .desc p span {
   color: #0090d0;
 }
 #pricing .container-xl .content .price-block .desc form {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 #pricing .container-xl .content .price-block .desc form button {
   border: 1px solid lightgray;
-  height: 2lh;
+  height: 50px;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   color: #0090d0;
 }
 #pricing .container-xl .content .price-block .desc form button:hover {
   border: none;
-  height: 2lh;
+  height: 50px;
   color: white;
   background-color: #0090d0;
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   color: white;
 }
@@ -803,19 +881,19 @@ header .container-xl .name .desc {
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
   border: none;
-  height: 2lh;
+  height: 50px;
   color: white;
   background-color: #0090d0;
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   color: white;
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button:hover {
   border: 1px solid lightgray;
-  height: 2lh;
+  height: 50px;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 175px;
+  width: 160px;
   font-weight: bold;
   color: #0090d0;
 }
@@ -830,6 +908,7 @@ header .container-xl .name .desc {
 @media (max-width: 992px) {
   #pricing .container-xl .content {
     display: block;
+    padding: 0;
   }
   #pricing .container-xl .content .col-lg-3 {
     margin: 0 auto;
@@ -879,8 +958,8 @@ header .container-xl .name .desc {
     padding: 35px 20px;
     width: 60%;
   }
-  #pricing .container-xl .content .col-lg-3 .price-block .desc p span {
-    color: #0090d0;
+  #pricing .container-xl .content .col-lg-3 .price-block .desc p br {
+    display: none;
   }
   #pricing .container-xl .content .col-lg-3 .price-block .desc form {
     margin-top: 35px;
@@ -949,7 +1028,13 @@ header .container-xl .name .desc {
   #pricing .container-xl .content .col-lg-3 .price-block .desc form button {
     width: 125px;
   }
+  #pricing .container-xl .content .col-lg-3 .price-block .desc form button:hover {
+    width: 125px;
+  }
   #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
+    width: 125px;
+  }
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button:hover {
     width: 125px;
   }
 }
@@ -958,7 +1043,7 @@ header .container-xl .name .desc {
   background-color: #eeeeee;
 }
 #stay-in-touch .stay-in-touch-block .container-xl {
-  padding: 50px 0 75px 0;
+  padding: 50px 0 54px 0;
 }
 #stay-in-touch .stay-in-touch-block .container-xl .title {
   text-align: center;
@@ -980,7 +1065,7 @@ header .container-xl .name .desc {
 }
 #stay-in-touch .form-block {
   background-color: #0d0c14;
-  width: 800px;
+  width: 771px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -990,7 +1075,7 @@ header .container-xl .name .desc {
   padding: 0;
 }
 #stay-in-touch .form-block .container-xl form {
-  padding: 75px 0 90px 0;
+  padding: 58px 0 89px 0;
 }
 #stay-in-touch .form-block .container-xl form .form {
   margin: 0 auto;
@@ -1006,12 +1091,12 @@ header .container-xl .name .desc {
   padding: 15px;
 }
 #stay-in-touch .form-block .container-xl form .form div input {
-  height: 2.3lh;
-  margin-bottom: 25px;
+  height: 50px;
+  margin-bottom: 21px;
 }
 #stay-in-touch .form-block .container-xl form .form div textarea {
   resize: none;
-  height: 9lh;
+  height: 193px;
   margin: 0 auto;
 }
 #stay-in-touch .form-block .container-xl form .form div:first-child {
@@ -1019,10 +1104,10 @@ header .container-xl .name .desc {
 }
 #stay-in-touch .form-block .container-xl form button {
   border: none;
-  height: 2.3lh;
+  height: 50px;
   color: white;
   background-color: #0090d0;
-  width: 200px;
+  width: 160px;
   font-weight: bold;
   color: white;
   position: absolute;
@@ -1030,15 +1115,19 @@ header .container-xl .name .desc {
 }
 #stay-in-touch .form-block .container-xl form button:hover {
   border: 1px solid white;
-  height: 2.3lh;
+  height: 50px;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 200px;
+  width: 160px;
   font-weight: bold;
   margin-right: 0;
 }
 #stay-in-touch .map {
-  margin-top: 325px;
+  margin-top: 297px;
+}
+#stay-in-touch .map iframe {
+  width: 100%;
+  height: 361.5px;
 }
 
 /*------------------------------------------------------------------*/
@@ -1157,7 +1246,7 @@ body .underline {
   display: flex;
   justify-content: space-between;
   width: 60px;
-  margin: 40px auto 40px auto;
+  margin: 34px auto;
 }
 body .underline span {
   display: block;

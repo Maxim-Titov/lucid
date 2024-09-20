@@ -2,16 +2,26 @@
 
 #pricing {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 15px;
 
     .container-xl {
         margin: 0 auto;
 
         .title {
             text-align: center;
+
+            h1 {
+                padding-top: 15px;
+            }
+
+            .underline {
+                margin-top: 23px;
+            }
         }
 
         .content {
+            padding: 31.5px 0 0 0;
+
             .price-block {
                 div {
                     text-align: center;
@@ -20,7 +30,7 @@
 
                 .plan {
                     border: 1px solid $light-gray;
-                    padding: 15px 0;
+                    padding: 23.5px 0;
 
                     p {
                         height: 25px;
@@ -34,7 +44,7 @@
                     border-right: 1px solid $light-gray;
                     border-left: 1px solid $light-gray;
                     border-bottom: 1px solid $light-gray;
-                    padding: 20px 0;
+                    padding: 28px 0 38px 0;
 
                     p:first-child {
                         color: $black;
@@ -53,7 +63,7 @@
                     border-right: 1px solid $light-gray;
                     border-left: 1px solid $light-gray;
                     border-bottom: 1px solid $light-gray;
-                    padding: 35px 20px;
+                    padding: 50px 20px;
 
                     p {
                         span {
@@ -62,16 +72,16 @@
                     }
 
                     form {
-                        margin-top: 35px;
+                        margin-top: 45px;
 
                         button {
-                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
+                            @include btn(160px, 50px, rgba($white, $alpha: 0.1), (1px solid $light-gray));
 
                             color: $second-main-color;
                         }
         
                         button:hover {
-                            @include btn(175px, 2lh, $second-main-color, none);
+                            @include btn(160px, 50px, $second-main-color, none);
                             
                             color: $white;
                         }
@@ -98,13 +108,13 @@
                 .desc {
                     form {
                         button {
-                            @include btn(175px, 2lh, $second-main-color, none);
+                            @include btn(160px, 50px, $second-main-color, none);
 
                             color: $white;
                         }
         
                         button:hover {
-                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
+                            @include btn(160px, 50px, rgba($white, $alpha: 0.1), (1px solid $light-gray));
 
                             color: $second-main-color;
                         }
@@ -128,6 +138,7 @@
 @media(max-width: 992px) {
     #pricing .container-xl .content {
         display: block;
+        padding: 0;
 
         .col-lg-3 {
             margin: 0 auto;
@@ -182,8 +193,10 @@
                     padding: 35px 20px;
                     width: 60%;
         
-                    p span {
-                        color: $second-main-color;
+                    p {
+                        br {
+                            display: none;
+                        }
                     }
         
                     form {
@@ -256,13 +269,25 @@
                 }
             }
     
-            .desc form button {
-                width: 125px;
+            .desc form {
+                button {
+                    width: 125px;
+                }
+
+                button:hover {
+                    width: 125px;
+                }
             }
         }
 
-        .col-lg-3:nth-child(3) .desc form button {
-            width: 125px;
+        .col-lg-3:nth-child(3) .desc form {
+            button {
+                width: 125px;
+            }
+
+            button:hover {
+                width: 125px;
+            }
         }
     }
 }

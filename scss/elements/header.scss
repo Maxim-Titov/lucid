@@ -14,13 +14,22 @@ header {
             }
     
             .company {
-                font-size: 28px;
+                padding-top: 10px;
+                font-size: 23px;
             }
             
             .desc {
-                margin-top: 7px;
-                font-size: 10px;
-                color: $gray;
+                @include flex(column);
+
+                p {
+                    font-size: 10px;
+                    color: $gray;
+                    margin: 0;
+                }
+    
+                p:first-child {
+                    margin-top: 12px;
+                }
             }
         }
     }

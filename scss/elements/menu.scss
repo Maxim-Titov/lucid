@@ -82,10 +82,9 @@
             @include btn(50px, 30px, $second-main-color, none);
             
             z-index: 999;
-            top: 20px;
-            right: 15px;
+            top: 25px;
+            right: 25px;
             position: absolute;
-            z-index: 20;
             transition-duration: .25s;
 
             .menu__btn {
