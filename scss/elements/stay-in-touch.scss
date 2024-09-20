@@ -5,7 +5,7 @@
     background-color: $third-bg-color;
 
     .stay-in-touch-block .container-xl {
-        padding: 100px 0 75px 0;
+        padding: 50px 0 75px 0;
 
         .title {
             text-align: center;
@@ -21,9 +21,15 @@
                     vertical-align: middle;
                 }
 
-                p a {
-                    color: $font-main-color;
-                    text-decoration: 0;
+                p {
+                    a {
+                        color: $font-main-color;
+                        text-decoration: 0;
+                    }
+
+                    a:hover {
+                        color: $second-main-color;
+                    }
                 }
             }
         }

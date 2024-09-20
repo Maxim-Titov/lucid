@@ -1,7 +1,7 @@
 @import '../global/mixins.scss';
 
 #top {
-    padding-top: 35px;
+    padding: 15px 0 0 0;
     color: $white;
     background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(../images/header-background.png);
     opacity: 0.9;
@@ -37,8 +37,12 @@
                     @include btn(200px, 2.5lh, $second-main-color, none);
                 }
 
+                button:first-child:hover {
+                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid $white))
+                }
+
                 button:last-child {
-                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid white));
+                    @include btn(200px, 2.5lh, rgba($white, $alpha: 0.1), (1px solid $white));
                 }
 
                 button:last-child:hover {

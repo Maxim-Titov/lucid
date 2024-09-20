@@ -1,5 +1,5 @@
 #top {
-  padding: 15px 15px 0 15px;
+  padding: 15px 0 0 0;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/header-background.png);
   opacity: 0.9;
@@ -30,6 +30,14 @@
   height: 2.5lh;
   color: white;
   background-color: #0090d0;
+  width: 200px;
+  font-weight: bold;
+}
+#top .container-xl .left-block form button:first-child:hover {
+  border: 1px solid white;
+  height: 2.5lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 200px;
   font-weight: bold;
 }
@@ -266,7 +274,7 @@ header .container-xl .name .desc {
   }
 }
 #overview {
-  padding: 50px;
+  padding: 50px 0;
 }
 #overview .container-xl .overview-head {
   margin-top: 50px;
@@ -355,7 +363,7 @@ header .container-xl .name .desc {
   max-width: none;
 }
 #dip-into-details .block-row .content {
-  padding: 50px;
+  padding: 50px 0;
 }
 #dip-into-details .block-row .content .underline {
   margin-right: 0;
@@ -404,6 +412,12 @@ header .container-xl .name .desc {
   }
 }
 /*------------------------------------------------------------------*/
+@media (max-width: 1090px) {
+  #dip-into-details .block-row .container-xl .row .col-md-6 .content .block-content br {
+    display: none;
+  }
+}
+/*------------------------------------------------------------------*/
 @media (max-width: 992px) {
   #dip-into-details .block-row {
     margin: 0;
@@ -438,6 +452,21 @@ header .container-xl .name .desc {
   #dip-into-details .block-row:last-child {
     margin: 0;
     padding: 75px 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  #dip-into-details .block-row .container-xl .row .col-md-6 .content {
+    padding: 15px;
+  }
+  #dip-into-details .block-row .container-xl .row .col-md-6 .content .block-content br {
+    display: block;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 545px) {
+  #dip-into-details .block-row .container-xl .row .col-md-6 .content .block-content br {
+    display: none;
   }
 }
 /*------------------------------------------------------------------*/
@@ -561,31 +590,14 @@ header .container-xl .name .desc {
 }
 .like-what-you-see {
   width: 100%;
-  height: auto;
   background-color: #0d0c14;
-  padding: 50px;
-}
-.like-what-you-see .container-xl {
-  display: flex;
-  justify-content: space-around;
+  padding: 50px 0;
 }
 .like-what-you-see .container-xl p {
-  font-size: 30px;
+  font-size: 28px;
 }
 .like-what-you-see .container-xl p span {
   font-weight: bold;
-}
-.like-what-you-see .container-xl p br {
-  display: none;
-}
-.like-what-you-see .container-xl form button:last-child {
-  border: none;
-  height: 2.3lh;
-  color: white;
-  background-color: #0090d0;
-  width: 175px;
-  font-weight: bold;
-  margin-left: 11px;
 }
 .like-what-you-see .container-xl form button:first-child {
   border: 1px solid white;
@@ -604,13 +616,49 @@ header .container-xl .name .desc {
   width: 175px;
   font-weight: bold;
 }
+.like-what-you-see .container-xl form button:last-child {
+  border: none;
+  height: 2.3lh;
+  color: white;
+  background-color: #0090d0;
+  width: 175px;
+  font-weight: bold;
+  margin-left: 11px;
+}
+.like-what-you-see .container-xl form button:last-child:hover {
+  border: 1px solid white;
+  height: 2.3lh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 175px;
+  font-weight: bold;
+}
 .like-what-you-see .container-xl form br {
   display: none;
 }
 
+@media (max-width: 1002px) {
+  .like-what-you-see .container-xl p {
+    font-size: 27px;
+  }
+  .like-what-you-see .container-xl form button:first-child {
+    width: 150px;
+  }
+  .like-what-you-see .container-xl form button:first-child:hover {
+    width: 150px;
+  }
+  .like-what-you-see .container-xl form button:last-child {
+    width: 150px;
+  }
+  .like-what-you-see .container-xl form button:last-child:hover {
+    width: 150px;
+  }
+}
 /*------------------------------------------------------------------*/
-/*------------------------------------------------------------------*/
-@media (max-width: 1010px) {
+@media (max-width: 992px) {
+  .like-what-you-see .container-xl {
+    text-align: center;
+  }
   .like-what-you-see .container-xl p {
     font-size: 25px;
     margin-bottom: 15px;
@@ -651,13 +699,6 @@ header .container-xl .name .desc {
   .like-what-you-see {
     padding: 25px 0;
   }
-  .like-what-you-see .container-xl {
-    display: block;
-    text-align: center;
-  }
-  .like-what-you-see .container-xl p br {
-    display: block;
-  }
   .like-what-you-see .container-xl form button {
     width: 120px;
     height: 2lh;
@@ -682,7 +723,7 @@ header .container-xl .name .desc {
 }
 #pricing {
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
 }
 #pricing .container-xl {
   margin: 0 auto;
@@ -750,17 +791,17 @@ header .container-xl .name .desc {
   font-weight: bold;
   color: white;
 }
-#pricing .container-xl .content .col-sm-3:nth-child(3) .plan p {
+#pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
   color: #0090d0;
 }
-#pricing .container-xl .content .col-sm-3:nth-child(3) .price {
+#pricing .container-xl .content .col-lg-3:nth-child(3) .price {
   background-color: #0090d0;
   border: none;
 }
-#pricing .container-xl .content .col-sm-3:nth-child(3) .price p {
+#pricing .container-xl .content .col-lg-3:nth-child(3) .price p {
   color: white;
 }
-#pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
+#pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
   border: none;
   height: 2lh;
   color: white;
@@ -769,7 +810,7 @@ header .container-xl .name .desc {
   font-weight: bold;
   color: white;
 }
-#pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button:hover {
+#pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button:hover {
   border: 1px solid lightgray;
   height: 2lh;
   color: white;
@@ -790,22 +831,23 @@ header .container-xl .name .desc {
   #pricing .container-xl .content {
     display: block;
   }
-  #pricing .container-xl .content .col-sm-3 {
+  #pricing .container-xl .content .col-lg-3 {
     margin: 0 auto;
+    padding: 0;
     max-width: 650px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block {
+  #pricing .container-xl .content .col-lg-3 .price-block {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 15px 0;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .plan {
+  #pricing .container-xl .content .col-lg-3 .price-block .plan {
     border: 1px solid lightgray;
     padding: 15px 0;
     width: 15%;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .plan p {
+  #pricing .container-xl .content .col-lg-3 .price-block .plan p {
     height: 25px;
     font-size: 25px;
     color: black;
@@ -813,37 +855,37 @@ header .container-xl .name .desc {
     writing-mode: vertical-rl;
     text-align: left;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .price {
+  #pricing .container-xl .content .col-lg-3 .price-block .price {
     border-right: 1px solid lightgray;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     padding: 20px 0;
     width: 25%;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .price p:first-child {
+  #pricing .container-xl .content .col-lg-3 .price-block .price p:first-child {
     color: black;
     font-weight: bold;
     font-size: 60px;
     height: 60px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .price p:first-child span {
+  #pricing .container-xl .content .col-lg-3 .price-block .price p:first-child span {
     font-size: 30px;
     vertical-align: 20px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc {
     border-right: 1px solid lightgray;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     padding: 35px 20px;
     width: 60%;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc p span {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc p span {
     color: #0090d0;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc form {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc form {
     margin-top: 35px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc form button {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc form button {
     border: 1px solid lightgray;
     height: 2lh;
     color: white;
@@ -852,7 +894,7 @@ header .container-xl .name .desc {
     font-weight: bold;
     color: #0090d0;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc form button:hover {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc form button:hover {
     border: none;
     height: 2lh;
     color: white;
@@ -861,17 +903,17 @@ header .container-xl .name .desc {
     font-weight: bold;
     color: white;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .plan p {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
     color: #0090d0;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .price {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .price {
     background-color: #0090d0;
     border: none;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .price p:first-child {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .price p:first-child {
     color: white;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
     border: none;
     height: 2lh;
     color: white;
@@ -880,7 +922,7 @@ header .container-xl .name .desc {
     font-weight: bold;
     color: white;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button:hover {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button:hover {
     border: 1px solid lightgray;
     height: 2lh;
     color: white;
@@ -892,22 +934,22 @@ header .container-xl .name .desc {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 850px) {
-  #pricing .container-xl .content .col-sm-3 .price-block .plan p {
+  #pricing .container-xl .content .col-lg-3 .price-block .plan p {
     font-size: 30px;
     margin: 0;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .price p:first-child {
+  #pricing .container-xl .content .col-lg-3 .price-block .price p:first-child {
     font-size: 30px;
     height: 30px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .price p:first-child span {
+  #pricing .container-xl .content .col-lg-3 .price-block .price p:first-child span {
     font-size: 15px;
     vertical-align: 10px;
   }
-  #pricing .container-xl .content .col-sm-3 .price-block .desc form button {
+  #pricing .container-xl .content .col-lg-3 .price-block .desc form button {
     width: 125px;
   }
-  #pricing .container-xl .content .col-sm-3:nth-child(3) .desc form button {
+  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
     width: 125px;
   }
 }
@@ -932,6 +974,9 @@ header .container-xl .name .desc {
 #stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 p a {
   color: #8f8f8f;
   text-decoration: 0;
+}
+#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 p a:hover {
+  color: #0090d0;
 }
 #stay-in-touch .form-block {
   background-color: #0d0c14;
@@ -1052,7 +1097,7 @@ header .container-xl .name .desc {
 }
 
 footer {
-  padding: 50px;
+  padding: 50px 0;
   width: 100%;
   background-color: #0d0c14;
 }
@@ -1125,6 +1170,7 @@ body .line {
   border: none;
   height: 1px;
   background-color: lightgray;
+  margin: 0;
 }
 body .block-title {
   color: #0090d0;

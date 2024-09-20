@@ -1,6 +1,8 @@
 @import '../global/mixins.scss';
 
 #dip-into-details {
+    padding: 50px 0 0 0;
+
     .block-row {
         width: 100%;
 
@@ -9,6 +11,8 @@
         }
 
         .content {
+            padding: 50px 0;
+
             .underline {
                 margin-right: 0;
                 margin-left: 0;
@@ -69,6 +73,14 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 1090px) {
+    #dip-into-details .block-row .container-xl .row .col-md-6 .content .block-content br {
+        display: none;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 992px) {
     #dip-into-details {
         .block-row {
@@ -119,6 +131,26 @@
             margin: 0;
             padding: 75px 0;
         }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 767px) {
+    #dip-into-details .block-row .container-xl .row .col-md-6 .content {
+        padding: 15px;
+
+        .block-content br {
+            display: block;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 545px) {
+    #dip-into-details .block-row .container-xl .row .col-md-6 .content .block-content br {
+        display: none;
     }
 }
 
