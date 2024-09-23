@@ -122,15 +122,19 @@
         }
 
         form {
-            button:last-child {
-                @include btn(175px, 2.3lh, $second-main-color, none);
-                
+            button:first-child {
+                margin-right: 5px;
+            }
+
+            button:first-child:hover {
                 margin-left: 5px;
             }
-    
-            button:first-child {
-                @include btn(175px, 2.3lh, rgba($white, $alpha: 0.1), (1px solid $white));
-    
+
+            button:last-child {
+                margin-left: 5px;
+            }
+
+            button:last-child:hover {
                 margin-right: 5px;
             }
         }
@@ -143,10 +147,30 @@
     .like-what-you-see {
         padding: 25px 0;
 
-        .container-xl form button {
-            width: 120px;
-            height: 2lh;
-            font-size: 13px;
+        .container-xl .col-lg-5 form {
+            button:first-child {
+                width: 120px;
+                height: 2lh;
+                font-size: 13px;
+            }
+
+            button:first-child:hover {
+                width: 120px;
+                height: 2lh;
+                font-size: 13px;
+            }
+
+            button:last-child {
+                width: 120px;
+                height: 2lh;
+                font-size: 13px;
+            }
+
+            button:last-child:hover {
+                width: 120px;
+                height: 2lh;
+                font-size: 13px;
+            }
         }
     }
 }
@@ -154,17 +178,29 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 390px) {
-    .like-what-you-see .container-xl form {
+    .like-what-you-see .container-xl .col-lg-5 form {
+        button:first-child {
+            width: 60%;
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
+        button:first-child:hover {
+            width: 60%;
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
         button:last-child {
             width: 60%;
             margin-left: 0;
             margin-top: 8px;
         }
 
-        button:first-child {
+        button:last-child:hover {
             width: 60%;
-            margin-right: 0;
-            margin-bottom: 8px;
+            margin-left: 0;
+            margin-top: 8px;
         }
 
         br {

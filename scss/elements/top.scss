@@ -13,50 +13,50 @@
 
         .row .col-lg-6:first-child {
             padding-left: 0;
-        }
 
-        .left-block {
-            margin-top: 62px;
-
-            .introducing {
-                color: $second-main-color;
-                font-weight: bold;
-                margin-top: 65px;
-            }
-
-            h1 {
-                font-size: 49px;
-                color: $white;
-                margin-top: 20px;
-                line-height: 1;
-            }
-
-            .description {
-                font-size: 18px;
-                margin-top: 19px;
-            }
-
-            form {
-                margin-top: 54px;
-
-                button:first-child {
-                    @include btn(160px, 2.2lh, $second-main-color, none);
-                    
-                    margin-right: 10px;
+            .left-block {
+                margin-top: 62px;
+    
+                .introducing {
+                    color: $second-main-color;
+                    font-weight: bold;
+                    margin-top: 65px;
                 }
-
-                button:first-child:hover {
-                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white))
+    
+                h1 {
+                    font-size: 49px;
+                    color: $white;
+                    margin-top: 20px;
+                    line-height: 1;
                 }
-
-                button:last-child {
-                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
-
-                    margin-left: 10px;
+    
+                .description {
+                    font-size: 18px;
+                    margin-top: 19px;
                 }
-
-                button:last-child:hover {
-                    @include btn(160px, 2.2lh, $second-main-color, none);
+    
+                form {
+                    margin-top: 54px;
+    
+                    button:first-child {
+                        @include btn(160px, 2.2lh, $second-main-color, none);
+                        
+                        margin-right: 10px;
+                    }
+    
+                    button:first-child:hover {
+                        @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white))
+                    }
+    
+                    button:last-child {
+                        @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+    
+                        margin-left: 10px;
+                    }
+    
+                    button:last-child:hover {
+                        @include btn(160px, 2.2lh, $second-main-color, none);
+                    }
                 }
             }
         }
@@ -95,34 +95,38 @@
     #top {
         .container-xl {
             padding: 0 15px;
+
+            .row .col-lg-6:first-child {
+                padding-left: 15px;
+
+                .left-block {
+                    text-align: center;
     
-            .left-block {
-                text-align: center;
-
-                .introducing {
-                    font-size: 15px;
-                }
-
-                h1 {
-                    font-size: 25px;
-                }
-
-                .description {
-                    font-size: 15px;
-                    margin-top: 30px;
-
-                    br {
-                        display: none;
+                    .introducing {
+                        font-size: 15px;
                     }
-                }
-
-                form {
-                    @include flex-with-justify(center);
-
-                    button {
-                        font-size: 13px;
-                        color: white;
-                        margin: 0 5px;
+    
+                    h1 {
+                        font-size: 25px;
+                    }
+    
+                    .description {
+                        font-size: 15px;
+                        margin-top: 30px;
+    
+                        br {
+                            display: none;
+                        }
+                    }
+    
+                    form {
+                        @include flex-with-justify(center);
+    
+                        button {
+                            font-size: 13px;
+                            color: white;
+                            margin: 0 5px;
+                        }
                     }
                 }
             }

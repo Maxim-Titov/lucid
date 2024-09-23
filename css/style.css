@@ -12,28 +12,28 @@
 #top .container-xl .row .col-lg-6:first-child {
   padding-left: 0;
 }
-#top .container-xl .left-block {
+#top .container-xl .row .col-lg-6:first-child .left-block {
   margin-top: 62px;
 }
-#top .container-xl .left-block .introducing {
+#top .container-xl .row .col-lg-6:first-child .left-block .introducing {
   color: #0090d0;
   font-weight: bold;
   margin-top: 65px;
 }
-#top .container-xl .left-block h1 {
+#top .container-xl .row .col-lg-6:first-child .left-block h1 {
   font-size: 49px;
   color: white;
   margin-top: 20px;
   line-height: 1;
 }
-#top .container-xl .left-block .description {
+#top .container-xl .row .col-lg-6:first-child .left-block .description {
   font-size: 18px;
   margin-top: 19px;
 }
-#top .container-xl .left-block form {
+#top .container-xl .row .col-lg-6:first-child .left-block form {
   margin-top: 54px;
 }
-#top .container-xl .left-block form button:first-child {
+#top .container-xl .row .col-lg-6:first-child .left-block form button:first-child {
   border: none;
   height: 2.2lh;
   color: white;
@@ -42,7 +42,7 @@
   font-weight: bold;
   margin-right: 10px;
 }
-#top .container-xl .left-block form button:first-child:hover {
+#top .container-xl .row .col-lg-6:first-child .left-block form button:first-child:hover {
   border: 1px solid white;
   height: 2.2lh;
   color: white;
@@ -50,7 +50,7 @@
   width: 160px;
   font-weight: bold;
 }
-#top .container-xl .left-block form button:last-child {
+#top .container-xl .row .col-lg-6:first-child .left-block form button:last-child {
   border: 1px solid white;
   height: 2.2lh;
   color: white;
@@ -59,7 +59,7 @@
   font-weight: bold;
   margin-left: 10px;
 }
-#top .container-xl .left-block form button:last-child:hover {
+#top .container-xl .row .col-lg-6:first-child .left-block form button:last-child:hover {
   border: none;
   height: 2.2lh;
   color: white;
@@ -93,27 +93,30 @@
   #top .container-xl {
     padding: 0 15px;
   }
-  #top .container-xl .left-block {
+  #top .container-xl .row .col-lg-6:first-child {
+    padding-left: 15px;
+  }
+  #top .container-xl .row .col-lg-6:first-child .left-block {
     text-align: center;
   }
-  #top .container-xl .left-block .introducing {
+  #top .container-xl .row .col-lg-6:first-child .left-block .introducing {
     font-size: 15px;
   }
-  #top .container-xl .left-block h1 {
+  #top .container-xl .row .col-lg-6:first-child .left-block h1 {
     font-size: 25px;
   }
-  #top .container-xl .left-block .description {
+  #top .container-xl .row .col-lg-6:first-child .left-block .description {
     font-size: 15px;
     margin-top: 30px;
   }
-  #top .container-xl .left-block .description br {
+  #top .container-xl .row .col-lg-6:first-child .left-block .description br {
     display: none;
   }
-  #top .container-xl .left-block form {
+  #top .container-xl .row .col-lg-6:first-child .left-block form {
     display: flex;
     justify-content: center;
   }
-  #top .container-xl .left-block form button {
+  #top .container-xl .row .col-lg-6:first-child .left-block form button {
     font-size: 13px;
     color: white;
     margin: 0 5px;
@@ -505,6 +508,9 @@ header .container-xl .name .desc p:first-child {
   #dip-into-details .block-row .container-xl .content .underline {
     margin: 40px auto;
   }
+  #dip-into-details .block-row .container-xl .content .block-content {
+    font-size: 15px;
+  }
   #dip-into-details .block-row .container-xl .content .block-content br {
     display: none;
   }
@@ -519,11 +525,14 @@ header .container-xl .name .desc p:first-child {
     margin: 0;
     padding: 30px 0;
   }
+  #dip-into-details .block-row:last-child .container-xl .row .col-md-6 {
+    padding: 15px;
+  }
   #dip-into-details .block-row:last-child .container-xl .row .col-md-6 .image {
     text-align: center;
   }
   #dip-into-details .block-row:last-child .container-xl .row .col-md-6 .content {
-    padding: 0;
+    padding: 15px;
   }
 }
 /*------------------------------------------------------------------*/
@@ -633,6 +642,7 @@ header .container-xl .name .desc p:first-child {
     padding: 50px 0 25px 0;
   }
   #testimonials .container-xl .testimonial-slider {
+    padding-top: 0;
     height: 100%;
   }
   #testimonials .container-xl .testimonial-slider .slide .content {
@@ -656,7 +666,7 @@ header .container-xl .name .desc p:first-child {
   #testimonials .container-xl .testimonial-slider .slide .content .line {
     display: block;
     background-color: gray;
-    margin: 30px 0;
+    margin: 50px 0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -780,22 +790,16 @@ header .container-xl .name .desc p:first-child {
   .like-what-you-see .container-xl p {
     font-size: 20px;
   }
-  .like-what-you-see .container-xl form button:last-child {
-    border: none;
-    height: 2.3lh;
-    color: white;
-    background-color: #0090d0;
-    width: 175px;
-    font-weight: bold;
+  .like-what-you-see .container-xl form button:first-child {
+    margin-right: 5px;
+  }
+  .like-what-you-see .container-xl form button:first-child:hover {
     margin-left: 5px;
   }
-  .like-what-you-see .container-xl form button:first-child {
-    border: 1px solid white;
-    height: 2.3lh;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 175px;
-    font-weight: bold;
+  .like-what-you-see .container-xl form button:last-child {
+    margin-left: 5px;
+  }
+  .like-what-you-see .container-xl form button:last-child:hover {
     margin-right: 5px;
   }
 }
@@ -804,7 +808,22 @@ header .container-xl .name .desc p:first-child {
   .like-what-you-see {
     padding: 25px 0;
   }
-  .like-what-you-see .container-xl form button {
+  .like-what-you-see .container-xl .col-lg-5 form button:first-child {
+    width: 120px;
+    height: 2lh;
+    font-size: 13px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form button:first-child:hover {
+    width: 120px;
+    height: 2lh;
+    font-size: 13px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form button:last-child {
+    width: 120px;
+    height: 2lh;
+    font-size: 13px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form button:last-child:hover {
     width: 120px;
     height: 2lh;
     font-size: 13px;
@@ -812,17 +831,27 @@ header .container-xl .name .desc p:first-child {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 390px) {
-  .like-what-you-see .container-xl form button:last-child {
-    width: 60%;
-    margin-left: 0;
-    margin-top: 8px;
-  }
-  .like-what-you-see .container-xl form button:first-child {
+  .like-what-you-see .container-xl .col-lg-5 form button:first-child {
     width: 60%;
     margin-right: 0;
     margin-bottom: 8px;
   }
-  .like-what-you-see .container-xl form br {
+  .like-what-you-see .container-xl .col-lg-5 form button:first-child:hover {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form button:last-child {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form button:last-child:hover {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .like-what-you-see .container-xl .col-lg-5 form br {
     display: block;
   }
 }
@@ -1038,6 +1067,12 @@ header .container-xl .name .desc p:first-child {
     font-weight: bold;
     color: white;
   }
+  #pricing .container-xl .content .col-lg-3:first-child, #pricing .container-xl .content .col-lg-3:nth-child(2), #pricing .container-xl .content .col-lg-3:last-child {
+    padding: 0;
+  }
+  #pricing .container-xl .content .col-lg-3:nth-child(3) {
+    padding: 0 15px;
+  }
   #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
     color: #0090d0;
   }
@@ -1210,6 +1245,12 @@ header .container-xl .name .desc p:first-child {
 @media (max-width: 1170px) {
   #stay-in-touch .stay-in-touch-block .container-xl {
     padding: 15px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4:first-child, #stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4:nth-child(2), #stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4:last-child {
+    padding: 20px 0;
   }
 }
 /*------------------------------------------------------------------*/

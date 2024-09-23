@@ -141,6 +141,16 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 992px) {
+    #stay-in-touch .stay-in-touch-block .container-xl .row {
+        .col-sm-4:first-child, .col-sm-4:nth-child(2), .col-sm-4:last-child {
+            padding: 20px 0;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 800px) {
     #stay-in-touch {
         .form-block {
