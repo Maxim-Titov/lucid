@@ -75,12 +75,17 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 1170px) {
+@media(max-width: 1199px) {
     #top {
         padding: 15px 15px 0 15px;
 
         .container-xl {
             width: 100%;
+            padding-left: 15px;
+
+            .row .col-lg-6:first-child {
+                padding-left: 15px;
+            }
 
             br {
                 display: none;

@@ -77,12 +77,16 @@
 }
 
 /*------------------------------------------------------------------*/
-@media (max-width: 1170px) {
+@media (max-width: 1199px) {
   #top {
     padding: 15px 15px 0 15px;
   }
   #top .container-xl {
     width: 100%;
+    padding-left: 15px;
+  }
+  #top .container-xl .row .col-lg-6:first-child {
+    padding-left: 15px;
   }
   #top .container-xl br {
     display: none;
@@ -475,6 +479,15 @@ header .container-xl .name .desc p:first-child {
 @media (max-width: 1399px) {
   #dip-into-details .block-row .container-xl .row .col-md-6 .image .phone-details-second {
     max-width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 1199px) {
+  #dip-into-details .block-row:last-child .container-xl {
+    padding-left: 15px;
+  }
+  #dip-into-details .block-row:last-child .container-xl .row .col-md-6 {
+    padding: 15px 15px 10px 15px;
   }
 }
 /*------------------------------------------------------------------*/
@@ -984,7 +997,7 @@ header .container-xl .name .desc p:first-child {
 }
 
 /*------------------------------------------------------------------*/
-@media (max-width: 1170px) {
+@media (max-width: 1199px) {
   #pricing .container-xl {
     padding: 15px;
   }
@@ -1071,7 +1084,7 @@ header .container-xl .name .desc p:first-child {
     padding: 0;
   }
   #pricing .container-xl .content .col-lg-3:nth-child(3) {
-    padding: 0 15px;
+    padding: 0;
   }
   #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
     color: #0090d0;
@@ -1245,7 +1258,7 @@ header .container-xl .name .desc p:first-child {
 }
 
 /*------------------------------------------------------------------*/
-@media (max-width: 1170px) {
+@media (max-width: 1199px) {
   #stay-in-touch .stay-in-touch-block .container-xl {
     padding: 15px;
   }
