@@ -19,7 +19,7 @@ body {
         @include flex-with-justify(space-between);
 
         width: 60px;
-        margin: 34px auto;
+        margin: 31px auto;
     
         span {
             display: block;
@@ -41,10 +41,15 @@ body {
         color: $second-main-color;
         font-weight: bold;
         font-size: 13px;
+        letter-spacing: 2px;
     }
     
     h1, h2, h3, h4 {
         color: $black;
+    }
+
+    h1 {
+        font-size: 37px;
     }
 
     p {

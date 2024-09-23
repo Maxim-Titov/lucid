@@ -8,11 +8,14 @@
     color: $white;
 
     .container-xl {
+        padding: 0;
+
         .title {
             text-align: center;
             
             h1 {
                 color: $white;
+                margin-top: 9px;
             }
         }
     

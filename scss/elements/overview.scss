@@ -1,23 +1,26 @@
 @import '../global/mixins.scss';
 
 #overview {
-    padding: 60px 0;
+    padding: 60px 0 50px 0;
 
     .container-xl {
+        padding: 0;
+
         .overview-head {
             text-align: center;
 
             h1 {
-                padding-top: 5px;
+                padding-top: 10.5px;
             }
         }
 
         .points {
-            margin: 70px 0 23px 0;
+            margin: 72px 0 23px 0;
 
             .col-3 {
                 width: 25%;
                 text-align: center;
+                padding: 0;
 
                 .title {
                     color: $black;
@@ -29,7 +32,24 @@
                 .content {
                     margin-top: 0;
                     width: 100%;
+                    font-size: 18px;
                 }
+            }
+
+            .col-3:first-child {
+                padding-right: 45px;
+            }
+
+            .col-3:nth-child(2) {
+                padding-right: 17px;
+            }
+
+            .col-3:nth-child(3) {
+                padding-left: 17px;
+            }
+
+            .col-3:last-child  {
+                padding-left: 45px;
             }
         }
 
