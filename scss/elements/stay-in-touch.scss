@@ -86,6 +86,10 @@
                             background-color: rgba($black, $alpha: 0);
                             padding: 15px;
                         }
+
+                        input:focus, textarea:focus {
+                            outline-color: $second-main-color;
+                        }
         
                         input {
                             height: 50px;
