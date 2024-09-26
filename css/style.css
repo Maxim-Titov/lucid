@@ -612,6 +612,7 @@ header .container-xl .name .desc p:first-child {
 }
 #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author img {
   width: 60px;
+  height: 60px;
 }
 #testimonials .container-xl .testimonial-slider .slide .content .card .card-body .author div {
   padding: 5px 0 0 18px;
@@ -892,9 +893,6 @@ header .container-xl .name .desc p:first-child {
 #pricing .container-xl .content {
   padding: 35px 0 0 0;
 }
-#pricing .container-xl .content .col-lg-3 .price-block {
-  width: 270px;
-}
 #pricing .container-xl .content .col-lg-3 .price-block div {
   text-align: center;
   padding: 0 20px;
@@ -959,16 +957,11 @@ header .container-xl .name .desc p:first-child {
   font-weight: bold;
   color: white;
 }
-#pricing .container-xl .content .col-lg-3:first-child {
+#pricing .container-xl .content .col-lg-3:first-child, #pricing .container-xl .content .col-lg-3:nth-child(2) {
   padding-right: 20px;
-  padding-left: 0;
-}
-#pricing .container-xl .content .col-lg-3:nth-child(2) {
-  padding-right: 0;
-  padding-left: 0;
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) {
-  padding-left: 14px;
+  padding-left: 20px;
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
   color: #0090d0;
