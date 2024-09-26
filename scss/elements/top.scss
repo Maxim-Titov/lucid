@@ -4,7 +4,6 @@
     padding: 25px 0 0 0;
     color: $white;
     background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(../images/header-background.png);
-    opacity: 0.9;
     background-size: 100%;
     background-size: cover;
 
@@ -18,7 +17,9 @@
                 .introducing {
                     color: $second-main-color;
                     font-weight: bold;
-                    margin-top: 65px;
+                    margin-top: 72px;
+                    letter-spacing: 2px;
+                    font-size: 13px;
                 }
     
                 h1 {

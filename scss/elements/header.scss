@@ -15,8 +15,9 @@ header {
             }
     
             .company {
-                padding-top: 10px;
-                font-size: 23px;
+                margin-top: 15px;
+                width: 72px;
+                height: 18px;
             }
             
             .desc {
@@ -25,11 +26,13 @@ header {
                 p {
                     font-size: 10px;
                     color: $gray;
-                    margin: 0;
+                    margin: 0 0 0 8px;
+                    line-height: 1;
+                    letter-spacing: 1px;
                 }
     
                 p:first-child {
-                    margin-top: 12px;
+                    margin-top: 16px;
                 }
             }
         }

@@ -5,14 +5,16 @@
 
     .nav-link {
         color: $white;
-        padding: 0 11px;
+        padding: 0 11px 7px 11px;
+        font-weight: 600;
     }
 
     .nav-link:hover {
         color: $second-main-color;
+        padding: 0 11px;
     }
 
-    .selected {
+    .nav-link:hover .selected {
         @include flex-with-justify(space-between);
 
         margin-top: 5px;
@@ -21,7 +23,6 @@
             background-color: $second-main-color;
             height: 2px;
             width: 45%;
-            display: block;
         }
     }
 }
