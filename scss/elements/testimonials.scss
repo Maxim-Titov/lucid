@@ -41,10 +41,14 @@
                             .author {
                                 @include flex-with-justify(left);
                                 
-                                padding-top: 20px;
+                                padding-top: 17px;
+
+                                img {
+                                    width: 60px;
+                                }
                 
                                 div {
-                                    padding-left: 20px;
+                                    padding: 5px 0 0 18px;
                 
                                     p {
                                         margin: 0;

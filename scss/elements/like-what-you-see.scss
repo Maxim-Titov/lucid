@@ -3,7 +3,7 @@
 .like-what-you-see {
     width: 100%;
     background-color: $fourth-bg-color;
-    padding: 59px 0;
+    padding: 59px 15px 62px 15px;
 
     .container-xl {
         p {
@@ -19,23 +19,23 @@
 
             form {
                 button:first-child {
-                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+                    @include btn(160px, 50px, rgba($white, $alpha: 0.1), (1px solid $white));
         
                     margin-right: 11px;
                 }
         
                 button:first-child:hover {
-                    @include btn(160px, 2.2lh, $second-main-color, none);
+                    @include btn(160px, 50px, $second-main-color, none);
                 }
     
                 button:last-child {
-                    @include btn(160px, 2.2lh, $second-main-color, none);
+                    @include btn(160px, 50px, $second-main-color, none);
                     
                     margin-left: 11px;
                 }
     
                 button:last-child:hover {
-                    @include btn(160px, 2.2lh, rgba($white, $alpha: 0.1), (1px solid $white));
+                    @include btn(160px, 50px, rgba($white, $alpha: 0.1), (1px solid $white));
                 }
         
                 br {
@@ -150,25 +150,25 @@
         .container-xl .col-lg-5 form {
             button:first-child {
                 width: 120px;
-                height: 2lh;
+                height: 40px;
                 font-size: 13px;
             }
 
             button:first-child:hover {
                 width: 120px;
-                height: 2lh;
+                height: 40px;
                 font-size: 13px;
             }
 
             button:last-child {
                 width: 120px;
-                height: 2lh;
+                height: 40px;
                 font-size: 13px;
             }
 
             button:last-child:hover {
                 width: 120px;
-                height: 2lh;
+                height: 40px;
                 font-size: 13px;
             }
         }
