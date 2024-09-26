@@ -9,13 +9,11 @@
     background-size: cover;
 
     .container-xl {
-        padding-left: 0;
-
         .row .col-lg-6:first-child {
             padding-left: 0;
 
             .left-block {
-                margin-top: 62px;
+                margin-top: 69px;
     
                 .introducing {
                     color: $second-main-color;
@@ -63,10 +61,10 @@
 
         .right-block {
             text-align: right;
-            margin-top: 35px;
+            margin-top: 39px;
+            padding-right: 15px;
 
             .phone-img {
-                text-align: right;
                 width: 425px;
             }
         }
@@ -81,7 +79,6 @@
 
         .container-xl {
             width: 100%;
-            padding-left: 15px;
 
             .row .col-lg-6:first-child {
                 padding-left: 15px;
@@ -138,9 +135,9 @@
 
             .right-block {
                 text-align: center;
+                padding-right: 0;
     
                 .phone-img {
-                    text-align: center;
                     width: 250px;
                 }
             }

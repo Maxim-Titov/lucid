@@ -6,14 +6,11 @@
   background-size: 100%;
   background-size: cover;
 }
-#top .container-xl {
-  padding-left: 0;
-}
 #top .container-xl .row .col-lg-6:first-child {
   padding-left: 0;
 }
 #top .container-xl .row .col-lg-6:first-child .left-block {
-  margin-top: 62px;
+  margin-top: 69px;
 }
 #top .container-xl .row .col-lg-6:first-child .left-block .introducing {
   color: #0090d0;
@@ -69,10 +66,10 @@
 }
 #top .container-xl .right-block {
   text-align: right;
-  margin-top: 35px;
+  margin-top: 39px;
+  padding-right: 15px;
 }
 #top .container-xl .right-block .phone-img {
-  text-align: right;
   width: 425px;
 }
 
@@ -83,7 +80,6 @@
   }
   #top .container-xl {
     width: 100%;
-    padding-left: 15px;
   }
   #top .container-xl .row .col-lg-6:first-child {
     padding-left: 15px;
@@ -127,9 +123,9 @@
   }
   #top .container-xl .right-block {
     text-align: center;
+    padding-right: 0;
   }
   #top .container-xl .right-block .phone-img {
-    text-align: center;
     width: 250px;
   }
 }
@@ -139,6 +135,7 @@ header {
 header .container-xl {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 header .container-xl .name {
   display: flex;
@@ -165,11 +162,11 @@ header .container-xl .name .desc p:first-child {
 }
 
 .menu nav .nav .nav-item {
-  margin: 15px 15px 15px 1px;
+  margin: 12px 0 18px 0;
 }
 .menu nav .nav .nav-item .nav-link {
   color: white;
-  padding: 0;
+  padding: 0 11px;
 }
 .menu nav .nav .nav-item .nav-link:hover {
   color: #0090d0;
@@ -177,11 +174,11 @@ header .container-xl .name .desc p:first-child {
 .menu nav .nav .nav-item .selected {
   display: flex;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 .menu nav .nav .nav-item .selected span {
   background-color: #0090d0;
-  height: 3px;
+  height: 2px;
   width: 45%;
   display: block;
 }
@@ -299,7 +296,7 @@ header .container-xl .name .desc p:first-child {
   padding: 60px 0 50px 0;
 }
 #overview .container-xl {
-  padding: 0;
+  padding: 0 15px;
 }
 #overview .container-xl .overview-head {
   text-align: center;
@@ -397,7 +394,7 @@ header .container-xl .name .desc p:first-child {
   }
 }
 #dip-into-details {
-  padding: 64px 0 10px 0;
+  padding: 64px 0 0 0;
 }
 #dip-into-details .block-row {
   width: 100%;
@@ -452,15 +449,12 @@ header .container-xl .name .desc p:first-child {
   height: 18px;
 }
 #dip-into-details .block-row:first-child .image {
-  padding: 0 26.25px;
+  padding: 0 41px;
 }
 #dip-into-details .block-row:last-child {
   margin: 75px 0 0 0;
   background-color: #f2f2f2;
-  padding: 60px 0 0 0;
-}
-#dip-into-details .block-row:last-child .container-xl {
-  padding-left: 0;
+  padding: 60px 0 10px 0;
 }
 #dip-into-details .block-row:last-child .container-xl .row .col-md-6 {
   padding-bottom: 10px;
@@ -578,7 +572,7 @@ header .container-xl .name .desc p:first-child {
   color: white;
 }
 #testimonials .container-xl {
-  padding: 0;
+  padding: 0 15px;
 }
 #testimonials .container-xl .title {
   text-align: center;
@@ -590,10 +584,6 @@ header .container-xl .name .desc p:first-child {
 #testimonials .container-xl .testimonial-slider {
   padding-top: 50px;
   height: 366px;
-}
-#testimonials .container-xl .testimonial-slider .slide .content {
-  display: flex;
-  justify-content: space-around;
 }
 #testimonials .container-xl .testimonial-slider .slide .content .card {
   background-color: rgba(255, 255, 255, 0);
@@ -658,6 +648,9 @@ header .container-xl .name .desc p:first-child {
 @media (max-width: 991px) {
   #testimonials {
     padding: 50px 0 25px 0;
+  }
+  #testimonials .container-xl {
+    padding: 0;
   }
   #testimonials .container-xl .testimonial-slider {
     padding-top: 0;
@@ -958,10 +951,10 @@ header .container-xl .name .desc p:first-child {
   color: white;
 }
 #pricing .container-xl .content .col-lg-3:first-child, #pricing .container-xl .content .col-lg-3:nth-child(2) {
-  padding-right: 20px;
+  padding-right: 14px;
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) {
-  padding-left: 20px;
+  padding-left: 14px;
 }
 #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
   color: #0090d0;
@@ -995,7 +988,7 @@ header .container-xl .name .desc p:first-child {
   color: #0090d0;
 }
 #pricing .container-xl .content .col-lg-3:last-child {
-  padding-left: 20px;
+  padding-left: 14px;
 }
 
 /*------------------------------------------------------------------*/
@@ -1149,7 +1142,7 @@ header .container-xl .name .desc p:first-child {
   background-color: #eeeeee;
 }
 #stay-in-touch .stay-in-touch-block .container-xl {
-  padding: 40px 0 64px 0;
+  padding: 40px 15px 64px 15px;
 }
 #stay-in-touch .stay-in-touch-block .container-xl .title {
   text-align: center;
@@ -1417,4 +1410,10 @@ body .container-xl {
 
 * {
   box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .container-xl {
+    max-width: 1170px;
+  }
 }

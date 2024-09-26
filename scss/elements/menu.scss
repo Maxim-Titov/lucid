@@ -1,11 +1,11 @@
 @import '../global/mixins.scss';
 
 .menu nav .nav .nav-item {
-    margin: 15px 15px 15px 1px;
+    margin: 12px 0 18px 0;
 
     .nav-link {
         color: $white;
-        padding: 0;
+        padding: 0 11px;
     }
 
     .nav-link:hover {
@@ -15,11 +15,11 @@
     .selected {
         @include flex-with-justify(space-between);
 
-        margin-top: 8px;
+        margin-top: 5px;
 
         span {
             background-color: $second-main-color;
-            height: 3px;
+            height: 2px;
             width: 45%;
             display: block;
         }

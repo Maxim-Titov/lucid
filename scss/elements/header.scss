@@ -5,6 +5,7 @@ header {
 
     .container-xl {
         @include flex-with-justify(space-between);
+        padding: 0;
     
         .name{
             @include flex(row);
