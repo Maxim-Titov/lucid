@@ -12,12 +12,12 @@ footer {
         div {
             svg {
                 margin: 0 15px;      
-                vertical-align: middle;  
-            }
+                vertical-align: middle;
 
-            svg:hover {
-                g {
-                    fill: $second-main-color;
+                &:hover {
+                    g {
+                        fill: $second-main-color;
+                    }
                 }
             }
 
@@ -29,10 +29,10 @@ footer {
             a {
                 color: $font-main-color;
                 text-decoration: none;
-            }
 
-            a:hover {
-                color: $second-main-color;
+                &:hover {
+                    color: $second-main-color;
+                }
             }
         }
     }

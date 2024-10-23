@@ -47,21 +47,23 @@
                     border-bottom: 1px solid $light-gray;
                     padding: 20px 0 30px 0;
 
-                    p:first-child {
-                        color: $black;
-                        font-weight: bold;
-                        font-size: 60px;
-                        height: 60px;
-
-                        span {
-                            font-size: 30px;
-                            vertical-align: 20px;
+                    p {
+                        &:first-child {
+                            color: $black;
+                            font-weight: bold;
+                            font-size: 60px;
+                            height: 60px;
+    
+                            span {
+                                font-size: 30px;
+                                vertical-align: 20px;
+                            }
                         }
-                    }
 
-                    p:last-child {
-                        margin-top: 15px;
-                        font-size: 17px;
+                        &:last-child {
+                            margin-top: 15px;
+                            font-size: 17px;
+                        }
                     }
                 }
 
@@ -84,43 +86,45 @@
                             @include btn(160px, 50px, rgba($white, $alpha: 0.1), (1px solid $light-gray));
 
                             color: $second-main-color;
+
+                            &:hover {
+                                @include btn(160px, 50px, $second-main-color, none);
+    
+                                color: $white;
+                            }
                         }
+                    }
+                }
+            }
 
-                        button:hover {
-                            @include btn(160px, 50px, $second-main-color, none);
+            .col-lg-3 {
+                &:first-child, &:nth-child(2) {
+                    padding-right: 14px;
+                }
 
+                &:nth-child(3), &:last-child {
+                    padding-left: 14px;
+                }
+
+                &:hover {
+                    .plan {
+                        p {
+                            color: $second-main-color;
+                        }
+                    }
+    
+                    .price {
+                        background-color: $second-main-color;
+                        border: none;
+                        padding-bottom: 31px;
+    
+                        p:first-child {
                             color: $white;
                         }
-                    }
-                }
-            }
-
-            .col-lg-3:first-child, .col-lg-3:nth-child(2) {
-                padding-right: 14px;
-            }
-
-            .col-lg-3:nth-child(3), .col-lg-3:last-child {
-                padding-left: 14px;
-            }
-
-            .col-lg-3:hover {
-                .plan {
-                    p {
-                        color: $second-main-color;
-                    }
-                }
-
-                .price {
-                    background-color: $second-main-color;
-                    border: none;
-                    padding-bottom: 31px;
-
-                    p:first-child {
-                        color: $white;
-                    }
-
-                    p {
-                        color: $white
+    
+                        p {
+                            color: $white
+                        }
                     }
                 }
             }
@@ -176,15 +180,17 @@
                     padding: 20px 0;
                     width: 25%;
 
-                    p:first-child {
-                        color: $black;
-                        font-weight: bold;
-                        font-size: 60px;
-                        height: 60px;
-
-                        span {
-                            font-size: 30px;
-                            vertical-align: 20px;
+                    p {
+                        &:first-child {
+                            color: $black;
+                            font-weight: bold;
+                            font-size: 60px;
+                            height: 60px;
+    
+                            span {
+                                font-size: 30px;
+                                vertical-align: 20px;
+                            }
                         }
                     }
                 }
@@ -209,49 +215,53 @@
                             @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
 
                             color: $second-main-color;
-                        }
 
-                        button:hover {
-                            @include btn(175px, 2lh, $second-main-color, none);
-
-                            color: $white;
+                            &:hover {
+                                @include btn(175px, 2lh, $second-main-color, none);
+    
+                                color: $white;
+                            }
                         }
                     }
                 }
             }
         }
 
-        .col-lg-3:first-child, .col-lg-3:nth-child(2), .col-lg-3:last-child {
-            padding: 0;
-        }
-
-        .col-lg-3:nth-child(3) {
-            padding: 0;
-
-            .plan p {
-                color: $second-main-color;
+        .col-lg-3 {
+            &:first-child, &:nth-child(2), &:last-child {
+                padding: 0;
             }
 
-            .price {
-                background-color: $second-main-color;
-                border: none;
-
-                p:first-child {
-                    color: $white;
-                }
-            }
-
-            .desc form {
-                button {
-                    @include btn(175px, 2lh, $second-main-color, none);
-
-                    color: $white;
-                }
-
-                button:hover {
-                    @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
-
+            &:nth-child(3) {
+                padding: 0;
+    
+                .plan p {
                     color: $second-main-color;
+                }
+    
+                .price {
+                    background-color: $second-main-color;
+                    border: none;
+    
+                    p {
+                        &:first-child {
+                            color: $white;
+                        }
+                    }
+                }
+    
+                .desc form {
+                    button {
+                        @include btn(175px, 2lh, $second-main-color, none);
+    
+                        color: $white;
+
+                        &:hover {
+                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
+        
+                            color: $second-main-color;
+                        }
+                    }
                 }
             }
         }
@@ -268,34 +278,38 @@
                 margin: 0;
             }
 
-            .price p:first-child {
-                font-size: 30px;
-                height: 30px;
-
-                span {
-                    font-size: 15px;
-                    vertical-align: 10px;
+            .price p {
+                &:first-child {
+                    font-size: 30px;
+                    height: 30px;
+    
+                    span {
+                        font-size: 15px;
+                        vertical-align: 10px;
+                    }
                 }
             }
 
             .desc form {
                 button {
                     width: 125px;
-                }
 
-                button:hover {
-                    width: 125px;
+                    &:hover {
+                        width: 125px;
+                    }
                 }
             }
         }
 
-        .col-lg-3:nth-child(3) .desc form {
-            button {
-                width: 125px;
-            }
+        .col-lg-3 {
+            &:nth-child(3) .desc form {
+                button {
+                    width: 125px;
 
-            button:hover {
-                width: 125px;
+                    &:hover {
+                        width: 125px;
+                    }
+                }
             }
         }
     }

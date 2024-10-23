@@ -35,22 +35,22 @@
                     width: 100%;
                     font-size: 18px;
                 }
-            }
 
-            .col-3:first-child {
-                padding-right: 45px;
-            }
+                &:first-child {
+                    padding-right: 45px;
+                }
 
-            .col-3:nth-child(2) {
-                padding-right: 17px;
-            }
+                &:nth-child(2) {
+                    padding-right: 17px;
+                }
 
-            .col-3:nth-child(3) {
-                padding-left: 17px;
-            }
+                &:nth-child(3) {
+                    padding-left: 17px;
+                }
 
-            .col-3:last-child  {
-                padding-left: 45px;
+                &:last-child  {
+                    padding-left: 45px;
+                }
             }
         }
 

@@ -29,10 +29,10 @@ header {
                     margin: 0 0 0 8px;
                     line-height: 1;
                     letter-spacing: 1px;
-                }
-    
-                p:first-child {
-                    margin-top: 16px;
+
+                    &:first-child {
+                        margin-top: 16px;
+                    }
                 }
             }
         }
