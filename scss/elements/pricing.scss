@@ -225,41 +225,25 @@
                     }
                 }
             }
-        }
 
-        .col-lg-3 {
-            &:first-child, &:nth-child(2), &:last-child {
+            &:first-child, &:nth-child(2), &:nth-child(3), &:last-child {
                 padding: 0;
             }
 
-            &:nth-child(3) {
-                padding: 0;
-    
-                .plan p {
-                    color: $second-main-color;
-                }
-    
-                .price {
-                    background-color: $second-main-color;
-                    border: none;
-    
+            &:hover .price-block {
+                .plan {
                     p {
-                        &:first-child {
-                            color: $white;
-                        }
+                        color: $black;
                     }
                 }
     
-                .desc form {
-                    button {
-                        @include btn(175px, 2lh, $second-main-color, none);
+                .price {
+                    padding: 20px 0 30px 0;
+                    background-color: $white;
     
-                        color: $white;
-
-                        &:hover {
-                            @include btn(175px, 2lh, rgba($white, $alpha: 0.1), (1px solid $light-gray));
-        
-                            color: $second-main-color;
+                    p {
+                        &:first-child {
+                            color: $black;
                         }
                     }
                 }

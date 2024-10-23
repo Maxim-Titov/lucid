@@ -1058,39 +1058,18 @@ header .container-xl .name .desc p:first-child {
     font-weight: bold;
     color: white;
   }
-  #pricing .container-xl .content .col-lg-3:first-child, #pricing .container-xl .content .col-lg-3:nth-child(2), #pricing .container-xl .content .col-lg-3:last-child {
+  #pricing .container-xl .content .col-lg-3:first-child, #pricing .container-xl .content .col-lg-3:nth-child(2), #pricing .container-xl .content .col-lg-3:nth-child(3), #pricing .container-xl .content .col-lg-3:last-child {
     padding: 0;
   }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) {
-    padding: 0;
+  #pricing .container-xl .content .col-lg-3:hover .price-block .plan p {
+    color: black;
   }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) .plan p {
-    color: #0090d0;
+  #pricing .container-xl .content .col-lg-3:hover .price-block .price {
+    padding: 20px 0 30px 0;
+    background-color: white;
   }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) .price {
-    background-color: #0090d0;
-    border: none;
-  }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) .price p:first-child {
-    color: white;
-  }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button {
-    border: none;
-    height: 2lh;
-    color: white;
-    background-color: #0090d0;
-    width: 175px;
-    font-weight: bold;
-    color: white;
-  }
-  #pricing .container-xl .content .col-lg-3:nth-child(3) .desc form button:hover {
-    border: 1px solid lightgray;
-    height: 2lh;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 175px;
-    font-weight: bold;
-    color: #0090d0;
+  #pricing .container-xl .content .col-lg-3:hover .price-block .price p:first-child {
+    color: black;
   }
 }
 /*------------------------------------------------------------------*/
