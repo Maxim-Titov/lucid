@@ -82,7 +82,7 @@
   #top .container-xl {
     width: 100%;
   }
-  #top .container-xl .row .col-lg-6:first-child {
+  #top .container-xl .row .col-lg-6 :first-child {
     padding-left: 15px;
   }
   #top .container-xl br {
@@ -203,6 +203,10 @@ header .container-xl .name .desc p:first-child {
   .hamburger-menu #menu__toggle {
     display: none;
   }
+  .hamburger-menu #menu__toggle:checked ~ .button {
+    background-color: rgba(0, 144, 208, 0);
+    transform: rotate(90deg);
+  }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span {
     transform: rotate(45deg);
   }
@@ -212,10 +216,6 @@ header .container-xl .name .desc p:first-child {
   }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::after {
     top: 0;
-    transform: rotate(90deg);
-  }
-  .hamburger-menu #menu__toggle:checked ~ .button {
-    background-color: rgba(0, 144, 208, 0);
     transform: rotate(90deg);
   }
   .hamburger-menu #menu__toggle:checked ~ .menu__box {
@@ -248,9 +248,7 @@ header .container-xl .name .desc p:first-child {
   .hamburger-menu .button .menu__btn span {
     right: 0.5px;
   }
-  .hamburger-menu .button .menu__btn span,
-  .hamburger-menu .button .menu__btn span::before,
-  .hamburger-menu .button .menu__btn span::after {
+  .hamburger-menu .button .menu__btn span, .hamburger-menu .button .menu__btn span::before, .hamburger-menu .button .menu__btn span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -277,7 +275,7 @@ header .container-xl .name .desc p:first-child {
     padding: 50px 15px 15px 15px;
     list-style: none;
     text-align: center;
-    background-color: rgba(0, 144, 208, 0.9);
+    background-color: #0090d0;
     transition-duration: 0.25s;
     z-index: 1;
   }
@@ -1146,14 +1144,14 @@ header .container-xl .name .desc p:first-child {
   margin-bottom: 27px;
   vertical-align: middle;
 }
-#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 p {
-  font-size: 18px;
-}
-#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 p a {
+#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 a {
   color: #8f8f8f;
   text-decoration: 0;
 }
-#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 p a:hover {
+#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 a p {
+  font-size: 18px;
+}
+#stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4 a:hover {
   color: #0090d0;
 }
 #stay-in-touch .stay-in-touch-block .container-xl .row .col-sm-4:first-child {
