@@ -728,20 +728,20 @@
 
 		<div class="form-block">
 			<div class="container-xl">
-				<form method="get" id="feedback" novalidate>
+				<form method="get" id="feedback">
 					<div class="row form">
 						<div class="col-sm-6">
-							<input type="text" name="name" id="name" class="rounded-lg" placeholder="NAME *"><br/>
-							<input type="email" name="email" id="email" class="rounded-lg" placeholder="EMAIL *"><br/>
-							<input type="text" name="subject" id="subject" class="rounded-lg" placeholder="SUBJECT *"><br/>
+							<input type="text" name="name" id="name" class="rounded-lg" placeholder="NAME *" required><br/>
+							<input type="email" name="email" id="email" class="rounded-lg" placeholder="EMAIL *" required><br/>
+							<input type="text" name="subject" id="subject" class="rounded-lg" placeholder="SUBJECT *" required><br/>
 						</div>
 
 						<div class="col-sm-6">
-							<textarea name="message" id="message" class="rounded-lg" placeholder="MESSAGE *"></textarea>
+							<textarea name="message" id="message" class="rounded-lg" placeholder="MESSAGE *" required></textarea>
 						</div>
 					</div>
 
-					<button class="rounded-lg">SEND MESSAGE</button>
+					<button class="rounded-lg" type="submit">SEND MESSAGE</button>
 				</form>
 			</div>
 		</div>
@@ -840,7 +840,7 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	<script type="text/javascript" src="js/slider.js"></script>
-	<script type="text/javascript" src="js/validation.js"></script>
+	<script type="text/javascript" src="js/send-message.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
