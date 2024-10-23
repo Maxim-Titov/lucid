@@ -118,12 +118,12 @@
                         border: none;
                         padding-bottom: 31px;
     
-                        p:first-child {
-                            color: $white;
-                        }
-    
                         p {
-                            color: $white
+                            color: $white;
+
+                            &:first-child {
+                                color: $white;
+                            }
                         }
                     }
                 }
@@ -242,6 +242,8 @@
                     background-color: $white;
     
                     p {
+                        color: $gray;
+
                         &:first-child {
                             color: $black;
                         }

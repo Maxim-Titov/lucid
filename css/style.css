@@ -967,10 +967,10 @@ header .container-xl .name .desc p:first-child {
   border: none;
   padding-bottom: 31px;
 }
-#pricing .container-xl .content .col-lg-3:hover .price p:first-child {
+#pricing .container-xl .content .col-lg-3:hover .price p {
   color: white;
 }
-#pricing .container-xl .content .col-lg-3:hover .price p {
+#pricing .container-xl .content .col-lg-3:hover .price p:first-child {
   color: white;
 }
 
@@ -1067,6 +1067,9 @@ header .container-xl .name .desc p:first-child {
   #pricing .container-xl .content .col-lg-3:hover .price-block .price {
     padding: 20px 0 30px 0;
     background-color: white;
+  }
+  #pricing .container-xl .content .col-lg-3:hover .price-block .price p {
+    color: gray;
   }
   #pricing .container-xl .content .col-lg-3:hover .price-block .price p:first-child {
     color: black;
